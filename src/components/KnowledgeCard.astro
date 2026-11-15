@@ -1,0 +1,25 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import { CATEGORIES } from '../consts';
+interface Props { card: CollectionEntry<'knowledge'>['data']; link?: boolean }
+const { card, link = true } = Astro.props;
+const cat = CATEGORIES.find((c) => c.slug === card.category)!;
+const toSeconds = (t: string) => t.split(':').reduce((acc, n) => acc * 60 + Number(n), 0);
+const videoUrl = `https://www.youtube.com/watch?v=${card.source_video_id}&t=${toSeconds(card.timestamp)}s`;
+---
+<article class="kc">
+  <span class="tag">{cat.name}</span>
+  <h3>{link ? <a href={`/knowledge/${card.id}/`}>{card.title}</a> : card.title}</h3>
+  <p>{card.what}</p>
+  <div class="src"><a href={videoUrl} rel="nofollow noopener" target="_blank">{card.source_channel}・{card.timestamp}</a></div>
+</article>
+
+<style>
+  .kc { background: var(--card); border-radius: 6px; padding: 20px; display: flex; flex-direction: column; gap: 10px; min-width: 0; border: 1px solid var(--rule); border-top: 4px solid var(--tile); }
+  .tag { align-self: flex-start; }
+  h3 { font-size: 1.05rem; margin: 0; line-height: 1.5; }
+  h3 a { text-decoration: none; }
+  h3 a:hover { text-decoration: underline; }
+  p { margin: 0; color: var(--muted); font-size: .95rem; }
+  .src { margin-top: auto; font-size: .85rem; color: var(--muted); border-top: 1px dashed var(--rule); padding-top: 10px; }
+</style>

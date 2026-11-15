@@ -1,0 +1,32 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import { CATEGORIES } from '../../consts';
+
+const articles = (await getCollection('articles', ({ data }) => !data.draft)).sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+);
+const groups = CATEGORIES.map((c) => ({ ...c, items: articles.filter((a) => a.data.category === c.slug) }));
+---
+<Base title="全部文章" description="冷氣、洗衣機、除濕機、電鍋氣炸鍋與鍋具的錯誤碼、清潔保養與設定整理。">
+  <header class="page-head">
+    <h1>全部文章</h1>
+    <p>每篇上線前都對照過原廠說明書或官方資料，來源列在文末。</p>
+  </header>
+  {articles.length === 0 && <p class="none">第一批文章整理中。</p>}
+  {groups.filter((g) => g.items.length).map((g) => (
+    <section class="group">
+      <h2><a href={`/category/${g.slug}/`}>{g.name}</a></h2>
+      <ul>{g.items.map((a) => <li><a href={`/articles/${a.id}/`}>{a.data.title}</a><p>{a.data.description}</p></li>)}</ul>
+    </section>
+  ))}
+</Base>
+
+<style>
+  .group { padding-block: 28px; border-top: 1px solid var(--rule); margin-top: 24px; }
+  .group h2 { font-size: 1.4rem; margin: 0 0 12px; }
+  .group h2 a { text-decoration: none; }
+  ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 18px; max-width: 46em; }
+  li a { font-weight: 600; font-size: 1.05rem; }
+  li p { margin: 2px 0 0; color: var(--muted); }
+</style>

@@ -1,0 +1,51 @@
+/* 設計方向：家的平面圖。暖白紙底、深咖啡字、磁磚紅點綴、鼠尾草綠當次要色；標題用明體。
+   刻意與 badminton-tw（深綠＋羽球黃）與 pickleball-tw（球場藍＋圓體）區隔。說明見 docs/DESIGN.md */
+:root {
+  --paper: #F6F1E7;
+  --ink: #2A2420;
+  --muted: #6B5F55;
+  --tile: #C2603A;      /* 磁磚紅：重點、連結底線、平面圖的選中房間 */
+  --tile-ink: #FFFFFF;
+  --sage: #7C9A7E;      /* 鼠尾草綠：次要標籤 */
+  --wall: #3A322C;      /* 平面圖牆線 */
+  --floor: #EDE4D3;     /* 平面圖地板 */
+  --rule: #DCD2C2;
+  --card: #FFFDF8;
+  --warn: #B23A2B;
+  --warn-bg: #FBEDE9;
+  --display: "Noto Serif TC", "Songti TC", "PMingLiU", serif;
+  --body: "PingFang TC", "Microsoft JhengHei", "Noto Sans TC", system-ui, sans-serif;
+  --measure: 38em;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #1C1815; --ink: #EDE6DC; --muted: #B3A698; --tile: #D97B55; --sage: #8FAE91;
+    --wall: #D9CFC2; --floor: #2A241F; --rule: #3B332C; --card: #241F1B;
+    --warn: #F08A78; --warn-bg: #3A211C;
+    color-scheme: dark;
+  }
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--body); font-size: 16px; line-height: 1.8; }
+a { color: inherit; text-decoration-color: var(--tile); text-underline-offset: 4px; }
+img { max-width: 100%; height: auto; }
+:focus-visible { outline: 3px solid var(--tile); outline-offset: 3px; }
+.wrap { max-width: 1080px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+h1, h2 { font-family: var(--display); font-weight: 700; text-wrap: balance; }
+.page-head { padding-block: 32px 8px; }
+.page-head h1 { font-size: clamp(1.9rem, 4.4vw, 2.7rem); line-height: 1.3; margin: 0 0 8px; }
+.page-head p { color: var(--muted); margin: 0; max-width: var(--measure); }
+.none { color: var(--muted); }
+
+.prose { max-width: var(--measure); padding-block: 24px 64px; }
+.prose h2 { font-size: 1.5rem; line-height: 1.4; margin: 2.2em 0 .5em; }
+.prose h3 { font-size: 1.12rem; margin: 1.8em 0 .4em; }
+.prose table { border-collapse: collapse; width: 100%; font-variant-numeric: tabular-nums; }
+.prose th, .prose td { border-bottom: 1px solid var(--rule); padding: 8px 10px; text-align: left; vertical-align: top; }
+.prose th { font-weight: 600; background: var(--floor); }
+.table-wrap { overflow-x: auto; }
+.tag { display: inline-block; font-size: .8rem; padding: 1px 10px; border-radius: 999px; background: var(--floor); color: var(--ink); border: 1px solid var(--rule); }
+.ad { margin: 2em 0; min-height: 100px; }

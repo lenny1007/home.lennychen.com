@@ -1,0 +1,51 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import KnowledgeCard from '../../components/KnowledgeCard.astro';
+import { CATEGORIES, KINDS } from '../../consts';
+
+export function getStaticPaths() {
+  return CATEGORIES.map((c) => ({ params: { slug: c.slug }, props: { cat: c } }));
+}
+const { cat } = Astro.props;
+const articles = (await getCollection('articles', ({ data }) => !data.draft && data.category === cat.slug)).sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+);
+const cards = (await getCollection('knowledge')).filter((c) => c.data.category === cat.slug);
+const groups = (Object.keys(KINDS) as (keyof typeof KINDS)[])
+  .map((k) => ({ key: k, name: KINDS[k], items: articles.filter((a) => a.data.kind === k) }))
+  .filter((g) => g.items.length);
+---
+<Base title={cat.name} description={`${cat.name}：${cat.note}對照原廠說明書整理，每一條都標來源。`} noindex={articles.length === 0}>
+  <header class="page-head">
+    <h1>{cat.name}</h1>
+    <p>{cat.note}</p>
+  </header>
+  {articles.length === 0 && <p class="none">這一類整理中。</p>}
+  {groups.map((g) => (
+    <section class="group">
+      <h2>{g.name}</h2>
+      <ul>
+        {g.items.map((a) => (
+          <li><a href={`/articles/${a.id}/`}>{a.data.title}</a>{a.data.brands.length > 0 && <span class="tag">{a.data.brands.join('・')}</span>}<p>{a.data.description}</p></li>
+        ))}
+      </ul>
+    </section>
+  ))}
+  {cards.length > 0 && (
+    <section class="group">
+      <h2>影片重點卡</h2>
+      <div class="cards">{cards.slice(0, 6).map((c) => <KnowledgeCard card={c.data} />)}</div>
+    </section>
+  )}
+</Base>
+
+<style>
+  .group { padding-block: 28px; border-top: 1px solid var(--rule); margin-top: 24px; }
+  .group h2 { font-size: 1.4rem; margin: 0 0 12px; }
+  ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 18px; max-width: 46em; }
+  li a { font-weight: 600; font-size: 1.05rem; margin-right: 8px; }
+  li p { margin: 2px 0 0; color: var(--muted); }
+  .cards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
+  @media (max-width: 860px) { .cards { grid-template-columns: minmax(0, 1fr); } }
+</style>

@@ -1,0 +1,44 @@
+---
+// 首頁導覽：一張家的平面圖，每個房間連到該分類。全站唯一的重點裝飾。
+// 座標系 400×300；房間位置是示意，不是真實格局。
+import { CATEGORIES, type CategorySlug } from '../consts';
+const name = (s: CategorySlug) => CATEGORIES.find((c) => c.slug === s)!.name;
+const rooms: { slug: CategorySlug; x: number; y: number; w: number; h: number; room: string }[] = [
+  { slug: 'aircon', x: 0, y: 0, w: 240, h: 180, room: '客廳・臥室' },
+  { slug: 'cooker', x: 240, y: 0, w: 160, h: 90, room: '廚房' },
+  { slug: 'cookware', x: 240, y: 90, w: 160, h: 90, room: '廚房' },
+  { slug: 'dehumidifier', x: 0, y: 180, w: 140, h: 120, room: '儲藏室' },
+  { slug: 'washer', x: 140, y: 180, w: 260, h: 120, room: '陽台' },
+];
+---
+<figure class="plan">
+  <svg viewBox="-6 -6 412 312" role="img" aria-labelledby="plan-title">
+    <title id="plan-title">家的平面圖：點房間看該類家電的說明</title>
+    {rooms.map((r) => (
+      <a href={`/category/${r.slug}/`}>
+        <rect class="room" x={r.x} y={r.y} width={r.w} height={r.h} />
+        <text class="room-name" x={r.x + 14} y={r.y + 24}>{r.room}</text>
+        <text class="cat" x={r.x + r.w / 2} y={r.y + r.h / 2 + 12} text-anchor="middle">{name(r.slug)}</text>
+      </a>
+    ))}
+    <rect class="walls" x="0" y="0" width="400" height="300" />
+    <line class="door" x1="100" y1="180" x2="140" y2="180" />
+    <line class="door" x1="240" y1="40" x2="240" y2="70" />
+    <line class="door" x1="290" y1="180" x2="340" y2="180" />
+  </svg>
+  <figcaption>點房間，看那一類家電的錯誤碼、清潔與設定。</figcaption>
+</figure>
+
+<style>
+  .plan { margin: 0; }
+  svg { display: block; width: 100%; height: auto; }
+  .room { fill: var(--floor); stroke: var(--wall); stroke-width: 3; transition: fill .15s; }
+  a:hover .room, a:focus-visible .room { fill: var(--tile); }
+  a:hover text, a:focus-visible text { fill: var(--tile-ink); }
+  .walls { fill: none; stroke: var(--wall); stroke-width: 7; }
+  .door { stroke: var(--paper); stroke-width: 8; }
+  .room-name { font-size: 12px; fill: var(--muted); font-family: var(--body); }
+  .cat { font-size: 19px; fill: var(--ink); font-family: var(--display); font-weight: 700; }
+  figcaption { margin-top: 10px; font-size: .9rem; color: var(--muted); }
+  @media (prefers-reduced-motion: reduce) { .room { transition: none; } }
+</style>

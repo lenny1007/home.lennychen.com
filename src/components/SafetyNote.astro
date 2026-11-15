@@ -1,0 +1,14 @@
+---
+// 安全提醒：拆外殼、碰電路、冷媒、瓦斯相關一律放這個框，不寫操作步驟。
+interface Props { title?: string }
+const { title = '這一步請交給原廠' } = Astro.props;
+---
+<aside class="safety" role="note">
+  <strong>{title}</strong>
+  <slot>需要拆外殼、碰到電路或冷媒的維修，請聯絡原廠客服或合格技師，不要自己動手。</slot>
+</aside>
+
+<style>
+  .safety { margin: 1.6em 0; padding: 14px 18px; border-left: 5px solid var(--warn); background: var(--warn-bg); border-radius: 0 6px 6px 0; }
+  strong { display: block; color: var(--warn); margin-bottom: 4px; }
+</style>

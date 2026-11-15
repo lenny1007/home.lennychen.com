@@ -1,0 +1,30 @@
+---
+// 錯誤碼表：錯誤碼頁的主體。每列都要能在文章 frontmatter sources 列出的原廠說明書裡找到。
+// pro: true 的列代表要叫原廠或技師，會標紅。
+interface Row { code: string; meaning: string; action: string; pro?: boolean }
+interface Props { rows: Row[]; caption?: string }
+const { rows, caption } = Astro.props;
+---
+<div class="table-wrap">
+  <table class="codes">
+    {caption && <caption>{caption}</caption>}
+    <thead><tr><th scope="col">代碼／燈號</th><th scope="col">意思</th><th scope="col">你可以做什麼</th></tr></thead>
+    <tbody>
+      {rows.map((r) => (
+        <tr class:list={{ pro: r.pro }}>
+          <th scope="row"><code>{r.code}</code></th>
+          <td>{r.meaning}</td>
+          <td>{r.pro ? <><strong>請聯絡原廠</strong>　{r.action}</> : r.action}</td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</div>
+
+<style>
+  .codes { margin: 1.4em 0; }
+  caption { text-align: left; color: var(--muted); font-size: .9rem; padding-bottom: 6px; }
+  code { font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace; font-weight: 700; white-space: nowrap; }
+  tbody th { background: transparent; }
+  .pro strong { color: var(--warn); }
+</style>
