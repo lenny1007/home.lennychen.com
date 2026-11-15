@@ -42,7 +42,7 @@
 網域已有；Vercel Pro 與其他站共用；只多 Gemini 萃取費（首批估幾十元台幣，以帳單為準）。
 
 ## 待站主
-1. Vercel：New Project → 匯入 `lenny1007/home.lennychen.com` → Domains 加 `home.lennychen.com` → 照指示在 lennychen.com 的 DNS 加 CNAME。
+1. ~~Vercel 專案與網域~~：2026-11-15 已建（專案 `home-lennychen-com`，lennychen.com 的 DNS 在 Vercel，子網域自動生效）。
 2. GSC：把 `home.lennychen.com` 加進 Search Console（若 lennychen.com 已是網域資源，子網域自動涵蓋）。
 3. AdSense：確認 lennychen.com 已審過，把 `ca-pub-…` 填進 `src/consts.ts`。
 4. 萃取端：選定品牌官方與維修師傅頻道，在本機跑第一批。
