@@ -36,3 +36,4 @@ Codex 與 Claude Code 都讀這份（AGENTS.md 指向這裡）。只寫讀程式
 
 ## 分支
 - Claude 雲端 session 用系統指定的 `claude/*` 分支，開 draft PR，不直接推 `main`。
+- Codex 用 `codex/*` 分支，交辦單在 `docs/codex/`。Codex 寫的文章一律 `draft: true`，由 Claude 逐句查證後才改 false。
