@@ -1,1 +1,909 @@
-[]
+[
+  {
+    "id": "dehumidifier-xcn1im23ldi-01",
+    "title": "用坪數公式計算除濕力",
+    "category": "dehumidifier",
+    "type": "tip",
+    "what": "依據空間坪數換算每日所需的除濕能力（公升／日）。",
+    "why": "除濕機標示的公升數代表一天不間斷運轉能除濕多少公升；影片引用台電提供的公式（每平方公尺每天約 0.24 公升，一坪等於 3.3 平方公尺）來估算所需除濕力。",
+    "how": [
+      "確認要除濕的空間坪數",
+      "以公式「坪數 × 3.3 × 0.24 = 建議每日除濕公升數」計算",
+      "影片舉例：10 坪空間大約挑除濕力 7、8 公升左右的機型"
+    ],
+    "check": "選購機型標示的除濕能力（公升／日）與公式算出的需求相當",
+    "needs_pro": false,
+    "source_channel": "胡少HuShao",
+    "source_title": "除濕機怎麼買？種類有分那些？｜壓縮機式？除溼輪式？｜優缺點完整剖析｜預防自燃的方法｜怎麼計算需要的除濕力｜胡少",
+    "source_video_id": "xCN1iM23ldI",
+    "timestamp": "02:00",
+    "index": false
+  },
+  {
+    "id": "dehumidifier-xcn1im23ldi-02",
+    "title": "依使用習慣挑選水箱規格",
+    "category": "dehumidifier",
+    "type": "tip",
+    "what": "評估除濕機水箱容量、水箱設計與是否接排水管。",
+    "why": "水箱大小決定一天要倒幾次水，也決定機身體積；水箱裝滿時很重，家中只有長輩時不一定要買大水箱；接排水管就不用倒水。",
+    "how": [
+      "家中只有長輩倒水時，不一定要挑大水箱，拿得動比較重要",
+      "可考慮有水箱專利、能調整不同滿水位的機型",
+      "到賣場看機時注意水箱設計，最好單手就能直接操作",
+      "大部分除濕機可接排水管直接排水，但放在客廳或房間通常較難安裝"
+    ],
+    "check": "水箱裝滿時拿得動、能單手操作，或已接好排水管",
+    "needs_pro": false,
+    "source_channel": "胡少HuShao",
+    "source_title": "除濕機怎麼買？種類有分那些？｜壓縮機式？除溼輪式？｜優缺點完整剖析｜預防自燃的方法｜怎麼計算需要的除濕力｜胡少",
+    "source_video_id": "xCN1iM23ldI",
+    "timestamp": "02:34",
+    "index": false
+  },
+  {
+    "id": "dehumidifier-xcn1im23ldi-03",
+    "title": "壓縮機式與除濕輪式差異",
+    "category": "dehumidifier",
+    "type": "tip",
+    "what": "除濕機依原理主要分為壓縮機式與除濕輪式兩大類。",
+    "why": "（影片觀點）壓縮機式原理類似冷氣機，讓水氣凝結成水，耗電量低、除濕力強、選擇最多，缺點是低溫環境除濕力不夠、運轉有噪音；除濕輪式（沸石或陶瓷滾輪）沒有壓縮機、重量輕、運作安靜，像 15 度以下的低溫越冷除濕效果越好，但除濕力多在 10 公升以下，耗電量約為壓縮機式的 3 倍。以台灣環境來看，壓縮機式較合適。",
+    "how": [
+      "一般台灣家庭優先考慮壓縮機式除濕機，耗電低、除濕力強",
+      "在低溫環境使用壓縮機式除濕力不夠時，可加開暖氣解決",
+      "若重視運作安靜或常在低溫環境使用，再考慮除濕輪式"
+    ],
+    "check": "確認規格表標明為壓縮機式或除濕輪式，符合自身使用環境",
+    "needs_pro": false,
+    "source_channel": "胡少HuShao",
+    "source_title": "除濕機怎麼買？種類有分那些？｜壓縮機式？除溼輪式？｜優缺點完整剖析｜預防自燃的方法｜怎麼計算需要的除濕力｜胡少",
+    "source_video_id": "xCN1iM23ldI",
+    "timestamp": "04:35",
+    "index": false
+  },
+  {
+    "id": "dehumidifier-xcn1im23ldi-04",
+    "title": "除濕機運轉靜音挑選",
+    "category": "dehumidifier",
+    "type": "tip",
+    "what": "挑選具備靜音或睡眠模式的除濕機。",
+    "why": "壓縮機運轉時會產生噪音，除濕機又多放在生活周遭，有些人無法接受運轉噪音。",
+    "how": [
+      "在賣場看展示機的操作面板，有沒有靜音運轉或睡眠模式的選項",
+      "也可考慮變頻機種，運轉時音量會降低許多"
+    ],
+    "check": "開啟靜音或睡眠模式後，放在房間不影響睡眠",
+    "needs_pro": false,
+    "source_channel": "胡少HuShao",
+    "source_title": "除濕機怎麼買？種類有分那些？｜壓縮機式？除溼輪式？｜優缺點完整剖析｜預防自燃的方法｜怎麼計算需要的除濕力｜胡少",
+    "source_video_id": "xCN1iM23ldI",
+    "timestamp": "06:13",
+    "index": false
+  },
+  {
+    "id": "dehumidifier-xcn1im23ldi-05",
+    "title": "認明一級能效與貨物稅減免",
+    "category": "dehumidifier",
+    "type": "tip",
+    "what": "選購貼有一級能源效率標示的除濕機，並留意貨物稅減免補助（影片拍攝當時的規定）。",
+    "why": "除濕機運轉時間長，耗電量很重要；影片建議到賣場找貼有能源標章的機種，選一級能源效率就沒錯。",
+    "how": [
+      "在賣場確認機種貼有能源標章，且為一級能源效率",
+      "（影片拍攝當時的規定）在補助期間內購買除濕機等家電，可依相關規定向政府申請貨物稅減免；影片提到當時延長到 2025 年 6 月 14 日"
+    ],
+    "check": "機身貼有一級能源效率標章",
+    "needs_pro": false,
+    "source_channel": "胡少HuShao",
+    "source_title": "除濕機怎麼買？種類有分那些？｜壓縮機式？除溼輪式？｜優缺點完整剖析｜預防自燃的方法｜怎麼計算需要的除濕力｜胡少",
+    "source_video_id": "xCN1iM23ldI",
+    "timestamp": "06:49",
+    "index": false
+  },
+  {
+    "id": "dehumidifier-xcn1im23ldi-06",
+    "title": "二合一清淨除濕機選購限制",
+    "category": "dehumidifier",
+    "type": "tip",
+    "what": "除濕清淨兩用機的適用坪數落差與選購建議。",
+    "why": "除濕機加上 HEPA 或活性碳濾網後，空氣過濾會讓出風量變小，所以二合一機種的除濕與清淨適用坪數通常不一致，選購較複雜。",
+    "how": [
+      "檢視兩用機規格表，分別確認除濕與清淨的適用坪數是否符合空間需求",
+      "（影片觀點）若要真的改善空氣品質，建議另外添購空氣清淨機"
+    ],
+    "check": "清楚了解所買機型的清淨適用坪數",
+    "needs_pro": false,
+    "source_channel": "胡少HuShao",
+    "source_title": "除濕機怎麼買？種類有分那些？｜壓縮機式？除溼輪式？｜優缺點完整剖析｜預防自燃的方法｜怎麼計算需要的除濕力｜胡少",
+    "source_video_id": "xCN1iM23ldI",
+    "timestamp": "07:22",
+    "index": false
+  },
+  {
+    "id": "dehumidifier-xcn1im23ldi-07",
+    "title": "除濕機室內乾衣安全技巧",
+    "category": "dehumidifier",
+    "type": "setting",
+    "what": "利用除濕機乾衣功能讓衣物加速乾燥，並注意使用安全。",
+    "why": "把除濕機出風口對著衣物、搭配電風扇吹動衣服，可加快乾燥；但衣服滴水時放在正下方有水滴到電子面板的風險，衣服掉落也可能覆蓋出風口。",
+    "how": [
+      "把衣服吊掛在接近密閉的室內，除濕機出風口對著衣物，使用乾衣功能",
+      "衣服量大時，可再搭配一台 DC 電風扇吹動衣服",
+      "衣服還會滴水時，千萬不要把除濕機放在衣服正下方",
+      "避免衣服掉落覆蓋出風口，且要有人在家留意時才這樣使用"
+    ],
+    "check": "衣物乾爽無異味，除濕機出風口沒有被遮蔽或滴到水",
+    "needs_pro": false,
+    "source_channel": "胡少HuShao",
+    "source_title": "除濕機怎麼買？種類有分那些？｜壓縮機式？除溼輪式？｜優缺點完整剖析｜預防自燃的方法｜怎麼計算需要的除濕力｜胡少",
+    "source_video_id": "xCN1iM23ldI",
+    "timestamp": "08:14",
+    "index": false
+  },
+  {
+    "id": "dehumidifier-xcn1im23ldi-08",
+    "title": "除濕機用電安全與插座規範",
+    "category": "dehumidifier",
+    "type": "tip",
+    "what": "除濕機的插座使用方式與防範火災措施。",
+    "why": "曾有一條延長線同時插兩台除濕機運轉而造成火災的新聞；家中有人時才開，也能避免一些意外狀況。",
+    "how": [
+      "除濕機使用單一獨立插座，避免使用延長線",
+      "萬一真的要用延長線，挑選專用且有過載、過熱保護的延長線",
+      "不要和其他高功率電器（例如電暖器）共用",
+      "家中沒有人時不要開除濕機"
+    ],
+    "check": "除濕機插在獨立插座，未與其他高功率電器共用",
+    "needs_pro": false,
+    "source_channel": "胡少HuShao",
+    "source_title": "除濕機怎麼買？種類有分那些？｜壓縮機式？除溼輪式？｜優缺點完整剖析｜預防自燃的方法｜怎麼計算需要的除濕力｜胡少",
+    "source_video_id": "xCN1iM23ldI",
+    "timestamp": "10:48",
+    "index": false
+  },
+  {
+    "id": "dehumidifier-xcn1im23ldi-09",
+    "title": "除濕機擺放距離與濾網保養",
+    "category": "dehumidifier",
+    "type": "cleaning",
+    "what": "除濕機周圍保持距離，並定期清理濾網。",
+    "why": "與牆壁、窗簾、家具保持距離，萬一起火可避免火勢擴大延燒；濾網包裝沒拆或沒清理，會造成進氣量小、除濕力不夠，也可能運轉異常。",
+    "how": [
+      "新機買回來，先確認附的濾網包裝已拆掉再使用",
+      "除濕機擺放遠離可燃物，和周圍牆壁、窗簾、家具保持至少約 30 至 50 公分",
+      "記得定期清理濾網"
+    ],
+    "check": "機身周圍保持距離，濾網已拆包裝且乾淨",
+    "needs_pro": false,
+    "source_channel": "胡少HuShao",
+    "source_title": "除濕機怎麼買？種類有分那些？｜壓縮機式？除溼輪式？｜優缺點完整剖析｜預防自燃的方法｜怎麼計算需要的除濕力｜胡少",
+    "source_video_id": "xCN1iM23ldI",
+    "timestamp": "11:21",
+    "index": false
+  },
+  {
+    "id": "dehumidifier-xcn1im23ldi-10",
+    "title": "檢查老舊除濕機瑕疵召回名單",
+    "category": "dehumidifier",
+    "type": "tip",
+    "what": "家中 2012 年以前製造的除濕機，要確認是否在標準檢驗局公布的瑕疵除濕機召回名單內。",
+    "why": "曾有品牌的除濕機因使用瑕疵零件導致自燃，標檢局已公布召回名單。",
+    "how": [
+      "查看家中除濕機的製造年份與型號",
+      "製造年份在 2012 年以前，確認是否在標檢局公布的瑕疵除濕機召回名單內",
+      "若符合召回名單的機型，一定要到賣場進行維修更換，交給專業人員處理"
+    ],
+    "check": "確認家中除濕機不在召回名單內，或已完成維修更換",
+    "needs_pro": true,
+    "source_channel": "胡少HuShao",
+    "source_title": "除濕機怎麼買？種類有分那些？｜壓縮機式？除溼輪式？｜優缺點完整剖析｜預防自燃的方法｜怎麼計算需要的除濕力｜胡少",
+    "source_video_id": "xCN1iM23ldI",
+    "timestamp": "11:52",
+    "index": false
+  },
+  {
+    "id": "aircon-ilskiuzysbq-01",
+    "title": "室外機空間夠放就優先選一對一冷氣",
+    "category": "aircon",
+    "type": "tip",
+    "what": "多個房間要同時裝冷氣時，如果室外機的位置空間夠放，建議選一對一機型而不是一對多。",
+    "why": "一對多的室外機若故障，接在上面的房間都不能用；而且一對多電費還更貴。",
+    "how": [
+      "確認室外機的位置空間是否夠放多台室外機",
+      "空間沒問題就每個房間各裝一對一冷氣"
+    ],
+    "check": "每間房間的冷氣各自配有獨立的室外機。",
+    "needs_pro": false,
+    "source_channel": "胡少HuShao",
+    "source_title": "冷氣怎麼買？什麼時機點買最划算？分離式還是窗型｜冷房能力怎麼算｜省電效率比較｜胡少",
+    "source_video_id": "ILSKiUZYSbQ",
+    "timestamp": "02:17",
+    "index": false
+  },
+  {
+    "id": "aircon-ilskiuzysbq-02",
+    "title": "窗型冷氣要用安裝尺寸量窗口",
+    "category": "aircon",
+    "type": "tip",
+    "what": "選窗型冷氣最重要的是窗口放不放得下；廠商標示的尺寸有機身尺寸和安裝尺寸，一定要用安裝尺寸去量。",
+    "why": "窗型冷氣有附鐵架，安裝尺寸是加了鐵架的厚度；沒量仔細可能會放不進去。",
+    "how": [
+      "量家中冷氣窗口的實際大小",
+      "查看廠商標示的「安裝尺寸」",
+      "確認窗口放得下該安裝尺寸"
+    ],
+    "check": "冷氣連同鐵架放得進窗口。",
+    "needs_pro": false,
+    "source_channel": "胡少HuShao",
+    "source_title": "冷氣怎麼買？什麼時機點買最划算？分離式還是窗型｜冷房能力怎麼算｜省電效率比較｜胡少",
+    "source_video_id": "ILSKiUZYSbQ",
+    "timestamp": "03:07",
+    "index": false
+  },
+  {
+    "id": "aircon-ilskiuzysbq-03",
+    "title": "移動式冷氣要固定排風管排熱",
+    "category": "aircon",
+    "type": "tip",
+    "what": "移動式冷氣背面有排風管，雖然叫移動式，還是要固定一條管子把熱氣排出去。",
+    "why": "移動式冷氣非常耗電又很吵，比較適合租屋族或臨時用；除非真的沒辦法裝分離式或窗型，再考慮移動式。",
+    "how": [
+      "確認使用位置能固定排風管",
+      "把排風管的熱氣排到室外"
+    ],
+    "check": "排風管有把熱氣排出室外。",
+    "needs_pro": false,
+    "source_channel": "胡少HuShao",
+    "source_title": "冷氣怎麼買？什麼時機點買最划算？分離式還是窗型｜冷房能力怎麼算｜省電效率比較｜胡少",
+    "source_video_id": "ILSKiUZYSbQ",
+    "timestamp": "03:55",
+    "index": false
+  },
+  {
+    "id": "aircon-ilskiuzysbq-04",
+    "title": "居家房間坪數計算方式",
+    "category": "aircon",
+    "type": "tip",
+    "what": "評估冷氣大小前，先算出要裝冷氣的空間有多大；台灣都是看坪數。",
+    "why": "知道坪數後，才能接著算需要的冷房能力。",
+    "how": [
+      "量房間的長和寬（公尺）",
+      "長 × 寬 × 0.3025",
+      "得出實際坪數"
+    ],
+    "check": "1 坪是 180×180 公分，大約等於一張加大的雙人床，可用來概略對照計算結果是否合理。",
+    "needs_pro": false,
+    "source_channel": "胡少HuShao",
+    "source_title": "冷氣怎麼買？什麼時機點買最划算？分離式還是窗型｜冷房能力怎麼算｜省電效率比較｜胡少",
+    "source_video_id": "ILSKiUZYSbQ",
+    "timestamp": "05:05",
+    "index": false
+  },
+  {
+    "id": "aircon-ilskiuzysbq-05",
+    "title": "冷氣冷房能力 kW 算法與熱環境加乘",
+    "category": "aircon",
+    "type": "tip",
+    "what": "用房間坪數乘上係數算出需要的冷房能力（kW）；頂樓、西曬、挑高等比較熱的環境要加成。此算法針對一般家庭。",
+    "why": "影片的算法是一坪需要 0.64 kW；只要有頂樓、西曬或挑高其中一個因素，就把 0.64 再加 0.064。",
+    "how": [
+      "一般房間：坪數 × 0.64 kW",
+      "檢視是否有頂樓、西曬、挑高等比較熱的因素",
+      "每有一項因素，0.64 再加 0.064 後乘以坪數（例：西曬＋挑高＝(0.64＋0.064＋0.064)× 坪數）",
+      "現在大部分冷氣型號裡的數字就是千瓦，用來對照算出的數值",
+      "營業場所或較大空間，請安裝師傅到現場評估"
+    ],
+    "check": "影片例子：5.5 坪一般房間約 3.52 kW；有西曬和挑高約 4.2 kW。",
+    "needs_pro": false,
+    "source_channel": "胡少HuShao",
+    "source_title": "冷氣怎麼買？什麼時機點買最划算？分離式還是窗型｜冷房能力怎麼算｜省電效率比較｜胡少",
+    "source_video_id": "ILSKiUZYSbQ",
+    "timestamp": "05:22",
+    "index": false
+  },
+  {
+    "id": "aircon-ilskiuzysbq-06",
+    "title": "同為一級能效，比較 CSPF 挑更省電的冷氣",
+    "category": "aircon",
+    "type": "tip",
+    "what": "同樣是變頻、也都是一級能效的冷氣，可以再比較 CSPF 數值判斷哪台更省電（能源效率分級一到五級為影片拍攝當時的規定）。",
+    "why": "CSPF 的測算納入外氣溫度和負載變化等季節因素，比早期只在單一標準條件下計算的 EER 值更符合台灣的冷氣使用習慣；數字越高越省電。",
+    "how": [
+      "確認機種是能源效率分級一級",
+      "比較各機種的 CSPF 數值",
+      "挑 CSPF 數值較高的機型"
+    ],
+    "check": null,
+    "needs_pro": false,
+    "source_channel": "胡少HuShao",
+    "source_title": "冷氣怎麼買？什麼時機點買最划算？分離式還是窗型｜冷房能力怎麼算｜省電效率比較｜胡少",
+    "source_video_id": "ILSKiUZYSbQ",
+    "timestamp": "07:02",
+    "index": false
+  },
+  {
+    "id": "aircon-ilskiuzysbq-07",
+    "title": "買冷氣的時機點：2-4 月、6-8 月與 9 月後",
+    "category": "aircon",
+    "type": "tip",
+    "what": "依影片經驗，2 到 4 月廠商開始暖身會額外送贈品；6 到 8 月通路打價格戰；9 月後可碰運氣找停產出清機種。",
+    "why": "2 到 4 月各家廠商都有送贈品，而且多半不是敷衍的贈品；6 到 8 月最適合喜歡比價的人，但師傅一天要裝很多台，可能安裝品質下降、約好的時間延期。",
+    "how": [
+      "想要贈品，可在 2 月到 4 月購買",
+      "喜歡比價，可在 6 月到 8 月購買，但要有安裝可能延期的心理準備",
+      "9 月後找看看有沒有停產出清的機種"
+    ],
+    "check": null,
+    "needs_pro": false,
+    "source_channel": "胡少HuShao",
+    "source_title": "冷氣怎麼買？什麼時機點買最划算？分離式還是窗型｜冷房能力怎麼算｜省電效率比較｜胡少",
+    "source_video_id": "ILSKiUZYSbQ",
+    "timestamp": "08:27",
+    "index": false
+  },
+  {
+    "id": "aircon-ilskiuzysbq-08",
+    "title": "單冷還是冷暖：優先考慮冷暖機",
+    "category": "aircon",
+    "type": "tip",
+    "what": "在單冷與冷暖之間，影片建議預算夠的話直接買冷暖機，除非完全不怕冷。",
+    "why": "（影片觀點）寒流來時冷暖機甚至比電暖器還省電，而且整個房間都暖，不用窩在電暖器旁；兩者價差不大。",
+    "how": [
+      "確認產品是冷暖型",
+      "預算夠的話優先選冷暖機型"
+    ],
+    "check": null,
+    "needs_pro": false,
+    "source_channel": "胡少HuShao",
+    "source_title": "冷氣怎麼買？什麼時機點買最划算？分離式還是窗型｜冷房能力怎麼算｜省電效率比較｜胡少",
+    "source_video_id": "ILSKiUZYSbQ",
+    "timestamp": "09:55",
+    "index": false
+  },
+  {
+    "id": "aircon-ilskiuzysbq-09",
+    "title": "核對冷氣標準安裝內容與額外施工費用",
+    "category": "aircon",
+    "type": "tip",
+    "what": "購買分離式冷氣時，需事先確認商品是否內含標準安裝，並掌握常見的現場加價項目。",
+    "why": "買冷氣只付機身費用等於只買到半成品；標準安裝通常僅附 5 公尺內的明管施工（含銅管、信號線、電源線），超出距離或特殊配件均需現場額外收費。",
+    "how": [
+      "確認報價是否包含「標準安裝」及 5 公尺管線",
+      "檢視現場環境是否超出 5 公尺，並確認超長銅管與補冷媒之計費標準",
+      "確認室外機安裝位置是否需要額外自費購買安裝鐵架、遮雨棚或洗牆孔",
+      "若有舊機，確認是否由師傅回收（通常免費）；若保留不回收需確認拆機費"
+    ],
+    "check": "在施工前與廠商或師傅核對明細，清楚了解額外施工的自費項目與總額。",
+    "needs_pro": true,
+    "source_channel": "胡少HuShao",
+    "source_title": "冷氣怎麼買？什麼時機點買最划算？分離式還是窗型｜冷房能力怎麼算｜省電效率比較｜胡少",
+    "source_video_id": "ILSKiUZYSbQ",
+    "timestamp": "11:00",
+    "index": false
+  },
+  {
+    "id": "aircon-ilskiuzysbq-10",
+    "title": "室外機裝在女兒牆下方會有危險施工費",
+    "category": "aircon",
+    "type": "tip",
+    "what": "室外機若要求安裝到低於女兒牆的高度，師傅施工有危險性，會收危險安裝施工費；這是最多人忽略的費用。",
+    "why": "室外機高於女兒牆沒有危險就不會收費，但有人嫌擋視野要求裝低於女兒牆，師傅必須整個人出去鎖底下，有危險性。",
+    "how": [
+      "了解室外機預定位置是高於或低於女兒牆",
+      "若要裝在女兒牆下方，安裝前先和師傅溝通危險施工費",
+      "擔心狀況可先請師傅到家裡看現場，把額外施工費用一次說清楚"
+    ],
+    "check": "額外施工項目與費用在安裝前已和師傅講清楚，避免現場爭議。",
+    "needs_pro": true,
+    "source_channel": "胡少HuShao",
+    "source_title": "冷氣怎麼買？什麼時機點買最划算？分離式還是窗型｜冷房能力怎麼算｜省電效率比較｜胡少",
+    "source_video_id": "ILSKiUZYSbQ",
+    "timestamp": "11:48",
+    "index": false
+  },
+  {
+    "id": "washer-10857lhc-ho-01",
+    "title": "洗衣機容量公斤數計算公式",
+    "category": "washer",
+    "type": "tip",
+    "what": "洗衣機容量以公斤（kg）標示，代表機器結構在設定轉速下能承受的最大重量，而非以公升計算容積。",
+    "why": "要預留洗床單、被子的備用容量；影片中13公斤的洗衣機放一件被子加一件床單就大概緊繃了。",
+    "how": [
+      "計算基準容量：1.5公斤 × 家中人數 × 幾天洗一次衣服。",
+      "再加上備用容量3至5公斤（考量洗床單棉被）。",
+      "公式只是參考，最準的是依自己平常洗衣習慣；先看舊機是幾公斤、量一下它的體積，再思考要買大多少（現在馬達進步，相同外殼體積下載重力比舊機強）。"
+    ],
+    "check": null,
+    "needs_pro": false,
+    "source_channel": "胡少HuShao",
+    "source_title": "洗衣機怎麼買？種類有分那些？｜滾筒式？直立式？｜優缺點完整剖析｜烘衣機要分開買嗎？｜買之前要注意甚麼事｜胡少",
+    "source_video_id": "10857Lhc_Ho",
+    "timestamp": "01:38",
+    "index": false
+  },
+  {
+    "id": "washer-10857lhc-ho-02",
+    "title": "滾筒式洗衣機優缺點評估",
+    "category": "washer",
+    "type": "tip",
+    "what": "滾筒式洗衣機以「拍打式」清洗，衣物由上到下不停拍打滾動，用水量與洗劑用量都比直立式少。",
+    "why": "拍打方式類似手洗，洗完不會打結、對衣物傷害較小；用水量約為直立式的三分之一，洗劑約為直立式的一半。缺點是洗衣途中暫停加衣很麻煩（門要等水排掉才能開），且開口位置低，拿衣服要蹲下或彎腰。",
+    "how": [
+      "注重衣物保護、希望省水省洗劑者可考慮滾筒式。",
+      "洗劑用量約為直立式的一半，千萬不能放太多，以免泡沫滿出來。",
+      "覺得開口太低可加裝架子墊高機身。"
+    ],
+    "check": "洗完衣物不打結；運轉中泡沫沒有滿出來。",
+    "needs_pro": false,
+    "source_channel": "胡少HuShao",
+    "source_title": "洗衣機怎麼買？種類有分那些？｜滾筒式？直立式？｜優缺點完整剖析｜烘衣機要分開買嗎？｜買之前要注意甚麼事｜胡少",
+    "source_video_id": "10857Lhc_Ho",
+    "timestamp": "03:01",
+    "index": false
+  },
+  {
+    "id": "washer-10857lhc-ho-03",
+    "title": "直立式洗衣機優缺點評估",
+    "category": "washer",
+    "type": "tip",
+    "what": "直立式洗衣機利用底盤與桶槽旋轉產生水流，以「搓揉式」清洗衣物。",
+    "why": "優點為洗滌途中可隨時暫停開蓋補丟衣物，且機身寬度通常比滾筒式小、擺放彈性較大。缺點為搓揉需要較多水、耗水量較大，洗滌時衣物拉扯力道強，衣服容易變形，領口會比滾筒式提早鬆垮（打結情況現在已改善很多）。",
+    "how": [
+      "常漏丟衣物需中途補放，或擺放空間寬度有限者，可考慮直立式。",
+      "有人會改用高級服飾行程減少拉扯，但影片認為其洗淨力與標準行程相比仍有差距。"
+    ],
+    "check": "清洗途中可暫停開蓋補放衣物。",
+    "needs_pro": false,
+    "source_channel": "胡少HuShao",
+    "source_title": "洗衣機怎麼買？種類有分那些？｜滾筒式？直立式？｜優缺點完整剖析｜烘衣機要分開買嗎？｜買之前要注意甚麼事｜胡少",
+    "source_video_id": "10857Lhc_Ho",
+    "timestamp": "04:08",
+    "index": false
+  },
+  {
+    "id": "washer-10857lhc-ho-04",
+    "title": "洗脫烘一體機容量與縮時技巧",
+    "category": "washer",
+    "type": "setting",
+    "what": "洗脫烘一體機將洗衣與烘衣功能整合於單一機身，但烘衣公斤數一定比洗衣公斤數少。",
+    "why": "衣服放太多可能超過烘衣公斤數限制，烘衣效果會打折扣、烘不太乾；整個洗脫烘行程時間很長，洗一次可能要4至5個小時。",
+    "how": [
+      "要烘衣時，衣物量不要超過機器標示的烘衣公斤數。",
+      "（影片轉述朋友的秘訣）先設定標準行程洗衣，不要直接選洗脫烘行程。",
+      "烘衣部分改用預約方式設定，整體時間可從快5小時縮到約3個半小時；影片表示不確定是否每個廠牌都適用。"
+    ],
+    "check": "烘完衣物有烘乾，沒有烘不太乾的情況。",
+    "needs_pro": false,
+    "source_channel": "胡少HuShao",
+    "source_title": "洗衣機怎麼買？種類有分那些？｜滾筒式？直立式？｜優缺點完整剖析｜烘衣機要分開買嗎？｜買之前要注意甚麼事｜胡少",
+    "source_video_id": "10857Lhc_Ho",
+    "timestamp": "06:04",
+    "index": false
+  },
+  {
+    "id": "washer-10857lhc-ho-05",
+    "title": "直立式洗衣機外加落地架堆疊烘衣機",
+    "category": "washer",
+    "type": "tip",
+    "what": "直立式洗衣機也能堆疊：用落地型烘衣機架，把架上型烘衣機放在架上、位於洗衣機上方。",
+    "why": "洗衣機、烘衣機分開可同時運轉，省下等待時間；缺點是外觀沒有滾筒堆疊美觀，且傳統烘衣機耗電量比瓦斯式或免曬衣乾衣機高。",
+    "how": [
+      "選擇開關設在機器下方的架上型烘衣機，墊高後仍好操作。",
+      "使用落地型烘衣機架，把烘衣機放在架上。",
+      "確認架設後直立式洗衣機的上蓋能正常打開。"
+    ],
+    "check": "直立式洗衣機上蓋能正常打開，上方烘衣機開關墊高後仍方便操作。",
+    "needs_pro": true,
+    "source_channel": "胡少HuShao",
+    "source_title": "洗衣機怎麼買？種類有分那些？｜滾筒式？直立式？｜優缺點完整剖析｜烘衣機要分開買嗎？｜買之前要注意甚麼事｜胡少",
+    "source_video_id": "10857Lhc_Ho",
+    "timestamp": "07:36",
+    "index": false
+  },
+  {
+    "id": "washer-10857lhc-ho-06",
+    "title": "選購實用功能：溫水洗與洗劑自動投入",
+    "category": "washer",
+    "type": "tip",
+    "what": "挑選洗衣機時可納入考量的兩個功能：溫水洗衣與洗劑自動投入。",
+    "why": "較高水溫的去汙與消毒能力較好，但不適用所有衣服，屬於備而不用；洗劑自動投入只要把洗衣精倒進去，由機器判斷該放多少，不用每次自己判斷用量，也不會不小心倒太多。",
+    "how": [
+      "溫水洗衣有需要時再啟動，並注意不是所有衣服都適用。",
+      "使用洗劑自動投入前，一定要看說明書與洗劑背面的建議用量，照建議用量設定好。",
+      "之後把洗衣精倒入機器，洗衣時由機器自動投放。"
+    ],
+    "check": null,
+    "needs_pro": false,
+    "source_channel": "胡少HuShao",
+    "source_title": "洗衣機怎麼買？種類有分那些？｜滾筒式？直立式？｜優缺點完整剖析｜烘衣機要分開買嗎？｜買之前要注意甚麼事｜胡少",
+    "source_video_id": "10857Lhc_Ho",
+    "timestamp": "08:53",
+    "index": false
+  },
+  {
+    "id": "washer-10857lhc-ho-07",
+    "title": "洗衣機配送前的動線與門寬丈量",
+    "category": "washer",
+    "type": "tip",
+    "what": "購買洗衣機前，除了擺放位置，也要量好沿途搬運動線各出入口的尺寸，其中寬度最重要。",
+    "why": "一台滾筒洗衣機可能和冰箱一樣重達100多公斤，又沒有好施力的點；若陽台門太窄，可能要從陽台窗戶抬過去並收取費用，沒有窗戶可過時只能花錢請吊車從陽台外吊進去。",
+    "how": [
+      "丈量預計擺放位置的尺寸，並把排水與擺放位置一併考慮。",
+      "依序確認樓下大門、樓梯、電梯口、家門口到陽台門口，洗衣機都過得去，特別是寬度。",
+      "若可能需要從窗戶抬或請吊車，購買前先詢問費用。"
+    ],
+    "check": "搬運路徑各出入口寬度都能讓洗衣機通過。",
+    "needs_pro": false,
+    "source_channel": "胡少HuShao",
+    "source_title": "洗衣機怎麼買？種類有分那些？｜滾筒式？直立式？｜優缺點完整剖析｜烘衣機要分開買嗎？｜買之前要注意甚麼事｜胡少",
+    "source_video_id": "10857Lhc_Ho",
+    "timestamp": "09:48",
+    "index": false
+  },
+  {
+    "id": "washer-10857lhc-ho-08",
+    "title": "洗衣機防曬與筒槽防霉保養",
+    "category": "washer",
+    "type": "cleaning",
+    "what": "洗衣機的日常保養：避免陽光直曬，以及洗衣後讓桶槽保持乾燥。",
+    "why": "電子產品怕高溫和潮濕，太陽直曬久了面板容易故障；桶槽內水氣不處理會滋生細菌，滾筒門的橡膠墊圈底部沒擦一定會發霉。",
+    "how": [
+      "若空間關係無法避免日曬，用防塵袋或找塊板子擋住。",
+      "滾筒式洗完開蓋通風，並養成每次用完擦乾門的橡膠墊圈，尤其是底部。",
+      "直立式洗完可開蓋晾乾；不想開蓋可用冷風乾燥行程空轉把水氣帶走，影片作者自己最少跑15分鐘。",
+      "依照原廠說明書定期使用槽洗劑保養。"
+    ],
+    "check": "門的橡膠墊圈底部沒有發霉，洗衣機沒有異味。",
+    "needs_pro": false,
+    "source_channel": "胡少HuShao",
+    "source_title": "洗衣機怎麼買？種類有分那些？｜滾筒式？直立式？｜優缺點完整剖析｜烘衣機要分開買嗎？｜買之前要注意甚麼事｜胡少",
+    "source_video_id": "10857Lhc_Ho",
+    "timestamp": "11:24",
+    "index": false
+  },
+  {
+    "id": "cooker-1hsi6vcxxvi-01",
+    "title": "氣炸豬五花：不裹粉、不鋪烘焙紙",
+    "category": "cooker",
+    "type": "setting",
+    "what": "用氣炸鍋做椒鹽豬五花時，食材不沾炸粉、炸籃不鋪烘焙紙的做法。",
+    "why": "粉會吸油，會把油全部吃進肚子裡；不鋪烘焙紙，多餘的油才會滴下去，熱對流也比較好。",
+    "how": [
+      "豬五花抹上鹽與白胡椒粉，不沾炸粉。",
+      "直接放入炸籃，底部不鋪烘焙紙。",
+      "設定 200 度 10 分鐘。",
+      "翻面，再炸 5 分鐘。"
+    ],
+    "check": "皮脆、肉嫩；影片示範 150 克豬五花，鍋底瀝出約 10 ml 的油。",
+    "needs_pro": false,
+    "source_channel": "Apple loves cooking",
+    "source_title": "氣炸鍋！5道必學料理＆1分鐘清潔秘訣（有字幕版）",
+    "source_video_id": "1hSI6vCxXvI",
+    "timestamp": "00:48",
+    "index": false
+  },
+  {
+    "id": "cooker-1hsi6vcxxvi-02",
+    "title": "氣炸雞翅（海鹽／醬燒）與中途查看",
+    "category": "cooker",
+    "type": "setting",
+    "what": "用氣炸鍋做海鹽、醬燒兩種雞翅，過程中可拉出炸籃查看。",
+    "why": "不裹粉才不會吃進太多油；影片示範的機型中途拉出會自動斷電，放回去就繼續烹調，可隨時查看狀況。",
+    "how": [
+      "海鹽口味：雞翅直接擺進炸籃，不用先調味，不裹粉。",
+      "醬燒口味：醬油 1 小匙加味醂 1 小匙拌勻，雞翅兩面都沾到醬汁，一樣不裹粉。",
+      "設定 180 度 15 分鐘。",
+      "中途可拉出查看（影片示範機型會自動斷電），放回去就繼續烹調。",
+      "海鹽口味炸好後趁熱灑海鹽。"
+    ],
+    "check": "雞翅鮮嫩多汁。",
+    "needs_pro": false,
+    "source_channel": "Apple loves cooking",
+    "source_title": "氣炸鍋！5道必學料理＆1分鐘清潔秘訣（有字幕版）",
+    "source_video_id": "1hSI6vCxXvI",
+    "timestamp": "02:37",
+    "index": false
+  },
+  {
+    "id": "cooker-1hsi6vcxxvi-03",
+    "title": "氣炸綜合蔬菜擺放與刷油",
+    "category": "cooker",
+    "type": "setting",
+    "what": "氣炸綜合蔬菜時的擺放順序與刷油。",
+    "why": "花椰菜容易焦掉，所以鋪在最下面；蔬菜本身沒有油，所以要刷一點點油。",
+    "how": [
+      "花椰菜先放、鋪在最下面，再放紅甜椒、洋蔥、玉米筍、綠櫛瓜。",
+      "表面刷一點點油。",
+      "設定 150 度 8 分鐘。"
+    ],
+    "check": "蔬菜吃起來脆、甜。",
+    "needs_pro": false,
+    "source_channel": "Apple loves cooking",
+    "source_title": "氣炸鍋！5道必學料理＆1分鐘清潔秘訣（有字幕版）",
+    "source_video_id": "1hSI6vCxXvI",
+    "timestamp": "04:14",
+    "index": false
+  },
+  {
+    "id": "cooker-1hsi6vcxxvi-04",
+    "title": "帶皮氣炸地瓜薯條",
+    "category": "cooker",
+    "type": "setting",
+    "what": "地瓜帶皮切塊、刷少量油氣炸成地瓜薯條。",
+    "why": "地瓜本身沒有油，所以要刷一點點油；灑白芝麻增加堅果香氣。",
+    "how": [
+      "地瓜外皮刷洗乾淨，不削皮，切塊。",
+      "表面刷一點點油。",
+      "灑點白芝麻。",
+      "設定 200 度 15 分鐘。"
+    ],
+    "check": "外表酥脆。",
+    "needs_pro": false,
+    "source_channel": "Apple loves cooking",
+    "source_title": "氣炸鍋！5道必學料理＆1分鐘清潔秘訣（有字幕版）",
+    "source_video_id": "1hSI6vCxXvI",
+    "timestamp": "05:25",
+    "index": false
+  },
+  {
+    "id": "cooker-1hsi6vcxxvi-05",
+    "title": "氣炸鍋用烘烤鍋做厚烘蛋（初版做法）",
+    "category": "cooker",
+    "type": "setting",
+    "what": "用不沾的 6.5 吋烘烤鍋在氣炸鍋裡做不加油的厚烘蛋；影片示範的是初版做法，成品口感偏硬、有洞孔、顏色不均，作者說後來有調整做法但沒公開。",
+    "why": "蛋本身已經有油脂，烘烤鍋又是不沾鍋，所以完全不用在鍋內抹油，也不用翻面。",
+    "how": [
+      "8 顆蛋打勻，加入撥成小片的起士片 4 片（也可改用乳酪絲）、鹽 2 小匙（起士已有鹹度，鹽不要加太多）、味醂 2 大匙拌勻。",
+      "倒入 6.5 吋烘烤鍋，不抹油。",
+      "160 度 10 分鐘，拉出攪拌一下。",
+      "調高到 180 度再 10 分鐘；還沒熟就再攪拌一下，180 度再 10 分鐘。"
+    ],
+    "check": "沒抹油也能輕鬆脫模，厚度約 3 公分；此做法口感偏硬、表面凹凸不平。",
+    "needs_pro": false,
+    "source_channel": "Apple loves cooking",
+    "source_title": "氣炸鍋！5道必學料理＆1分鐘清潔秘訣（有字幕版）",
+    "source_video_id": "1hSI6vCxXvI",
+    "timestamp": "07:13",
+    "index": false
+  },
+  {
+    "id": "cooker-1hsi6vcxxvi-06",
+    "title": "氣炸鍋炸籃與外鍋清潔",
+    "category": "cooker",
+    "type": "cleaning",
+    "what": "氣炸鍋用完後清洗外鍋與炸籃的方法。",
+    "why": "冷鍋用冷水洗，才不會因溫差過大傷了不沾塗層；油會吸附在超細纖維抹布上，不需要用清潔劑。",
+    "how": [
+      "炸完先將鍋子擺著，吃完（冷鍋）再回來洗。",
+      "拿一張廚房紙巾把鍋子擦一下。",
+      "開冷水，用超細纖維抹布輕輕洗外鍋；炸籃也用相同方式洗，不需要清潔劑。",
+      "最後用水把抹布沖洗乾淨。"
+    ],
+    "check": null,
+    "needs_pro": false,
+    "source_channel": "Apple loves cooking",
+    "source_title": "氣炸鍋！5道必學料理＆1分鐘清潔秘訣（有字幕版）",
+    "source_video_id": "1hSI6vCxXvI",
+    "timestamp": "10:53",
+    "index": false
+  },
+  {
+    "id": "cooker-1hsi6vcxxvi-07",
+    "title": "氣炸鍋主機內部頂部清潔",
+    "category": "cooker",
+    "type": "cleaning",
+    "what": "每次用完氣炸鍋，擦拭主機內頂部、電熱管與風扇。",
+    "why": "影片示範的機型主機內頂部、電熱管、風扇都有不沾塗層，每次用完擦一擦就好清潔。",
+    "how": [
+      "先將插頭拔掉。",
+      "機器直接立著，手伸進去。",
+      "用超細纖維抹布擦拭頂部、電熱管與風扇。"
+    ],
+    "check": null,
+    "needs_pro": false,
+    "source_channel": "Apple loves cooking",
+    "source_title": "氣炸鍋！5道必學料理＆1分鐘清潔秘訣（有字幕版）",
+    "source_video_id": "1hSI6vCxXvI",
+    "timestamp": "12:01",
+    "index": false
+  },
+  {
+    "id": "cookware-gs6dxzmkvzs-01",
+    "title": "不鏽鋼鍋水珠測試判斷熱鍋",
+    "category": "cookware",
+    "type": "setting",
+    "what": "用水珠在鍋底的狀態，判斷不鏽鋼鍋是否加熱到萊頓弗羅斯特現象的溫度。",
+    "why": "不鏽鋼鍋表面有細小縫隙與毛孔，要加熱到適當溫度、讓油進入毛孔形成保護膜；溫度不夠、油膜不夠厚，毛孔容易抓住食材造成沾黏。",
+    "how": [
+      "中火加熱鍋具。",
+      "做水珠測試。",
+      "水珠很快蒸發、或小水珠快速跳動，表示鍋溫還不到，要有耐心繼續加熱、繼續測試。",
+      "水珠集合成大水珠，在整個鍋底順利滑動，才可以下油。"
+    ],
+    "check": "水珠集合成大水珠，在鍋底跑到每個角落都不會蒸發。",
+    "needs_pro": false,
+    "source_channel": "Dream Chef Home",
+    "source_title": "原來這些錯誤，讓不鏽鋼鍋沾的亂七八糟！沾鍋問題總整理～How to prevent stainless steel cookware from sticking? | 夢幻廚房在我家 ENG SUB",
+    "source_video_id": "Gs6DXZMKVZs",
+    "timestamp": "01:21",
+    "index": false
+  },
+  {
+    "id": "cookware-gs6dxzmkvzs-02",
+    "title": "選購導熱均勻的複合合金不鏽鋼鍋",
+    "category": "cookware",
+    "type": "tip",
+    "what": "選購具備一定製程水準、導熱均勻的複合合金不鏽鋼鍋。",
+    "why": "導熱不均勻的不鏽鋼鍋受熱不良，容易出現局部溫差，可能始終無法順利加熱出完整的大水珠滾動狀態。",
+    "how": [
+      "選購時挑選採用複合合金結構的不鏽鋼鍋。",
+      "確認鍋具具備優良且均勻的導熱規格。"
+    ],
+    "check": "熱鍋進行水珠測試時，水珠能在整個鍋底均勻滾動而不破散。",
+    "needs_pro": false,
+    "source_channel": "Dream Chef Home",
+    "source_title": "原來這些錯誤，讓不鏽鋼鍋沾的亂七八糟！沾鍋問題總整理～How to prevent stainless steel cookware from sticking? | 夢幻廚房在我家 ENG SUB",
+    "source_video_id": "Gs6DXZMKVZs",
+    "timestamp": "01:52",
+    "index": false
+  },
+  {
+    "id": "cookware-gs6dxzmkvzs-03",
+    "title": "熱鍋完成後轉中或小火",
+    "category": "cookware",
+    "type": "setting",
+    "what": "水珠測試成功後，下油前應將火力調降為中火或小火。",
+    "why": "若持續維持大火，食材下鍋容易燒焦，且高溫大火會使不鏽鋼鍋容易發黃，甚至可能導致鍋體結構變形。",
+    "how": [
+      "觀察到水珠可在鍋底滾動且不蒸發後，立即將火力轉為中小火或小火。",
+      "用廚房紙巾吸乾測試殘留的水分。",
+      "轉小火穩定鍋溫後再倒入食用油。"
+    ],
+    "check": "鍋底水珠狀態維持穩定滾動，鍋具沒有因空燒過熱而變色發黃。",
+    "needs_pro": false,
+    "source_channel": "Dream Chef Home",
+    "source_title": "原來這些錯誤，讓不鏽鋼鍋沾的亂七八糟！沾鍋問題總整理～How to prevent stainless steel cookware from sticking? | 夢幻廚房在我家 ENG SUB",
+    "source_video_id": "Gs6DXZMKVZs",
+    "timestamp": "03:16",
+    "index": false
+  },
+  {
+    "id": "cookware-gs6dxzmkvzs-04",
+    "title": "依食材水分調整不鏽鋼鍋用油量",
+    "category": "cookware",
+    "type": "setting",
+    "what": "使用不鏽鋼鍋油量絕對不能太少，食材水份越高，油膜就要越厚。",
+    "why": "不鏽鋼鍋要靠油以人造方式創造一層物理性的不沾塗層；食材水份越高，需要的油膜越厚，所以某些食材油少也不沾，某些一下鍋就特別黏。",
+    "how": [
+      "下鍋前先看食材水份含量。",
+      "水份高的食材（如馬頭魚，魚肉嫩、水份特別高）油膜一定要夠厚。",
+      "水份中等的食材（如荷包蛋）油量也還是要夠。"
+    ],
+    "check": null,
+    "needs_pro": false,
+    "source_channel": "Dream Chef Home",
+    "source_title": "原來這些錯誤，讓不鏽鋼鍋沾的亂七八糟！沾鍋問題總整理～How to prevent stainless steel cookware from sticking? | 夢幻廚房在我家 ENG SUB",
+    "source_video_id": "Gs6DXZMKVZs",
+    "timestamp": "03:51",
+    "index": false
+  },
+  {
+    "id": "cookware-gs6dxzmkvzs-05",
+    "title": "食材下鍋等表面造殼再翻動",
+    "category": "cookware",
+    "type": "setting",
+    "what": "食材放入不鏽鋼鍋後不要急著翻動，要等接觸面定型造出一層殼。",
+    "why": "食材接觸鍋和油之後要讓表面預熱定型；太快翻動，表面來不及凝結形成殼，就容易黏鍋。",
+    "how": [
+      "食材下鍋後不要很快就翻動。",
+      "等接觸面好像造出一層殼。",
+      "可以輕易滑動後再翻動。"
+    ],
+    "check": "食材能在鍋中輕易滑動。",
+    "needs_pro": false,
+    "source_channel": "Dream Chef Home",
+    "source_title": "原來這些錯誤，讓不鏽鋼鍋沾的亂七八糟！沾鍋問題總整理～How to prevent stainless steel cookware from sticking? | 夢幻廚房在我家 ENG SUB",
+    "source_video_id": "Gs6DXZMKVZs",
+    "timestamp": "04:36",
+    "index": false
+  },
+  {
+    "id": "cookware-gs6dxzmkvzs-06",
+    "title": "避免刮傷敲打不鏽鋼鍋",
+    "category": "cookware",
+    "type": "cleaning",
+    "what": "使用與清洗不鏽鋼鍋時，盡量不要刮傷或刻意敲打。",
+    "why": "毛孔刮痕孔洞越多，就要用更厚的油去修補，會增加用油量，也會增加沾黏機會。",
+    "how": [
+      "烹調時盡量不要刮傷或刻意敲打鍋子。",
+      "清洗時不要用太粗糙的東西，避免產生更多更深的刮痕。",
+      "已有刮痕孔洞時，要用更厚的油來補。"
+    ],
+    "check": null,
+    "needs_pro": false,
+    "source_channel": "Dream Chef Home",
+    "source_title": "原來這些錯誤，讓不鏽鋼鍋沾的亂七八糟！沾鍋問題總整理～How to prevent stainless steel cookware from sticking? | 夢幻廚房在我家 ENG SUB",
+    "source_video_id": "Gs6DXZMKVZs",
+    "timestamp": "05:32",
+    "index": false
+  },
+  {
+    "id": "cookware-gs6dxzmkvzs-07",
+    "title": "食材擦乾水份並退冰到常溫",
+    "category": "cookware",
+    "type": "setting",
+    "what": "食材下不鏽鋼鍋前要控制水份，並退冰到常溫。",
+    "why": "食材水份高，一下鍋會把鍋溫拉低；食材溫度過低，燒熱的鍋面也會瞬間降溫，肯定會沾鍋。",
+    "how": [
+      "食材下鍋前一定要退冰到常溫。",
+      "水份高的食材（如板豆腐）可在料理前壓重物，讓水份釋出。",
+      "下鍋前用廚房紙巾徹底擦乾水份，或在外面抹鹽、抹澱粉、沾裹全蛋液。"
+    ],
+    "check": null,
+    "needs_pro": false,
+    "source_channel": "Dream Chef Home",
+    "source_title": "原來這些錯誤，讓不鏽鋼鍋沾的亂七八糟！沾鍋問題總整理～How to prevent stainless steel cookware from sticking? | 夢幻廚房在我家 ENG SUB",
+    "source_video_id": "Gs6DXZMKVZs",
+    "timestamp": "05:54",
+    "index": false
+  },
+  {
+    "id": "cookware-gs6dxzmkvzs-08",
+    "title": "鍋內食材不要擺太多",
+    "category": "cookware",
+    "type": "troubleshoot",
+    "what": "煎炒時不要把鍋擠得太滿，食材不要擠貼在鍋邊。",
+    "why": "食材太多鍋溫容易急速下降，失去萊頓弗羅斯特效應，沒辦法靠水蒸氣把食物撐抬起鍋面；鍋邊熱能沒有鍋底直接，擠貼在鍋邊的食材很容易沾。",
+    "how": [
+      "一次不要放太多食材，不要把鍋擠得太滿。",
+      "食材大小不要超過鍋底（例如整條魚超過鍋底）。",
+      "避免食材擠貼在鍋邊。"
+    ],
+    "check": null,
+    "needs_pro": false,
+    "source_channel": "Dream Chef Home",
+    "source_title": "原來這些錯誤，讓不鏽鋼鍋沾的亂七八糟！沾鍋問題總整理～How to prevent stainless steel cookware from sticking? | 夢幻廚房在我家 ENG SUB",
+    "source_video_id": "Gs6DXZMKVZs",
+    "timestamp": "06:37",
+    "index": false
+  },
+  {
+    "id": "cookware-gs6dxzmkvzs-09",
+    "title": "鍋底 fond 用熱水加小蘇打清洗，熱鍋不沖冷水",
+    "category": "cookware",
+    "type": "cleaning",
+    "what": "煎完後鍋底黏著的黃色物質（fond），可用熱水加小蘇打浸泡清洗；熱鍋不要馬上沖冷水。",
+    "why": "熱鍋馬上沖冷水，溫差太劇烈容易破壞鍋體，毛孔瞬間收縮也容易卡污垢；加熱水和小蘇打浸泡，污垢容易鬆脫溶解。",
+    "how": [
+      "想利用的話，可加水或高湯做 deglaze 變成醬汁。",
+      "不做的話，直接加入熱水，加一小匙小蘇打粉。",
+      "浸泡、攪拌一下再清洗。",
+      "熱鍋不要馬上沖冷水；清洗不要用太粗糙的東西。"
+    ],
+    "check": "污垢鬆脫、很好清洗。",
+    "needs_pro": false,
+    "source_channel": "Dream Chef Home",
+    "source_title": "原來這些錯誤，讓不鏽鋼鍋沾的亂七八糟！沾鍋問題總整理～How to prevent stainless steel cookware from sticking? | 夢幻廚房在我家 ENG SUB",
+    "source_video_id": "Gs6DXZMKVZs",
+    "timestamp": "08:34",
+    "index": false
+  },
+  {
+    "id": "cookware-gs6dxzmkvzs-10",
+    "title": "洗淨後徹底擦乾，不需上油",
+    "category": "cookware",
+    "type": "cleaning",
+    "what": "不鏽鋼鍋洗乾淨後一定要徹底擦乾，擦乾後不做任何保養、也不上油。",
+    "why": "雖然叫不鏽鋼鍋，太潮濕還是有可能生鏽；保持清潔乾燥就是最好的保養。",
+    "how": [
+      "用溫熱的水清洗乾淨。",
+      "洗乾淨後一定要徹底擦乾。",
+      "擦乾之後不做任何保養，也不要上油。"
+    ],
+    "check": null,
+    "needs_pro": false,
+    "source_channel": "Dream Chef Home",
+    "source_title": "原來這些錯誤，讓不鏽鋼鍋沾的亂七八糟！沾鍋問題總整理～How to prevent stainless steel cookware from sticking? | 夢幻廚房在我家 ENG SUB",
+    "source_video_id": "Gs6DXZMKVZs",
+    "timestamp": "09:10",
+    "index": false
+  }
+]
