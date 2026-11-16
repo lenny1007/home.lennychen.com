@@ -24,6 +24,8 @@ sources:
 draft: false
 ---
 import SafetyNote from '../../components/SafetyNote.astro';
+import Figure from '../../components/Figure.astro';
+import AirconFilterSteps from '../../components/figures/AirconFilterSteps.astro';
 
 冷氣濾網自己洗只要四步：停機斷電、打開前面板抽出濾網、用吸塵器吸或用中性清潔劑加水洗、放陰涼處晾乾後裝回。頻率大約每兩週一次——大金、日立的台灣說明書都這樣寫；國際牌部分機型則是看室內機的「濾網清洗」燈。
 
@@ -48,6 +50,10 @@ import SafetyNote from '../../components/SafetyNote.astro';
 - 日立：先關冷氣，再關掉專用的電源開關；手濕的時候不要操作電源開關。
 
 ## 拆、洗、晾、裝回
+
+<Figure caption="冷氣濾網自己洗的四步，依大金、日立、國際牌台灣說明書的共通做法整理。拆法與水溫各品牌略有不同，見下方步驟。">
+  <AirconFilterSteps />
+</Figure>
 
 1. **打開前面板。** 大金是抓住面板兩側掀開；國際牌是把前面板打開到水平位置，不要太用力，否則會弄壞面板；日立是把面板往上掀。
 2. **抽出空氣濾網。** 大金要先把濾網中央的卡榫略往上推，再往下拉出；國際牌是面板打開後直接取下濾網；日立是拿起濾網往外拉。

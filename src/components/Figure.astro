@@ -1,0 +1,10 @@
+---
+// 文章圖解：內放 SVG（src/components/figures/*.astro）。只畫說明書寫到的內容，不畫特定型號外觀。
+// 顏色只用 global.css 的 token（.fig 底下的 class 定義在 global.css）。
+interface Props { caption: string; note?: string }
+const { caption, note = '示意圖，非特定型號外觀。' } = Astro.props;
+---
+<figure class="fig">
+  <slot />
+  <figcaption>{caption}<span class="fig-note">{note}</span></figcaption>
+</figure>
