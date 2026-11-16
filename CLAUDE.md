@@ -29,6 +29,7 @@ Codex 與 Claude Code 都讀這份（AGENTS.md 指向這裡）。只寫讀程式
 
 ## 設計
 - 家的平面圖當首頁導覽，是唯一的重點裝飾。顏色只用 `src/styles/global.css` 的 token。見 `docs/DESIGN.md`。
+- 配圖：步驟用自畫 SVG `<Figure>`、操作用官方影片 `<VideoEmbed>`、開頭用 AI 情境圖 `cover`。不用說明書或影片截圖，AI 不畫步驟與零件。細則見 `docs/DESIGN.md`。
 
 ## AdSense
 - `src/consts.ts` 的 `ADSENSE_CLIENT` 填 `ca-pub-…` 才會載入廣告。AdSense 只能登記主網域 lennychen.com，審過後子網域直接可用。

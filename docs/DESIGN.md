@@ -21,4 +21,8 @@ badminton-tw：深綠＋羽球黃、Noto Sans／Space Grotesk。pickleball-tw：
 - 大膽只用在平面圖一處，其他區塊用排版和留白。
 - 錯誤碼一律用 `<CodeTable />`，要叫原廠的列標紅。
 - 安全相關一律用 `<SafetyNote />`。
-- 圖片：不用 AI 產圖、不用說明書截圖。需要圖解時畫 SVG，顏色只用 token。
+- 圖片分三種用途（2026-11-16 站主同意）：
+  - **步驟／位置**：自己畫 SVG（`<Figure>`＋`src/components/figures/*.astro`），只畫說明書寫到的內容，不畫特定型號外觀，顏色只用 token；跟文字一樣要經獨立查證。目標每篇 1–2 張。
+  - **實際操作**：嵌入品牌官方 YouTube 影片（`<VideoEmbed>`，點了才載入、從指定秒數播）。只用官方頻道、允許嵌入的影片，內容不能跟文章矛盾。
+  - **開頭情境圖**：AI 生成（frontmatter `cover`＋`cover_alt`，檔案 `src/assets/covers/<slug>.webp`），只當情境、不示範步驟；不能有字、數字、logo、面板、整台家電；每張人工目檢。
+  - 不用：說明書截圖、影片截圖（版權）、AI 畫步驟或零件。
