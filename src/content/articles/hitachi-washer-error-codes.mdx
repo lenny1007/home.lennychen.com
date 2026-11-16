@@ -1,0 +1,90 @@
+---
+title: 日立洗衣機錯誤碼怎麼辦？C01、F01 與直立式代碼分機型看
+description: 日立洗衣機 C01、F01 怎麼處理？依台灣說明書整理 BD-SX150JJ／JJR 與 SF-200ZHV 錯誤碼、使用者檢查步驟及服務站處理條件。
+pubDate: 2026-11-17
+category: washer
+kind: troubleshoot
+brands: ["日立"]
+takeaways:
+  - BD-SX150JJ／JJR 的 C01 是無法給水；SF-200ZHV 的未供水代碼是 C1
+  - BD-SX150JJ／JJR 說明書沒有列出 F01 的個別故障含義
+  - SF-200ZHV 無法運轉時，先查插頭、停電與預約設定
+  - SF-200ZHV 顯示 F0、F9 等警告標誌時，立即停止操作並聯絡服務商
+sources:
+  - title: 阿奇立克日立台灣家電《日立全自動洗衣乾衣機 使用說明書》BD-SX150JJ／BD-SX150JJR（文件編號 3-R3996-6）
+    url: https://www.hitachi-homeappliances.com.tw/image/hsct/service/download/manual/(final)User_manual_BD-SX150JJ,JJR.pdf
+    checked: 2026-11
+  - title: 阿奇立克日立台灣家電《全自動洗衣機 說明書》SF-200ZHV（文件編號 2WPL18793A）
+    url: https://www.hitachi-homeappliances.com.tw/image/hsct/service/download/manual/SF200ZHVGG.pdf
+    checked: 2026-11
+draft: false
+---
+import CodeTable from '../../components/CodeTable.astro';
+import SafetyNote from '../../components/SafetyNote.astro';
+
+日立洗衣機顯示 **C01**，在 BD-SX150JJ／JJR 滾筒洗衣機是「無法給水」，可先暫停並檢查水龍頭、給水口網口與是否斷水。**F01** 在這份說明書中只有顯示範例，沒有個別故障含義。SF-200ZHV 直立式的未供水代碼則是 **C1**，請分機型對照。
+
+## 適用機種
+
+本文只整理阿奇立克日立台灣家電的兩份說明書：
+
+- 滾筒洗衣機：BD-SX150JJ、BD-SX150JJR。
+- 直立式洗衣機：SF-200ZHV。
+
+## 滾筒 BD-SX150JJ／JJR：代碼與檢查項目
+
+以下節錄說明書第 58～59 頁；F01 的顯示範例見第 10 頁。
+
+<CodeTable caption="僅適用 BD-SX150JJ／BD-SX150JJR" rows={[
+  { code: 'C01', meaning: '無法給水', action: '依下方步驟檢查水龍頭、給水口網口與斷水情況。' },
+  { code: 'C02', meaning: '無法排水', action: '先按暫停，檢查排水管、排水口有無線屑堵塞，以及管路是否破損、結冰或頭端浸水；確認後再按起動。' },
+  { code: 'C04', meaning: '不能脫水', action: '先按暫停。衣物偏向一邊時，拋鬆後重新放入；大件衣物過多時減量，並確認水平器氣泡在圓圈中央。確認後再按起動。' },
+  { code: 'C16', meaning: '線屑濾網未正確安裝', action: '將線屑濾網轉鈕向右轉至發出「卡嘰聲」，確認後按起動。' },
+  { code: 'F01', meaning: '說明書未列個別含義', action: '多次暫時關電再開電修正後仍出現相同顯示時，中止使用並洽服務中心。', pro: true },
+]} />
+
+### C01 無法給水，照順序檢查
+
+以下只適用 BD-SX150JJ／JJR：
+
+1. 按起動／暫停鍵，暫停運轉。
+2. 確認水龍頭是否全開。
+3. 確認給水口的網口是否堵塞。
+4. 確認是否正在斷水。
+5. 確認後按起動／暫停鍵，再次起動。
+
+## 直立式 SF-200ZHV：代碼不要補成三碼
+
+下表依說明書第 30 頁的顯示圖示整理。
+
+<CodeTable caption="僅適用 SF-200ZHV" rows={[
+  { code: 'C0', meaning: '衣物過多', action: '檢查並減少衣物量。' },
+  { code: 'C1', meaning: '未供水', action: '檢查供水單元，並依說明書第 28 頁清潔進水口過濾器；清潔供水口前先關水龍頭。' },
+  { code: 'C2', meaning: '未排水', action: '檢查排水軟管及其末端。' },
+  { code: 'C3', meaning: '洗衣槽未旋轉', action: '檢查蓋子是否開啟，完全關上。' },
+  { code: 'C4', meaning: '洗衣槽未旋轉', action: '衣物集中一側時，均勻平衡衣物；機器傾斜時，調整腳座。' },
+  { code: 'C8', meaning: '蓋子無法上鎖', action: '檢查並完全關上蓋子，確認機器是否在水平表面上。' },
+  { code: 'C9', meaning: '無法解除蓋鎖', action: '檢查是否按下開關，以及機器是否在傾斜、不平的地面上。' },
+  { code: 'Ch', meaning: '旋轉速度未達指定值', action: '檢查排水軟管是否堵塞、洗劑泡沫是否過多。' },
+  { code: 'F0、F9 等', meaning: '警告標誌；未列個別含義', action: '立即停止操作，聯絡授權服務經銷商或服務代理商檢查維修。', pro: true },
+]} />
+
+## SF-200ZHV 不動作：叫修前自我檢查
+
+說明書第 29 頁列出「洗衣機無法運轉」的檢查項目：
+
+1. 檢查電源插頭是否已插入插座。
+2. 檢查家中其他電器，確認是否停電。
+3. 檢查是否設定了預約。
+
+SF-200ZHV 若在開始脫水後因衣物嚴重失衡而停下，會啟動洗清行程，使衣物重新平衡，再次啟動脫水。
+
+## 什麼情況要找原廠／服務站
+
+**BD-SX150JJ／JJR**：說明書所列的 C 碼，依「調整方法」確認後仍多次出現相同顯示，請中止使用並洽服務中心。表列以外的 F、C 碼，多次暫時關電再開電修正後仍出現相同顯示，也要中止使用並洽服務中心。
+
+**SF-200ZHV**：顯示 F0、F9 等警告標誌時，立即停止操作並聯絡授權服務經銷商或服務代理商。若機蓋可在運轉中打開，立即停用，不要碰觸機器內部，聯絡當地服務中心檢修。
+
+<SafetyNote title="拆卸與維修請交給服務人員">
+BD-SX150JJ／JJR 說明書要求勿自行分解、修理、改造，維修請諮詢經銷店；SF-200ZHV 也禁止自行拆卸、維修或改裝，需維修時請洽當地服務中心。
+</SafetyNote>

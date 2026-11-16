@@ -1,0 +1,81 @@
+---
+title: LG洗衣機 IE、OE、UE 錯誤碼怎麼辦？直立式與滾筒分開查
+description: LG洗衣機顯示 IE、OE、UE 錯誤碼或不動作時，依 WT 系列與 WD-S13VDW 台灣說明書，分別檢查進水、排水、衣物失衡與需要叫修的情況。
+pubDate: 2026-11-17
+category: washer
+kind: troubleshoot
+brands: ["LG"]
+takeaways:
+  - 本文 WT 系列與 WD-S13VDW 的 IE、OE、UE 分別是進水、出水與失衡錯誤
+  - WT 系列 LE 要靜置 30 分鐘後重啟行程；仍顯示時聯絡服務中心
+  - WD-S13VDW 的 UE 若是負荷過少，可添加 1 件或 2 件類似或較小的衣物
+  - AE 在本文 WT 系列是離合器錯誤，在 WD-S13VDW 是漏水，兩者都要聯絡服務中心
+sources:
+  - title: LG《使用者手冊 洗衣機》WT-SD179HVG／WT-D179VG／WT-D179SG／WT-SD179HBG／WT-SD169HVG／WT-D169VG／WT-D169SG／WT-D179BG／WT-D170MSG／WT-D160MSG／WT-SD159HVG／WT-D159MG（MFL69552238，Rev.13_010523）
+    url: https://gscs-b2c.lge.com/open/downloadFile?fileId=YadDAVtA9mgBeY6Cz7h3w
+    checked: 2026-11
+  - title: LG《使用者手冊 洗衣機》WD-S13VDW（MFL71818897，Rev.03_080223）
+    url: https://gscs-b2c.lge.com/open/downloadFile?fileId=brOTLnw5AaEftrEP0xhZQ
+    checked: 2026-11
+draft: false
+---
+import CodeTable from '../../components/CodeTable.astro';
+import SafetyNote from '../../components/SafetyNote.astro';
+
+LG洗衣機顯示 **IE、OE、UE**，在本文兩份說明書中，分別是進水錯誤、出水錯誤、失衡錯誤，可依原因檢查水龍頭、排水管或衣物分布。其他代碼要分機型看：例如 **AE**，本文 WT 系列是離合器錯誤，WD-S13VDW 則是漏水。
+
+## 適用機種
+
+- **直立式 WT 系列**：WT-SD179HVG、WT-D179VG、WT-D179SG、WT-SD179HBG、WT-SD169HVG、WT-D169VG、WT-D169SG、WT-D179BG、WT-D170MSG、WT-D160MSG、WT-SD159HVG、WT-D159MG。
+- **滾筒洗衣機**：WD-S13VDW。
+
+以下摘列這兩份說明書的代碼與處理方式。
+
+## 直立式 WT 系列：錯誤碼對照
+
+<CodeTable caption="適用機種：上列 WT 系列；說明書第 35–36 頁" rows={[
+  { code: 'IE', meaning: '進水錯誤', action: '水龍頭未全開時，完全打開；供水管打結、被壓到或壓扁時，拉直或重新安裝。' },
+  { code: 'OE', meaning: '出水錯誤', action: '排水管打結、被擠壓或阻塞時，清潔並拉直排水管。' },
+  { code: 'UE', meaning: '失衡錯誤', action: '衣物打結時，手動重新放置；衣量太少時，放入更多衣物。' },
+  { code: 'dE／dL', meaning: '機門錯誤／機門鎖定錯誤', action: '完全關門後仍顯示時聯絡服務中心；dL 另檢查門下有無物品。' },
+  { code: 'LE', meaning: '馬達鎖定錯誤', action: '靜置 30 分鐘後重新啟動行程；仍顯示時聯絡服務中心。' },
+  { code: 'FE／PE', meaning: '溢出錯誤／壓力感測器錯誤', action: '關閉水龍頭，拔下插頭，致電服務中心。', pro: true },
+  { code: 'AE', meaning: '離合器錯誤', action: '拔下插頭，致電服務中心。', pro: true },
+]} />
+
+WT 系列若在運轉時打開機門而出現 dE，說明書另列以下操作：
+
+1. 按「啟動／暫停」取消門錯誤。
+2. 再按「啟動／暫停」啟動洗滌程序。
+
+## 滾筒 WD-S13VDW：錯誤碼對照
+
+<CodeTable caption="適用機種：WD-S13VDW；說明書第 47–48 頁" rows={[
+  { code: 'IE', meaning: '進水錯誤', action: '供水不足時檢查室內其他水龍頭；水龍頭未全開時完全打開；進水管扭折時拉直或重新安裝。' },
+  { code: 'OE', meaning: '出水錯誤', action: '排水管扭結或堵塞時，清潔並拉直；排水過濾器堵塞時，依說明書第 44–45 頁檢查、清潔。' },
+  { code: 'UE', meaning: '失衡錯誤', action: '重新放置衣物，關門後按「啟動／暫停」；負荷過少時可添加 1 件或 2 件類似或較小的衣物。' },
+  { code: 'dE／dE1／dE2／dE4', meaning: '機門錯誤', action: '說明書列為門磁故障，致電 LG 服務中心。', pro: true },
+  { code: 'LE', meaning: '馬達鎖定錯誤', action: '等待 30 分鐘，直到馬達冷卻，然後重新啟動程式。' },
+  { code: 'FE／PE', meaning: '溢出錯誤／壓力感測器錯誤', action: '關閉水龍頭，拔下插頭，致電服務中心。', pro: true },
+  { code: 'AE', meaning: '漏水', action: '呼叫維修服務。', pro: true },
+]} />
+
+WD-S13VDW 清潔排水泵過濾器前，說明書要求用水冷卻過濾器、拔下插頭；排水時須小心，水可能較熱。完整拆裝順序請依第 44–45 頁操作。
+
+## 沒顯示代碼，但洗衣機不動作
+
+本文 WT 系列與 WD-S13VDW 的叫修前檢查，都包含確認電源線穩固插入插座、完全打開供水龍頭，以及確認行程設定。若控制面板因閒置而斷電，按「電源」啟動。
+
+若需要重設行程，兩份說明書列的順序是：
+
+1. 按「電源」。
+2. 重新選擇所需行程。
+3. 按「啟動／暫停」。
+
+## 什麼情況要找原廠／服務站
+
+- **WT 系列**：dE、dL 完全關門後仍顯示，或 LE 靜置 30 分鐘並重啟後仍顯示，聯絡服務中心；AE 拔下插頭後叫修。
+- **WD-S13VDW**：dE、dE1、dE2、dE4 或 AE，聯絡服務中心。
+- **上述兩組機種**：FE、PE 要先關閉水龍頭、拔下插頭，再致電服務中心。
+
+<SafetyNote>兩份 LG 說明書都要求不要嘗試拆開面板或拆卸機器。除手冊具體建議外，修理與維修須由合格維修人員執行，請交給服務中心。</SafetyNote>
