@@ -6,5 +6,5 @@ const { caption, note = '示意圖，非特定型號外觀。' } = Astro.props;
 ---
 <figure class="fig">
   <slot />
-  <figcaption>{caption}<span class="fig-note">{note}</span></figcaption>
+  <figcaption>{caption}{note && <span class="fig-note">{note}</span>}</figcaption>
 </figure>

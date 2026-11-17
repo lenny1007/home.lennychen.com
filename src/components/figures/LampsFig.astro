@@ -1,0 +1,18 @@
+---
+// 指示燈示意：一排燈，標出哪一盞亮、哪一盞閃。只表達燈的名稱與狀態，不畫特定型號的面板外觀。
+import Figure from '../Figure.astro';
+interface Lamp { label: string; state: 'on' | 'off' | 'blink' }
+interface Props { caption: string; lamps: Lamp[]; legend?: string; note?: string }
+const { caption, lamps, legend, note } = Astro.props;
+const word = { on: '亮', off: '不亮', blink: '閃爍' };
+---
+<Figure caption={caption} note={note ?? '示意圖，燈的位置與顏色依機型不同。'}>
+  <div class="flamps">
+    <ul>
+      {lamps.map((l) => (
+        <li class={l.state}><span class="dot" aria-hidden="true"></span><span class="lbl">{l.label}</span><span class="st">{word[l.state]}</span></li>
+      ))}
+    </ul>
+    {legend && <p class="flegend">{legend}</p>}
+  </div>
+</Figure>

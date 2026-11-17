@@ -16,6 +16,7 @@ sources:
     checked: 2026-11
 draft: false
 ---
+import StepsFig from '../../components/figures/StepsFig.astro';
 import SafetyNote from '../../components/SafetyNote.astro';
 
 ## 多久洗一次
@@ -27,6 +28,16 @@ import SafetyNote from '../../components/SafetyNote.astro';
 清潔前先關掉冷氣，再關掉專用的電源開關。手濕的時候不要碰開關。
 
 ## 銀離子空氣過濾網
+
+
+<StepsFig caption="日立銀離子空氣過濾網的清洗順序。依日立 RAS-22YSK～71YSK 等機種說明書。" steps={[
+  { icon: 'power', title: '關冷氣，再關專用電源開關', note: '手濕時不要碰開關' },
+  { icon: 'panel', title: '打開前面板，取出濾網' },
+  { icon: 'vacuum', title: '先用吸塵器吸灰塵' },
+  { icon: 'wash', title: '太髒再用中性清潔劑洗', note: '不要用 40°C 以上的水' },
+  { icon: 'shade', title: '放陰涼處晾乾' },
+  { icon: 'reinstall', title: '照原位裝回' },
+]} />
 
 1. **拆下來**：打開前面板，就能取出空氣濾網。
 2. **吸灰塵**：先用吸塵器把濾網上的灰塵吸掉。

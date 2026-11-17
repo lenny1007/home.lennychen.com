@@ -17,6 +17,8 @@ sources:
 draft: false
 ---
 
+import StepsFig from '../../components/figures/StepsFig.astro';
+
 ## 先看看是不是這些正常現象
 
 下面這些情形，日立說明書都明確寫了「不是故障」。
@@ -39,6 +41,14 @@ draft: false
 | 暖氣時，室外機冒蒸氣 | 正在除霜 |
 | 暖氣關掉後，室外機還在運轉 | 自動快速除霜 |
 | 運轉指示燈從亮變閃再變亮（暖氣預熱中，或剛從冷氣切換成暖氣） | 保護回路和預熱感應器在動作，不是定時燈的故障閃爍 |
+
+<StepsFig numbered={false} caption="日立說明書寫明不是故障的幾種現象，和真正要叫修的訊號。依日立 RAS-22YSK～71YSK 等機種說明書。" steps={[
+  { icon: 'ear', title: '流水聲、沸騰聲', note: '冷媒在管路裡流動' },
+  { icon: 'eye', title: '出風口冒白霧', note: '潮濕空氣被冷風冷卻凝結' },
+  { icon: 'nose', title: '吹出的風有味道', note: '室內氣味被吸附後吹出' },
+  { icon: 'steam', title: '暖氣時室外機冒蒸氣', note: '正在除霜' },
+  { icon: 'lamp', title: '定時燈閃＋顯示器出現數字', note: '這才是故障，要記下代碼叫修', warn: true },
+]} />
 
 吹出來有味道，雖然不是故障，但機器內部髒了也會產生異味。這時可以參考[日立冷氣濾網怎麼洗](/articles/hitachi-aircon-filter-cleaning/)，內部則要請專業清潔。
 

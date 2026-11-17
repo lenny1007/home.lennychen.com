@@ -41,9 +41,17 @@ sources:
     checked: 2026-11
 draft: false
 ---
+import StepsFig from '../../components/figures/StepsFig.astro';
 import SafetyNote from '../../components/SafetyNote.astro';
 
 冷氣設在 26～28℃ 是經濟部能源署和台電共同的建議，經濟部（刊於能源署網站）說冷氣溫度每調高 1℃，可節省冷氣用電 6%。再搭配電扇或循環扇、每 2～3 週清一次濾網，是官方最常提的三件事。至於「變頻冷氣一直開比較省電」，台電的說法是不一定：短時間外出 30 分鐘內可考慮不關，長時間離開還是建議關。
+
+<StepsFig numbered={false} caption="官方最常提的冷氣省電做法。依經濟部能源署、台電資料整理。" steps={[
+  { icon: 'thermo', title: '設定 26～28℃', note: '每調高 1℃，可省冷氣用電 6%（經濟部）' },
+  { icon: 'fan', title: '循環扇放出風口下方', note: '風朝房間中央、仰角 45 度（台電）' },
+  { icon: 'filter', title: '夏季每 2～3 週清濾網', note: '能源署建議' },
+  { icon: 'shade', title: '關好門窗、東西向窗戶遮陽', note: '能源署、台電建議' },
+]} />
 
 ## 冷氣幾度最省電：26～28℃
 

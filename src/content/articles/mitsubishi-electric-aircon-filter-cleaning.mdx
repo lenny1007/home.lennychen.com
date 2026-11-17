@@ -20,6 +20,7 @@ sources:
     checked: 2026-11
 draft: false
 ---
+import ScheduleFig from '../../components/figures/ScheduleFig.astro';
 import SafetyNote from '../../components/SafetyNote.astro';
 
 三菱電機（Mitsubishi Electric）和三菱重工是不同品牌，濾網構造和保養方式也不一樣。先看室內機或說明書上的標示，型號開頭是 MSZ-、MSY- 的才是本文說的三菱電機機種。
@@ -35,6 +36,14 @@ GT、GA 系列的室內機裡有兩層濾網：前面一片是**空氣濾網（�
 | 微粒子濾網（選購） | 每 3 個月吸塵 | **不可以** | 每 3 年 |
 
 說明書提醒：濾網髒了會讓冷氣裡的水氣凝結，滋生黴菌等細菌；定期清濾網也能維持效能、減少耗電。
+
+<ScheduleFig caption="三菱電機 GT、GA 系列三種濾網的保養時間表。依三菱電機台灣說明書。" items={[
+  { when: '每 2 週', icon: 'filter', what: '空氣濾網（奈米白金濾網）：吸塵器吸或水洗' },
+  { when: '每 3 個月', icon: 'vacuum', what: '空氣淨化濾網：用吸塵器吸（微粒子濾網不可水洗）' },
+  { when: '每年', icon: 'calendar', what: '靜電抗敏酵素過濾網換新' },
+  { when: '每 3 年', icon: 'calendar', what: '微粒子濾網（選購）換新' },
+]} />
+
 
 ## 清潔前先看這幾條
 

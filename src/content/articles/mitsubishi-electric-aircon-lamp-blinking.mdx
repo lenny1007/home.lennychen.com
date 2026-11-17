@@ -19,6 +19,7 @@ sources:
     checked: 2026-11
 draft: false
 ---
+import CompareFig from '../../components/figures/CompareFig.astro';
 import SafetyNote from '../../components/SafetyNote.astro';
 
 三菱電機（Mitsubishi Electric）和三菱重工是不同品牌，說明書和處理方式也不一樣。先看室內機或說明書上的標示，型號開頭是 MSZ-、MSY- 的才是本文說的三菱電機機種。
@@ -46,6 +47,12 @@ import SafetyNote from '../../components/SafetyNote.astro';
 說明書在清潔出風口的步驟裡寫明：**沒有正確安裝水平葉片，電源開啟時所有的 LED 燈會閃爍**。如果你剛清潔過出風口、拆過葉片，先關電源，照說明書把水平葉片裝回去，再開機看看。
 
 葉片的拆裝方式見[三菱電機冷氣濾網怎麼洗](/articles/mitsubishi-electric-aircon-filter-cleaning/)。
+
+<CompareFig caption="三菱電機 GT、GA 系列兩種閃燈，處理方式不同。依三菱電機台灣說明書。" a={{ title: '左側／上方運轉指示燈閃', icon: 'lamp' }} b={{ title: '所有 LED 燈一起閃', icon: 'lamp' }} rows={[
+  { label: '說明書怎麼說', a: '列在要停止使用、聯絡經銷商的情況', b: '水平葉片沒有正確安裝' },
+  { label: '怎麼做', a: '停止使用，聯絡經銷商（0800-52-30-30）', b: '關電源，把水平葉片裝回再開機' },
+]} />
+
 
 ## 運轉指示燈平常的樣子
 

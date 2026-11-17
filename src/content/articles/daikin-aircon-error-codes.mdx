@@ -29,6 +29,8 @@ sources:
     checked: 2026-11
 draft: false
 ---
+import LampsFig from '../../components/figures/LampsFig.astro';
+import FlowFig from '../../components/figures/FlowFig.astro';
 import CodeTable from '../../components/CodeTable.astro';
 import SafetyNote from '../../components/SafetyNote.astro';
 
@@ -43,6 +45,13 @@ import SafetyNote from '../../components/SafetyNote.astro';
 - **運轉指示燈（綠色）**：恆亮＝正在運轉；**閃爍＝請檢查故障代碼**。
 - 定時指示燈（橘色）恆亮＝已設定定時；防霉、閃流指示燈（綠色）恆亮＝正在做防霉或閃流運轉。這些都不是故障。
 
+<LampsFig caption="大金橫綱 FTXM 燈號表：運轉指示燈閃爍，代表請檢查故障代碼。" lamps={[
+  { label: '運轉', state: 'blink' },
+  { label: '定時', state: 'off' },
+  { label: '防霉／閃流', state: 'off' },
+]} legend="定時、防霉、閃流指示燈恆亮是正在運作，不是故障。" note="示意圖。大關 FTXV、豪菁 FTHF 的指示燈組合不同，以機身說明書為準。" />
+
+
 如果閃的是**遙控器的液晶螢幕**，那是電池快沒電，跟室內機無關，請看最後一段。
 
 ## 指示燈閃爍時，先做這兩項檢查
@@ -53,6 +62,14 @@ import SafetyNote from '../../components/SafetyNote.astro';
 2. 如果是運轉中突然停機、燈在閃：先停止運轉、關斷路器，檢查**室內機與室外機的進風口、出風口有沒有東西堵住**，清掉之後再用遙控器重新啟動。豪菁 FTHF 的說明書另外寫了一項：**空氣濾網是否骯髒，請清潔濾網**。
 
 做完燈還在閃，就照下一段叫出代碼，再聯絡經銷商或原廠。
+
+<FlowFig caption="大金冷氣運轉指示燈閃爍時的處理順序。依台灣大金 Z 系列說明書。" nodes={[
+  { icon: 'power', title: '關斷路器再打開，用遙控器重新啟動' },
+  { icon: 'eye', title: '還在閃：停機、關斷路器，檢查室內機與室外機的進出風口有沒有被堵住' },
+  { icon: 'remote', title: '還在閃：按住「取消」5 秒叫出代碼', note: '重複按「取消」，室內機發出長嗶音時顯示的就是目前代碼' },
+  { icon: 'phone', title: '記下代碼，聯絡經銷商或原廠', tone: 'warn' },
+]} />
+
 
 另外，如果冷氣只是停下來、但運轉指示燈是**恆亮**不是閃，說明書說這可能是遇到大的電壓波動、為保護系統而停機，約 3 分鐘內會自己恢復運轉。
 

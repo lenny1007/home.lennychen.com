@@ -1,0 +1,13 @@
+---
+// 可以／不要對照。
+import Figure from '../Figure.astro';
+import Icon from './Icon.astro';
+interface Props { caption: string; doTitle?: string; dontTitle?: string; dos: string[]; donts: string[]; note?: string }
+const { caption, doTitle = '可以這樣做', dontTitle = '不要這樣做', dos, donts, note } = Astro.props;
+---
+<Figure caption={caption} note={note ?? ''}>
+  <div class="fdd">
+    <div class="ok"><p class="fhd"><Icon name="check" size={26} />{doTitle}</p><ul>{dos.map((t) => <li>{t}</li>)}</ul></div>
+    <div class="no"><p class="fhd"><Icon name="cross" size={26} />{dontTitle}</p><ul>{donts.map((t) => <li>{t}</li>)}</ul></div>
+  </div>
+</Figure>
