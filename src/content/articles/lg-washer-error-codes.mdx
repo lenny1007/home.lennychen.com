@@ -19,6 +19,7 @@ sources:
     checked: 2026-11
 draft: false
 ---
+import StepsFig from '../../components/figures/StepsFig.astro';
 import CodeTable from '../../components/CodeTable.astro';
 import SafetyNote from '../../components/SafetyNote.astro';
 
@@ -30,6 +31,14 @@ LG洗衣機顯示 **IE、OE、UE**，在本文兩份說明書中，分別是進�
 - **滾筒洗衣機**：WD-S13VDW。
 
 以下摘列這兩份說明書的代碼與處理方式。
+
+<StepsFig numbered={false} caption="LG WT 系列與 WD-S13VDW 都有的代碼。細節與其他代碼見下方兩張表。" steps={[
+  { icon: 'tap', title: 'IE 進水錯誤', note: '打開水龍頭，拉直供水管' },
+  { icon: 'drain', title: 'OE 出水錯誤', note: '清潔並拉直排水管' },
+  { icon: 'basket', title: 'UE 失衡錯誤', note: '重新放置衣物' },
+  { icon: 'phone', title: 'FE、PE', note: '關水龍頭、拔插頭，致電服務中心', warn: true },
+]} />
+
 
 ## 直立式 WT 系列：錯誤碼對照
 

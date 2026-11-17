@@ -19,6 +19,7 @@ sources:
     checked: 2026-11
 draft: false
 ---
+import FlowFig from '../../components/figures/FlowFig.astro';
 import CodeTable from '../../components/CodeTable.astro';
 import SafetyNote from '../../components/SafetyNote.astro';
 
@@ -52,6 +53,16 @@ import SafetyNote from '../../components/SafetyNote.astro';
 3. 確認給水口的網口是否堵塞。
 4. 確認是否正在斷水。
 5. 確認後按起動／暫停鍵，再次起動。
+
+<FlowFig caption="日立滾筒 BD-SX150JJ／JJR 顯示 C01（無法給水）的檢查順序。僅適用這兩個型號。" nodes={[
+  { icon: 'power', title: '按起動／暫停鍵，暫停運轉' },
+  { icon: 'tap', title: '確認水龍頭全開' },
+  { icon: 'filter', title: '確認給水口的網口沒有堵塞' },
+  { icon: 'wash', title: '確認是不是正在斷水' },
+  { icon: 'check', title: '按起動／暫停鍵，再次起動' },
+  { icon: 'phone', title: '確認後仍多次出現相同顯示：中止使用，洽服務中心', tone: 'warn' },
+]} />
+
 
 ## 直立式 SF-200ZHV：代碼不要補成三碼
 
