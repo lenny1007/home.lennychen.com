@@ -29,6 +29,8 @@ sources:
     checked: 2026-11
 draft: false
 ---
+import DoDontFig from '../../components/figures/DoDontFig.astro';
+import StepsFig from '../../components/figures/StepsFig.astro';
 import SafetyNote from '../../components/SafetyNote.astro';
 
 除濕機濾網能不能洗，要分機型與濾網：Panasonic 本文系列禁止水洗，日立 RD-HH 的空氣過濾網可洗、HEPA 不可洗。水箱清潔頻率也不同，Panasonic 本文系列建議每月，LG 本文機型約每週；三菱 MJ-EV250HM-TW 則提醒，水箱清理不徹底會造成發霉。
@@ -43,6 +45,9 @@ import SafetyNote from '../../components/SafetyNote.astro';
 
 以下各品牌段落限上述機型。
 
+<DoDontFig caption="除濕機濾網能不能水洗，要看品牌與濾網種類。限本文「適用機種」列出的型號。" doTitle="可以水洗" dontTitle="不要水洗" dos={['日立 RD-HH：空氣過濾網（不用 40℃ 以上的水）', 'LG：超細濾網髒污嚴重時（勿用 40°C 以上熱水）', '夏普 DW-E13HT-W：過濾網髒污嚴重時（稀釋中性洗滌劑的溫水）']} donts={['Panasonic F-YV QB／QN 系列：空氣過濾網用吸塵器吸', '日立 RD-HH：HEPA 集塵濾網用吸塵器除塵']} />
+
+
 ## Panasonic：濾網吸塵，水箱每月清潔
 
 F-YV20QBH／QN 系列清潔前須拔下電源插頭並排掉水箱的水。空氣過濾網建議**每二週一回**，用吸塵器吸去污垢，**請勿水洗**；破損時更換。
@@ -54,6 +59,15 @@ F-YV20QBH／QN 系列清潔前須拔下電源插頭並排掉水箱的水。空�
 3. 打開排水口及水箱蓋後方卡扣，勿強拉。
 4. 向上拉起水箱蓋。
 5. 用水沖洗水箱、水箱蓋 2～3 回。
+
+<StepsFig caption="Panasonic F-YV QB／QN 系列水箱每月清潔一回的步驟。依 Panasonic 台灣說明書。" steps={[
+  { icon: 'tank', title: '排掉水箱的水', note: '清潔前先拔插頭' },
+  { icon: 'reinstall', title: '把水箱把手轉起' },
+  { icon: 'panel', title: '打開排水口及水箱蓋後方卡扣', note: '不要強拉' },
+  { icon: 'tank', title: '向上拉起水箱蓋' },
+  { icon: 'wash', title: '用水沖洗水箱、水箱蓋 2～3 回', note: '浮球不用拆' },
+]} />
+
 
 不易清除的污漬可用稀釋過的廚房中性洗劑。浮球不用拆，周邊污垢用水清除。說明書指出，依房間狀況，空氣中的髒污溶入除濕水，會使水箱內側發黑。
 

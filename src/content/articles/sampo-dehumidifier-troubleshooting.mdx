@@ -22,6 +22,7 @@ sources:
     checked: 2026-11
 draft: false
 ---
+import CompareFig from '../../components/figures/CompareFig.astro';
 import CodeTable from '../../components/CodeTable.astro';
 import SafetyNote from '../../components/SafetyNote.astro';
 
@@ -87,6 +88,12 @@ AD-S552DT 顯示 H1 時，代碼表列出的處理是：
 2. 等待環境溫度符合 5～35°C。
 3. 接上電源。
 4. 重新啟動。
+
+<CompareFig caption="聲寶 AD-W520T／AD-W532T、AD-WA618T 顯示 C2 時，先看環境溫度。AD-S552DT 的 C2 意思不同（風機故障）。" a={{ title: '環境溫度 ≤0°C 或 ≥40°C', icon: 'thermo' }} b={{ title: '已在 5～35°C 仍顯示 C2', icon: 'warning' }} rows={[
+  { label: '說明書的意思', a: '不適合機器運轉，屬於保護措施', b: '溫度濕度感應器故障' },
+  { label: '怎麼做', a: '移除電源，等溫度回到 5～35°C，接上電源重新啟動', b: '聯絡服務中心' },
+]} />
+
 
 <SafetyNote>上述三份聲寶說明書都提醒不要自行修理。有異常或疑慮請洽經銷商或服務中心；感應器端子、馬達、冷媒等內部問題，請交由服務中心處理。</SafetyNote>
 

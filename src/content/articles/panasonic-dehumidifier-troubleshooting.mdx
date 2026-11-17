@@ -22,6 +22,7 @@ sources:
     checked: 2026-11
 draft: false
 ---
+import FlowFig from '../../components/figures/FlowFig.astro';
 import CodeTable from '../../components/CodeTable.astro';
 import SafetyNote from '../../components/SafetyNote.astro';
 
@@ -54,6 +55,14 @@ QB／QN、MH、JH 的處理相同：
 4. 放置半天以上不要使用；內部有水侵入時，是為了讓它完全乾燥。
 5. 再次插入電源插頭。
 6. 啟動除濕運轉。
+
+<FlowFig caption="國際牌除濕機因傾倒顯示 11 時的處理順序。QB／QN、MH、JH 三系列相同。" nodes={[
+  { icon: 'plug', title: '拔下電源插頭' },
+  { icon: 'level', title: '把機體扶起，擦掉溢出的水' },
+  { icon: 'clock', title: '放置半天以上不要使用', note: '讓侵入內部的水完全乾燥' },
+  { icon: 'power', title: '插回電源插頭，啟動除濕運轉' },
+]} />
+
 
 若是**傾斜角度過大**，三份說明書另列以下處理：
 
