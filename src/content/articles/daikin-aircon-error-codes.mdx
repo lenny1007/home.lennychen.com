@@ -48,8 +48,9 @@ import SafetyNote from '../../components/SafetyNote.astro';
 <LampsFig caption="大金橫綱 FTXM 燈號表：運轉指示燈閃爍，代表請檢查故障代碼。" lamps={[
   { label: '運轉', state: 'blink' },
   { label: '定時', state: 'off' },
-  { label: '防霉／閃流', state: 'off' },
-]} legend="定時、防霉、閃流指示燈恆亮是正在運作，不是故障。" note="示意圖。大關 FTXV、豪菁 FTHF 的指示燈組合不同，以機身說明書為準。" />
+  { label: '防霉', state: 'off' },
+  { label: '閃流', state: 'off' },
+]} legend="定時、防霉、閃流指示燈恆亮是正在運作，不是故障。" note="示意圖。定時、防霉、閃流燈依當下設定可能亮著；大關 FTXV、豪菁 FTHF 的指示燈組合不同，以機身說明書為準。" />
 
 
 如果閃的是**遙控器的液晶螢幕**，那是電池快沒電，跟室內機無關，請看最後一段。
@@ -65,7 +66,7 @@ import SafetyNote from '../../components/SafetyNote.astro';
 
 <FlowFig caption="大金冷氣運轉指示燈閃爍時的處理順序。依台灣大金 Z 系列說明書。" nodes={[
   { icon: 'power', title: '關斷路器再打開，用遙控器重新啟動' },
-  { icon: 'eye', title: '還在閃：停機、關斷路器，檢查室內機與室外機的進出風口有沒有被堵住' },
+  { icon: 'eye', title: '運轉中突然停機、燈在閃：停機、關斷路器，檢查室內機與室外機的進出風口有沒有被堵住', note: '豪菁 FTHF 另列：濾網髒了要清' },
   { icon: 'remote', title: '還在閃：按住「取消」5 秒叫出代碼', note: '重複按「取消」，室內機發出長嗶音時顯示的就是目前代碼' },
   { icon: 'phone', title: '記下代碼，聯絡經銷商或原廠', tone: 'warn' },
 ]} />
