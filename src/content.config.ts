@@ -14,9 +14,12 @@ const source = z.object({
 
 const articles = defineCollection({
   loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/articles' }),
-  schema: z.object({
+  schema: ({ image }) => z.object({
     title: z.string(),
     description: z.string(),
+    /** 開頭情境圖（AI 生成，只當情境、不示範步驟）：放 src/assets/covers/<slug>.webp。 */
+    cover: image().optional(),
+    cover_alt: z.string().optional(),
     pubDate: z.coerce.date(),
     updatedDate: z.coerce.date().optional(),
     category: z.enum(categorySlugs),

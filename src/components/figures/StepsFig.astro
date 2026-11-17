@@ -1,0 +1,20 @@
+---
+// 步驟圖：編號＋圖示＋短標題＋備註。文字寫在 HTML（手機會自動換行），內容只取自文章與其來源。
+import Figure from '../Figure.astro';
+import Icon from './Icon.astro';
+interface Step { icon: string; title: string; note?: string; warn?: boolean }
+interface Props { caption: string; steps: Step[]; note?: string; numbered?: boolean }
+const { caption, steps, note, numbered = true } = Astro.props;
+---
+<Figure caption={caption} note={note ?? ''}>
+  <ol class:list={["fsteps", { nonum: !numbered }]}>
+    {steps.map((s, i) => (
+      <li class:list={[{ warn: s.warn }]}>
+        {numbered && <span class="fnum">{i + 1}</span>}
+        <span class="fic"><Icon name={s.icon} size={48} /></span>
+        <strong>{s.title}</strong>
+        {s.note && <span class="fnote">{s.note}</span>}
+      </li>
+    ))}
+  </ol>
+</Figure>

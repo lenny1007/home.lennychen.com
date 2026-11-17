@@ -1,6 +1,8 @@
 ---
 title: 國際牌冷氣運轉燈閃、風突然停、冒白霧，是壞了嗎？
 description: 國際牌（Panasonic）台灣說明書列出的「不是故障」現象：暖氣初運轉和除霜時運轉燈閃、自體淨時約 1 分鐘沒風、出風口冒霧、冷媒流動聲與塑膠伸縮聲。看完再決定要不要叫修。
+cover: ../../assets/covers/panasonic-aircon-not-a-fault.webp
+cover_alt: 兒童房帆船擺飾
 pubDate: 2026-11-16
 category: aircon
 kind: troubleshoot
@@ -24,6 +26,8 @@ sources:
 draft: false
 ---
 
+import CompareFig from '../../components/figures/CompareFig.astro';
+
 ## 運轉燈在閃，不一定是壞了
 
 國際牌說明書裡，代表故障的是**定時燈**持續閃爍（處理方式見[國際牌冷氣定時燈閃爍怎麼辦](/articles/panasonic-aircon-timer-light-blinking/)）。**運轉燈**閃爍則有下面幾種正常情況：
@@ -34,6 +38,12 @@ draft: false
 | 暖氣運轉中，風停了 | 室外溫度低或濕度高時，霜會聚集在室外機上，正在除霜；除霜時間最長 12 分鐘 |
 | 預約開機前、在自動運轉行程中 | 為了開機時達到設定溫度，冷氣機會提前 0～50 分鐘運轉；若在自動運轉行程，運轉燈會持續閃爍 |
 | 一對多機種，兩間以上同時開（QX、RX 系列） | 各室選了不同的運轉模式，可能無法正常運轉，運轉燈會閃到調回相同模式為止 |
+
+<CompareFig caption="國際牌說明書列出幾種運轉燈閃爍的正常情況；定時燈持續閃爍則代表故障或保護裝置動作。燒焦味、漏水等狀況另見下方叫修清單。" a={{ title: '運轉燈閃爍', icon: 'lamp' }} b={{ title: '定時燈持續閃爍', icon: 'warning' }} rows={[
+  { label: '常見原因', a: '暖氣剛開始、除霜、自動運轉行程中', b: '冷氣機發生故障或保護裝置動作' },
+  { label: '怎麼做', a: '稍候，對照說明書的正常情況', b: '看清楚代碼，關閉無熔絲開關，聯絡經銷商或服務站' },
+]} />
+
 
 ## 風的狀況
 

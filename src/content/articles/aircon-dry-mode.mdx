@@ -1,6 +1,8 @@
 ---
 title: 冷氣除濕模式怎麼用？和冷氣模式差在哪、比較省電嗎
 description: 冷氣除濕模式能不能設溫度、為什麼風量變小、會不會比冷氣省電、能不能取代除濕機？整理大金、國際牌、日立台灣說明書的原廠說法。
+cover: ../../assets/covers/aircon-dry-mode.webp
+cover_alt: 雨天客廳亞麻沙發
 pubDate: 2026-11-16
 category: aircon
 kind: setting
@@ -22,6 +24,7 @@ sources:
     checked: 2026-11
 draft: false
 ---
+import CompareFig from '../../components/figures/CompareFig.astro';
 import SafetyNote from '../../components/SafetyNote.astro';
 
 冷氣的除濕模式，是讓冷氣用另一種控制方式運轉來降低濕度，不是另一台機器。各品牌做法不一樣：有的機種會盡量把室溫維持住，有的會邊降溫邊除濕；有的不能設溫度、風量全自動。下面用大金、國際牌、日立三份台灣說明書，把差異整理清楚。
@@ -43,6 +46,12 @@ import SafetyNote from '../../components/SafetyNote.astro';
 - **國際牌 QX 系列**：室溫高於遙控器設定溫度時，除濕會自動轉成冷氣運轉；室溫低於設定溫度時，才以除濕行程運轉。所以設定溫度比室溫低時，實際上就是在吹冷氣。
 - **日立 NT 系列**：室溫比設定溫度高時，會邊降溫邊除濕，降到比設定溫度低就停，回升再啟動；室溫比設定溫度低時，會自動把設定溫度調到比室溫稍低（室溫在 16℃ 以下時設為 16℃）再除濕。原廠也提醒，可能因房間人數或條件達不到設定溫度。
 - **大金 橫綱Z系列**：除濕時室內溫度會盡量保持不變。
+
+<CompareFig caption="開除濕時，室溫比設定溫度高或低，國際牌 QX 與日立 NT 系列的動作不同。依兩家台灣說明書。" a={{ title: '室溫高於設定溫度', icon: 'thermo' }} b={{ title: '室溫低於設定溫度', icon: 'thermo' }} rows={[
+  { label: '國際牌 QX 系列', a: '自動轉成冷氣運轉', b: '以除濕行程運轉，風量由微電腦控制、不能調' },
+  { label: '日立 NT 系列', a: '邊降溫邊除濕，降到比設定溫度低就停，回升再啟動', b: '自動把設定溫度調到比室溫稍低再除濕（室溫 16℃ 以下時設 16℃）' },
+]} />
+
 
 ## 為什麼開除濕後風很小、有時不出風
 

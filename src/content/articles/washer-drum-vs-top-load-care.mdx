@@ -1,6 +1,8 @@
 ---
 title: 滾筒與直立式洗衣機保養差在哪？門封、洗劑盒與濾網對照
 description: 滾筒洗衣機保養與直立式洗衣機保養差在哪？依 Panasonic、LG、三星台灣說明書，分型號對照門封、門墊圈、洗劑盒、濾網與槽洗頻率。
+cover: ../../assets/covers/washer-drum-vs-top-load-care.webp
+cover_alt: 兩只圓洗衣籃
 pubDate: 2026-11-17
 category: washer
 kind: cleaning
@@ -31,6 +33,7 @@ sources:
     checked: 2026-11
 draft: false
 ---
+import CompareFig from '../../components/figures/CompareFig.astro';
 import SafetyNote from '../../components/SafetyNote.astro';
 
 說明書裡的保養項目是依型號寫的，不是單純分成直立或滾筒兩套：例如 **LG WD-S13VDW（滾筒）與 LG WT 系列（直立式）都要在洗完後擦拭機門，Panasonic NM（直立式）則要清絲屑過濾盒、擦槽蓋與投入口水滴**。洗劑盒、濾網與槽洗週期也要對照自己的型號。
@@ -77,6 +80,13 @@ import SafetyNote from '../../components/SafetyNote.astro';
 | **三星 WA**：每隔 1～2 個月，或槽洗淨指示燈亮起時。 | **三星 WW**：每洗 40 次執行一次強力槽洗淨+／槽洗淨（依適用型號），這台的槽洗行程不加洗劑或漂白劑（其他型號規定不同，例如三星 WA、Panasonic DW 槽洗會用到含氯漂白劑，請看各自說明書）；也會出現提醒。 |
 
 LG WT 與 WD-S13VDW 另寫明：若槽內有難聞氣味或發霉，除定期提示間隔外，每 3 週執行一次筒槽保養。槽洗操作另見[洗衣機槽洗怎麼做](/articles/washer-tub-cleaning/)。
+
+<CompareFig caption="有些品牌的直立式和滾筒，濾網與槽洗頻率不同。依各系列台灣說明書，型號見上方「適用機種」。" a={{ title: '直立式', icon: 'toptub' }} b={{ title: '滾筒', icon: 'drum' }} rows={[
+  { label: 'Panasonic 濾網', a: 'NM：每回洗後清絲屑過濾盒', b: 'DW：排水過濾網約每週一次；乾衣時每次清' },
+  { label: 'Panasonic 槽洗', a: 'NM：3～6 個月一次', b: 'DW：約每月一次' },
+  { label: 'LG 槽洗', a: 'WT：每月一次，或視需要增加', b: 'WD-S13VDW：每月一次，或視需要增加' },
+  { label: '三星 槽洗', a: 'WA：每 1～2 個月，或指示燈亮時', b: 'WW：每洗 40 次（依適用型號）' },
+]} />
 
 ## 什麼情況要找原廠／服務站
 

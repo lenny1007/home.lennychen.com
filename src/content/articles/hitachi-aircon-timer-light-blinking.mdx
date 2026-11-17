@@ -1,6 +1,8 @@
 ---
 title: 日立冷氣定時燈閃爍、跳出數字怎麼辦？照說明書這樣處理
 description: 日立冷氣的定時燈閃爍、顯示器出現 50 以上的數字，代表機器故障。說明書教你記下代碼、關電源、聯絡經銷商，叫修前也能先排除幾個常見原因。
+cover: ../../assets/covers/hitachi-aircon-timer-light-blinking.webp
+cover_alt: 清晨的臥室
 pubDate: 2026-11-16
 category: aircon
 kind: troubleshoot
@@ -16,6 +18,8 @@ sources:
     checked: 2026-11
 draft: false
 ---
+import LampsFig from '../../components/figures/LampsFig.astro';
+import FlowFig from '../../components/figures/FlowFig.astro';
 import SafetyNote from '../../components/SafetyNote.astro';
 
 ## 閃燈加數字，代表機器故障
@@ -24,11 +28,23 @@ import SafetyNote from '../../components/SafetyNote.astro';
 
 說明書沒有列出每個代碼代表什麼。這些代碼是給維修人員判斷用的，所以你要做的是把它記下來，交給來修的人。
 
+<LampsFig caption="日立變頻分離式冷氣故障時：定時燈閃爍，顯示器出現 50 以上的代碼。" lamps={[
+  { label: '定時燈', state: 'blink' },
+]} legend="顯示器同時出現 50 以上（含）的數字，就是故障代碼。" />
+
+
 ## 看到閃燈，照這三步做
 
 1. **記下來**：數一下定時燈閃了幾次，再記下顯示器上的數字。
 2. **關電源**：關掉冷氣，再關掉冷氣的專用電源開關（漏電斷路器）。說明書提醒要在關電之前先記下代碼。
 3. **聯絡經銷商或服務中心**：把閃爍次數和數字告訴對方。
+
+<FlowFig caption="日立冷氣定時燈閃爍時的三步。依日立 RAS-22YSK～71YSK 等機種說明書。" nodes={[
+  { icon: 'eye', title: '記下定時燈閃幾次、顯示器上的數字', note: '要在關電之前記' },
+  { icon: 'power', title: '關冷氣，再關專用電源開關' },
+  { icon: 'phone', title: '聯絡經銷商或服務中心，告知閃爍次數和數字', tone: 'warn' },
+]} />
+
 
 ## 這些狀況請馬上聯絡經銷商
 

@@ -1,6 +1,8 @@
 ---
 title: 國際牌冷氣定時燈閃爍、跳出英文加數字怎麼辦？照台灣說明書這樣處理
 description: 國際牌（Panasonic）冷氣定時燈持續閃爍，說明書的意思是故障或保護裝置動作。整理分離式和隱藏式怎麼看故障代碼、什麼時候要馬上關電叫修，以及叫修前可以先查的項目。
+cover: ../../assets/covers/panasonic-aircon-timer-light-blinking.webp
+cover_alt: 傍晚客廳果盤
 pubDate: 2026-11-16
 category: aircon
 kind: troubleshoot
@@ -23,6 +25,8 @@ sources:
     checked: 2026-11
 draft: false
 ---
+import CompareFig from '../../components/figures/CompareFig.astro';
+import FlowFig from '../../components/figures/FlowFig.astro';
 import SafetyNote from '../../components/SafetyNote.astro';
 
 ## 定時燈恆亮和閃爍，意思不一樣
@@ -35,6 +39,12 @@ import SafetyNote from '../../components/SafetyNote.astro';
 QX 系列把機體燈光調成「全關」時，如果出現故障代碼，定時燈仍會一直閃爍，不會熄滅。
 
 隱藏式的 J 系列沒有機體顯示，定時燈在遙控接收器上。
+
+<CompareFig caption="國際牌冷氣定時燈：恆亮和持續閃爍意思不同。依國際牌 QX、RX、J 系列台灣說明書。" a={{ title: '定時燈恆亮', icon: 'clock' }} b={{ title: '定時燈持續閃爍', icon: 'lamp' }} rows={[
+  { label: '說明書的意思', a: '設定了預約開機或關機', b: '冷氣機發生故障或保護裝置動作' },
+  { label: '怎麼做', a: '正常，不是故障', b: '看清楚代碼（J 系列用遙控器讀），關閉無熔絲開關，聯絡經銷商或服務站' },
+]} />
+
 
 ## 分離式（QX、RX 系列）：看溫度顯示部
 
@@ -53,6 +63,12 @@ J 系列的定時燈閃爍時，表示冷氣機運轉出現異常，要用遙控
 1. 持續按住遙控器的「診斷」按鈕 5 秒，遙控器顯示「H00」，就進入故障診斷畫面。
 2. 按 ▲ 或 ▼ 逐一切換代碼，直到室內機發出連續「嗶」聲，這時遙控器上的字母和數字就是故障代碼。
 3. 確認後，關閉無熔絲開關，聯絡經銷商或服務站處理。
+
+<FlowFig caption="隱藏式 J 系列用遙控器讀故障代碼。依國際牌 J 系列台灣說明書。" nodes={[
+  { icon: 'remote', title: '按住遙控器「診斷」5 秒', note: '顯示「H00」就進入故障診斷畫面' },
+  { icon: 'ear', title: '按 ▲ 或 ▼ 切換代碼', note: '室內機發出連續「嗶」聲時，遙控器上的就是故障代碼' },
+  { icon: 'phone', title: '關閉無熔絲開關，聯絡經銷商或服務站', tone: 'warn' },
+]} />
 
 說明書特別提醒：冷氣機正常運轉（定時燈沒有閃）時用遙控器做故障診斷，讀到的代碼不代表冷氣機異常。
 

@@ -49,3 +49,73 @@ h1, h2 { font-family: var(--display); font-weight: 700; text-wrap: balance; }
 .table-wrap { overflow-x: auto; }
 .tag { display: inline-block; font-size: .8rem; padding: 1px 10px; border-radius: 999px; background: var(--floor); color: var(--ink); border: 1px solid var(--rule); }
 .ad { margin: 2em 0; min-height: 100px; }
+
+/* 文章圖解（src/components/Figure.astro＋figures/*.astro） */
+.fig { margin: 1.8em 0; padding: 16px 16px 12px; background: var(--card); border: 1px solid var(--rule); border-radius: 6px; }
+.fig > svg { display: block; width: 100%; height: auto; }
+.fig figcaption { margin-top: 10px; font-size: .9rem; line-height: 1.6; color: var(--muted); }
+.fig .fig-note { display: block; font-size: .8rem; }
+.fig .ln { fill: none; stroke: var(--wall); stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+.fig .ln-thin { fill: none; stroke: var(--wall); stroke-width: 1.5; stroke-linecap: round; }
+.fig .dash { fill: none; stroke: var(--muted); stroke-width: 1.5; stroke-dasharray: 5 5; }
+.fig .ac-ln { fill: none; stroke: var(--tile); stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+.fig .fl { fill: var(--floor); }
+.fig .pp { fill: var(--paper); }
+.fig .ac { fill: var(--tile); }
+.fig .wt { fill: var(--sage); fill-opacity: .45; }
+.fig .tx { fill: var(--ink); font: 600 17px var(--body); }
+.fig .tm { fill: var(--muted); font: 15px var(--body); }
+.fig .tw { fill: var(--tile-ink); font: 700 15px var(--body); }
+
+/* HTML 圖解（figures/StepsFig、FlowFig、LampsFig、ScheduleFig、DoDontFig、CompareFig） */
+.fig .ficon { display: block; }
+.fig .fnote { display: block; font-size: .85rem; color: var(--muted); line-height: 1.5; margin-top: 2px; }
+.fsteps { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 10px; counter-reset: none; }
+.fsteps li { position: relative; padding: 12px 12px 12px; background: var(--paper); border: 1px solid var(--rule); border-radius: 6px; line-height: 1.5; }
+.fsteps li.warn { border-color: var(--warn); background: var(--warn-bg); }
+.fsteps .fnum { position: absolute; top: 8px; left: 8px; width: 24px; height: 24px; border-radius: 50%; background: var(--tile); color: var(--tile-ink); font: 700 .85rem/24px var(--body); text-align: center; }
+.fsteps .fic { display: flex; justify-content: center; color: var(--wall); margin: 4px 0 6px; }
+.fsteps li.warn .fic, .fsteps li.warn .fnum { color: var(--warn); }
+.fsteps li.warn .fnum { background: var(--warn); color: var(--tile-ink); }
+.fsteps strong { display: block; font-size: .95rem; }
+.fflow { list-style: none; margin: 0; padding: 0; display: grid; gap: 22px; }
+.fflow li { position: relative; display: flex; gap: 12px; align-items: center; padding: 10px 14px; background: var(--paper); border: 1px solid var(--rule); border-left: 5px solid var(--tile); border-radius: 6px; line-height: 1.5; }
+.fflow li:not(:last-child)::after { content: ''; position: absolute; left: 50%; bottom: -19px; width: 0; height: 0; border: 8px solid transparent; border-top: 10px solid var(--tile); translate: -50% 0; }
+.fflow li.warn { border-left-color: var(--warn); background: var(--warn-bg); }
+.fflow li.ok { border-left-color: var(--sage); }
+.fflow .fic { color: var(--wall); flex: 0 0 auto; }
+.fflow li.warn .fic { color: var(--warn); }
+.fflow strong { display: block; font-size: .95rem; }
+.flamps ul { list-style: none; margin: 0; padding: 14px; display: flex; flex-wrap: wrap; gap: 14px 22px; justify-content: center; background: var(--floor); border-radius: 8px; }
+.flamps li { display: grid; justify-items: center; gap: 4px; min-width: 64px; font-size: .9rem; text-align: center; }
+.flamps .dot { width: 22px; height: 22px; border-radius: 50%; background: var(--rule); border: 2px solid var(--wall); }
+.flamps .on .dot { background: var(--sage); }
+.flamps .blink .dot { background: var(--tile); box-shadow: 0 0 0 5px color-mix(in srgb, var(--tile) 30%, transparent); animation: fblink 1s steps(2, start) infinite; }
+.flamps .st { font-size: .8rem; color: var(--muted); }
+.flamps .blink .st { color: var(--tile); font-weight: 700; }
+.flegend { margin: 10px 0 0; font-size: .9rem; line-height: 1.6; }
+@keyframes fblink { to { opacity: .25; } }
+@media (prefers-reduced-motion: reduce) { .flamps .blink .dot { animation: none; } }
+.fsched { list-style: none; margin: 0; padding: 0 0 0 18px; position: relative; display: grid; gap: 12px; }
+.fsched::before { content: ''; position: absolute; left: 5px; top: 6px; bottom: 6px; width: 3px; background: var(--rule); border-radius: 2px; }
+.fsched li { position: relative; display: grid; grid-template-columns: auto 1fr; column-gap: 10px; align-items: center; line-height: 1.5; }
+.fsched li::before { content: ''; position: absolute; left: -18px; top: 50%; width: 13px; height: 13px; border-radius: 50%; background: var(--tile); translate: 0 -50%; }
+.fsched .fwhen { grid-column: 1 / -1; font-weight: 700; color: var(--tile); font-size: .95rem; }
+.fsched .fic { color: var(--wall); }
+.fsched .fwhat { font-size: .95rem; }
+.fsched li:not(:has(.fic)) .fwhat { grid-column: 1 / -1; }
+.fdd { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; }
+.fdd > div { padding: 10px 14px; border-radius: 6px; border: 1px solid var(--rule); background: var(--paper); }
+.fdd .no { border-color: var(--warn); background: var(--warn-bg); }
+.fdd .fhd { display: flex; align-items: center; gap: 6px; margin: 0 0 4px; font-weight: 700; }
+.fdd .ok .fhd { color: var(--sage); }
+.fdd .no .fhd { color: var(--warn); }
+.fdd ul { margin: 0; padding-left: 1.2em; font-size: .95rem; line-height: 1.6; }
+.fcmp { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.fcol { padding: 10px 12px; border: 1px solid var(--rule); border-radius: 6px; background: var(--paper); }
+.fcol .fhd { display: flex; align-items: center; gap: 6px; margin: 0 0 6px; font-weight: 700; font-size: .95rem; line-height: 1.4; color: var(--wall); }
+.fcol .fhd .ficon { flex: 0 0 auto; }
+.fcol dl { margin: 0; font-size: .9rem; line-height: 1.5; }
+.fcol dt { color: var(--muted); font-size: .8rem; margin-top: 8px; }
+.fcol dd { margin: 0; }
+.fsteps.nonum li .fic { margin-top: 0; }

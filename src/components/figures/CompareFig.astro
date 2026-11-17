@@ -1,0 +1,17 @@
+---
+// 兩欄對照（例如直立式 vs 滾筒）：每列一個項目。
+import Figure from '../Figure.astro';
+import Icon from './Icon.astro';
+interface Col { title: string; icon?: string }
+interface Row { label: string; a: string; b: string }
+interface Props { caption: string; a: Col; b: Col; rows: Row[]; note?: string }
+const { caption, a, b, rows, note } = Astro.props;
+---
+<Figure caption={caption} note={note ?? ''}>
+  <div class="fcmp">
+    <div class="fcol"><p class="fhd">{a.icon && <Icon name={a.icon} size={30} />}{a.title}</p>
+      <dl>{rows.map((r) => <><dt>{r.label}</dt><dd>{r.a}</dd></>)}</dl></div>
+    <div class="fcol"><p class="fhd">{b.icon && <Icon name={b.icon} size={30} />}{b.title}</p>
+      <dl>{rows.map((r) => <><dt>{r.label}</dt><dd>{r.b}</dd></>)}</dl></div>
+  </div>
+</Figure>

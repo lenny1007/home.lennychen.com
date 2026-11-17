@@ -1,0 +1,51 @@
+---
+// 圖解用的小圖示：40×40、線條用 currentColor。只表達動作或物件類別，不畫特定品牌型號。
+interface Props { name: string; size?: number }
+const { name, size = 40 } = Astro.props;
+const P: Record<string, string> = {
+  power: '<path d="M20 6v13"/><path d="M12.5 11.5a11 11 0 1 0 15 0"/>',
+  plug: '<path d="M14 6v8M26 6v8"/><path d="M10 14h20v6a10 10 0 0 1-20 0z"/><path d="M20 30v6"/>',
+  panel: '<rect x="5" y="16" width="30" height="16" rx="4"/><path d="M5 11h30" /><path d="M31 4l4 4-4 4"/>',
+  filter: '<rect x="7" y="8" width="26" height="24" rx="2"/><path d="M13 8v24M20 8v24M27 8v24M7 16h26M7 24h26"/>',
+  vacuum: '<path d="M8 30l10-10"/><path d="M18 20c4-8 14-8 16 0"/><rect x="4" y="29" width="10" height="5" rx="2"/>',
+  wash: '<path d="M20 6c5 7 9 11 9 16a9 9 0 0 1-18 0c0-5 4-9 9-16z"/><circle cx="29" cy="31" r="3"/><circle cx="9" cy="32" r="2"/>',
+  shade: '<path d="M4 14L20 6l16 8"/><path d="M8 14v18M32 14v18"/><rect x="13" y="18" width="14" height="14" rx="1"/>',
+  'sun-off': '<circle cx="20" cy="20" r="6"/><path d="M20 5v4M20 31v4M5 20h4M31 20h4M9 9l3 3M28 28l3 3M31 9l-3 3M12 28l-3 3"/><path d="M6 34L34 6"/>',
+  reinstall: '<rect x="6" y="20" width="28" height="14" rx="3"/><path d="M20 4v12M15 11l5 5 5-5"/>',
+  clock: '<circle cx="20" cy="20" r="14"/><path d="M20 12v8l6 4"/>',
+  phone: '<path d="M12 6l5 7-3 4a17 17 0 0 0 9 9l4-3 7 5-3 6C20 34 6 20 6 9z"/>',
+  tank: '<rect x="8" y="10" width="24" height="24" rx="3"/><path d="M8 22h24"/><path d="M14 10V6h12v4"/>',
+  brush: '<path d="M8 32l14-14"/><rect x="20" y="6" width="14" height="10" rx="2" transform="rotate(45 27 11)"/>',
+  sponge: '<rect x="6" y="14" width="28" height="14" rx="3"/><path d="M6 20h28"/><circle cx="12" cy="24" r="1"/><circle cx="20" cy="25" r="1"/><circle cx="28" cy="24" r="1"/>',
+  pan: '<ellipse cx="17" cy="22" rx="12" ry="5"/><path d="M5 22v3c0 3 5 5 12 5s12-2 12-5v-3"/><path d="M29 22h8"/>',
+  flame: '<path d="M20 4c6 8 10 12 10 18a10 10 0 0 1-20 0c0-4 2-7 5-9 0 4 2 6 4 6-2-5 0-10 1-15z"/>',
+  oven: '<rect x="5" y="6" width="30" height="28" rx="3"/><rect x="10" y="14" width="20" height="14" rx="2"/><path d="M10 10h4M18 10h4"/>',
+  bottle: '<path d="M16 4h8v6l3 4v18a2 2 0 0 1-2 2H15a2 2 0 0 1-2-2V14l3-4z"/><path d="M13 20h14"/>',
+  warning: '<path d="M20 5l16 28H4z"/><path d="M20 15v9M20 28v1"/>',
+  calendar: '<rect x="6" y="9" width="28" height="25" rx="3"/><path d="M6 16h28M13 5v7M27 5v7"/>',
+  fan: '<circle cx="20" cy="20" r="3"/><path d="M20 17c-2-8 6-12 8-6s-5 7-8 6zM23 21c8 0 9 9 3 9s-5-7-3-9zM17 21c-6 5-13 0-9-4s9 1 9 4z"/>',
+  drum: '<rect x="6" y="5" width="28" height="30" rx="3"/><circle cx="20" cy="22" r="9"/><path d="M10 10h6"/>',
+  toptub: '<rect x="6" y="10" width="28" height="25" rx="3"/><ellipse cx="20" cy="10" rx="11" ry="4"/><path d="M10 18h20"/>',
+  board: '<rect x="5" y="10" width="26" height="20" rx="3"/><circle cx="34" cy="20" r="2"/><path d="M11 16l6 8M19 15l5 6"/>',
+  thermo: '<path d="M17 6a3 3 0 0 1 6 0v17a7 7 0 1 1-6 0z"/><path d="M20 14v13"/>',
+  steam: '<path d="M12 18c-3-4 3-6 0-10M20 18c-3-4 3-6 0-10M28 18c-3-4 3-6 0-10"/><path d="M6 24h28l-3 10H9z"/>',
+  rice: '<path d="M6 20h28a14 14 0 0 1-28 0z"/><path d="M12 16c2-3 5-3 8 0 3-3 6-3 8 0"/>',
+  cloth: '<path d="M8 10h24v20H8z"/><path d="M8 16c8 3 16-3 24 0"/>',
+  check: '<path d="M8 21l8 8 16-17"/>',
+  cross: '<path d="M10 10l20 20M30 10L10 30"/>',
+  eye: '<path d="M4 20s6-10 16-10 16 10 16 10-6 10-16 10S4 20 4 20z"/><circle cx="20" cy="20" r="4"/>',
+  ear: '<path d="M13 16a8 8 0 1 1 15 4c-2 3-5 4-5 8a4 4 0 0 1-8 0"/><path d="M17 17a4 4 0 0 1 7 1"/>',
+  nose: '<path d="M8 22c4-2 8-2 12 0s8 2 12 0"/><path d="M8 14c4-2 8-2 12 0s8 2 12 0"/><path d="M8 30c4-2 8-2 12 0s8 2 12 0"/>',
+  remote: '<rect x="13" y="4" width="14" height="32" rx="3"/><circle cx="20" cy="11" r="2"/><path d="M17 18h6M17 23h6M17 28h6"/>',
+  drain: '<path d="M6 8h10v8a6 6 0 0 0 6 6h12"/><path d="M30 26c2 3 3 4 3 6a3 3 0 0 1-6 0c0-2 1-3 3-6z"/>',
+  door: '<circle cx="20" cy="20" r="14"/><circle cx="20" cy="20" r="9"/>',
+  tap: '<path d="M6 12h18a6 6 0 0 1 6 6v4"/><path d="M14 8v4"/><path d="M30 28c2 3 3 4 3 6a3 3 0 0 1-6 0c0-2 1-3 3-6z"/>',
+  lamp: '<circle cx="20" cy="20" r="7"/><path d="M20 5v4M20 31v4M5 20h4M31 20h4M9 9l3 3M28 28l3 3M31 9l-3 3M12 28l-3 3"/>',
+  level: '<path d="M4 30h32"/><rect x="10" y="12" width="20" height="18" rx="2"/>',
+  salt: '<path d="M14 14h12l2 20H12z"/><path d="M14 14c0-6 12-6 12 0"/><circle cx="18" cy="9" r=".5"/><circle cx="22" cy="9" r=".5"/>',
+  oil: '<path d="M20 6c5 7 8 10 8 15a8 8 0 0 1-16 0c0-5 3-8 8-15z"/><path d="M16 22a4 4 0 0 0 4 4"/>',
+  basket: '<path d="M5 16h30l-4 18H9z"/><path d="M12 16l4-8M28 16l-4-8"/><path d="M14 22v6M20 22v6M26 22v6"/>',
+};
+const d = P[name] ?? P.check;
+---
+<svg class="ficon" width={size} height={size} viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" set:html={d} />

@@ -1,0 +1,18 @@
+---
+// 流程圖：由上往下的判斷／處理順序。tone=warn 用於「停用、叫修」；tone=ok 用於「正常現象」。
+import Figure from '../Figure.astro';
+import Icon from './Icon.astro';
+interface Node { title: string; note?: string; icon?: string; tone?: 'warn' | 'ok' }
+interface Props { caption: string; nodes: Node[]; note?: string }
+const { caption, nodes, note } = Astro.props;
+---
+<Figure caption={caption} note={note ?? ''}>
+  <ol class="fflow">
+    {nodes.map((n) => (
+      <li class:list={[n.tone]}>
+        {n.icon && <span class="fic"><Icon name={n.icon} size={32} /></span>}
+        <span class="ftxt"><strong>{n.title}</strong>{n.note && <span class="fnote">{n.note}</span>}</span>
+      </li>
+    ))}
+  </ol>
+</Figure>

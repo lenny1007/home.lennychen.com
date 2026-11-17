@@ -1,0 +1,15 @@
+---
+// 保養頻率時間軸：由短到長排列。
+import Figure from '../Figure.astro';
+import Icon from './Icon.astro';
+interface Item { when: string; what: string; icon?: string }
+interface Props { caption: string; items: Item[]; note?: string }
+const { caption, items, note } = Astro.props;
+---
+<Figure caption={caption} note={note ?? ''}>
+  <ol class="fsched">
+    {items.map((it) => (
+      <li><span class="fwhen">{it.when}</span>{it.icon && <span class="fic"><Icon name={it.icon} size={30} /></span>}<span class="fwhat">{it.what}</span></li>
+    ))}
+  </ol>
+</Figure>
