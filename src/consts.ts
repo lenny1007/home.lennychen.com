@@ -1,7 +1,7 @@
 export const SITE_NAME = '家用說明書';
 export const SITE_URL = 'https://home.lennychen.com';
 export const SITE_DESCRIPTION =
-  '冷氣閃燈、洗衣機錯誤碼、除濕機、電鍋氣炸鍋與鍋具保養。對照原廠說明書整理成看得懂的中文，每一條都標來源。';
+  '冷氣閃燈、洗衣機錯誤碼、除濕機、電鍋氣炸鍋、鍋具保養與家用路由器。對照原廠說明書整理成看得懂的中文，每一條都標來源。';
 
 /**
  * AdSense 發布商 ID（ca-pub-…）。留空就不載入廣告。
@@ -19,6 +19,8 @@ export const CATEGORIES = [
   { slug: 'dehumidifier', name: '除濕機', room: '儲藏室', note: '故障燈號、不除濕排除、濕度設定。' },
   { slug: 'cooker', name: '電鍋與氣炸鍋', room: '廚房', note: '時間溫度表、外鍋水量、除垢與油汙。' },
   { slug: 'cookware', name: '鍋具與廚具', room: '廚房', note: '鐵鍋開鍋與生鏽、不沾鍋保養、砧板與刀。' },
+  // 2026-11-18 站主同意加測：Trends 上 wifi ≈ 羽球 1 倍，先放一小批看 GSC。
+  { slug: 'network', name: '網路設備', room: '書房', note: 'Wi-Fi 頻段怎麼選、路由器重置與換頻道。' },
 ] as const;
 export type CategorySlug = (typeof CATEGORIES)[number]['slug'];
 

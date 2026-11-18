@@ -1,0 +1,65 @@
+---
+title: TP-Link 路由器怎麼恢復原廠設定？WPS/RESET 鍵要按多久
+description: TP-Link 路由器忘記密碼或設定出錯時，依 TP-Link 台灣官方 FAQ：按住 WPS/RESET 鍵超過 10 秒、等 SYS 燈從慢閃變快閃再放開。也可以從網頁管理介面還原。
+cover: ../../assets/covers/tp-link-router-factory-reset.webp
+cover_alt: 早晨的走廊層架
+pubDate: 2026-11-18
+category: network
+kind: setting
+brands: ['TP-Link']
+takeaways:
+  - 路由器開機中，按住 WPS/RESET 鍵超過 10 秒，SYS 燈從慢閃變快閃就放開
+  - 同一顆鍵按不到 5 秒是 WPS 功能，不會重置
+  - Archer 系列也可以從網頁管理介面「系統工具」裡的恢復原廠預設值來還原
+  - 重置會清除所有設定，有備份設定檔的話可以匯入還原
+  - 預設登入 IP 或網址印在機身底部標籤
+sources:
+  - title: TP-Link 官方 FAQ〈如何使用 TP-Link 產品的 WPS/RESET 按鈕讓產品恢復原廠預設值〉（適用所有 Archer 系列與高功率路由器）
+    url: https://www.tp-link.com/tw/faq-497.html
+    checked: 2026-11
+  - title: TP-Link 官方 FAQ〈如何將 TP-Link 無線 4G 路由器恢復原廠預設值？〉
+    url: https://tp-link.com/tw/support/faq/2840
+    checked: 2026-11
+draft: false
+---
+import FlowFig from '../../components/figures/FlowFig.astro';
+import CompareFig from '../../components/figures/CompareFig.astro';
+
+## 重置前先知道
+
+恢復原廠預設值會**清除路由器所有設定**，之後要重新設定上網和 Wi-Fi。如果之前有備份設定檔，還原後可以直接匯入。
+
+TP-Link 這兩篇官方 FAQ 適用於**所有 Archer 系列、高功率路由器**，以及**無線 4G 路由器**。
+
+## 方法一：按 WPS/RESET 鍵
+
+部分 TP-Link 路由器（例如 Archer 系列）的 WPS 和 RESET 是**同一顆鍵**，差別在按多久：
+
+<CompareFig caption="TP-Link WPS/RESET 共用鍵：按多久決定做什麼。依 TP-Link 台灣官方 FAQ。" a={{ title: '按不到 5 秒', icon: 'wifi' }} b={{ title: '按住超過 10 秒', icon: 'pin' }} rows={[
+  { label: '功能', a: 'WPS 快速連線', b: '恢復原廠預設值' },
+  { label: '燈號', a: 'WPS 燈閃爍', b: 'SYS 燈從慢閃變快閃' },
+]} />
+
+步驟：
+
+1. 確認路由器**有通電、已開機**。
+2. **按住 WPS/RESET 鍵超過 10 秒**。
+3. 看到 **SYS 燈從慢速閃爍變成快速閃爍**，放開按鈕。
+4. 等路由器自己重新啟動、完成還原，不用手動重開機。過程中保持通電。
+
+<FlowFig caption="TP-Link 路由器用 WPS/RESET 鍵恢復原廠預設值。依 TP-Link 台灣官方 FAQ。" nodes={[
+  { icon: 'power', title: '路由器通電運作中' },
+  { icon: 'pin', title: '按住 WPS/RESET 鍵超過 10 秒', note: 'SYS 燈慢閃變快閃就放開' },
+  { icon: 'router', title: '等它自動重新啟動', note: '保持通電，不用手動重開', tone: 'ok' },
+]} />
+
+## 方法二：從網頁管理介面
+
+還能登入管理介面時：
+
+- **Archer 系列等**：登入後到「**系統工具**」，進入「**恢復到原廠預設值**」頁面，按恢復，等路由器重新啟動。
+- **無線 4G 路由器**：依序進入「**進階 > 系統工具 > 備份和還原**」，按「恢復出廠預設值」。
+
+## 還原後怎麼登入
+
+預設的 IP 位址或網址**印在產品底部的標籤上**。TP-Link 的 FAQ 寫預設帳號和密碼都是小寫的 admin；你的機型如果在第一次登入時要求自己設密碼，就照畫面設定。

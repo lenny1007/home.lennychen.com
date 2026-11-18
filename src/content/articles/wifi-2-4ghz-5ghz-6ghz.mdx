@@ -1,0 +1,54 @@
+---
+title: Wi-Fi 2.4GHz、5GHz、6GHz 差在哪？手機、電腦、智慧家電該連哪一個
+description: 家裡 Wi-Fi 有 2.4G、5G 兩個名稱該連哪個？依華碩台灣官方 FAQ 整理三個頻段的距離、速度、干擾差別，以及路由器擺放建議。
+cover: ../../assets/covers/wifi-2-4ghz-5ghz-6ghz.webp
+cover_alt: 窩在沙發上滑手機
+pubDate: 2026-11-18
+category: network
+kind: guide
+takeaways:
+  - 2.4GHz 涵蓋範圍最廣，但速度較慢、干擾較多
+  - 5GHz 距離較短，但通道較寬、速度通常較快
+  - 6GHz 只有 Wi-Fi 6E、Wi-Fi 7 的裝置和路由器才能用，穿牆能力最弱
+  - 離路由器近、裝置支援就連 5GHz；舊裝置、智慧家電或遠的房間用 2.4GHz
+  - 路由器放在家中央、離地，不要塞進櫃子或沙發後面
+sources:
+  - title: 華碩官方 FAQ〈[無線路由器] 無線頻率 2.4GHz、5GHz 和 6GHz 有什麼不同？〉
+    url: https://www.asus.com/tw/support/FAQ/1044838
+    checked: 2026-11
+draft: false
+---
+import CompareFig from '../../components/figures/CompareFig.astro';
+import DoDontFig from '../../components/figures/DoDontFig.astro';
+
+## 三個頻段怎麼分
+
+很多路由器會發出兩到三個 Wi-Fi，名稱後面常帶著 2.4G、5G。它們是不同的無線頻段，各有長處：
+
+| | 2.4GHz | 5GHz | 6GHz |
+|---|---|---|---|
+| 涵蓋範圍 | 最廣 | 比 2.4GHz 短 | 穿牆能力最弱 |
+| 速度 | 較慢 | 通常較快 | 頻寬最寬 |
+| 干擾 | 較多，藍牙、無線電話和部分家電也用這個頻段 | — | 通常較少，延遲較低 |
+| 誰能用 | 舊裝置、只支援 2.4GHz 的智慧家電也能用 | 支援 5GHz 的裝置 | 只有 Wi-Fi 6E、Wi-Fi 7 裝置與路由器 |
+
+注意 6GHz：**Wi-Fi 6 不支援**，要 Wi-Fi 6E 或 Wi-Fi 7 才行，而且裝置和路由器兩邊都要有。
+
+## 該連哪一個
+
+<CompareFig caption="2.4GHz 和 5GHz 怎麼選。依華碩台灣官方 FAQ 的建議。" a={{ title: '連 5GHz', icon: 'wifi' }} b={{ title: '連 2.4GHz', icon: 'router' }} rows={[
+  { label: '適合', a: '裝置支援 5GHz、離路由器比較近', b: '舊裝置、智慧家電、比較遠的房間' },
+  { label: '好處', a: '速度通常較快', b: '涵蓋範圍最廣' },
+]} />
+
+如果用 6GHz 時因為距離或牆壁讓訊號變弱，就切回 5GHz 或 2.4GHz。
+
+實際速度還會受訊號強度、干擾、通道寬度和裝置本身的規格影響，不是只看頻段。
+
+## 2.4GHz 的頻道
+
+2.4GHz 可用的通道比較窄，華碩建議使用**不重疊的 1、6、11 頻道**。鄰居很多、Wi-Fi 常斷時，可以試著換頻道，華碩路由器的操作見[華碩路由器怎麼換 Wi-Fi 頻道](/articles/asus-router-change-wifi-channel/)。
+
+## 路由器放哪裡
+
+<DoDontFig caption="路由器擺放位置。依華碩台灣官方 FAQ。" dos={['放在使用空間的中央', '避開牆壁、家具、金屬等阻隔物']} donts={['放在地上', '塞進密閉的櫃子裡', '放在沙發後面']} />
