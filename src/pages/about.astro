@@ -1,6 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
-import { SITE_NAME } from '../consts';
+import { CONTACT_EMAIL, SITE_NAME } from '../consts';
 ---
 <Base title="關於本站" description={`${SITE_NAME}是什麼、內容從哪裡來。`}>
   <article class="prose">
@@ -11,6 +11,8 @@ import { SITE_NAME } from '../consts';
     <h2>我們不寫什麼</h2>
     <p>需要拆外殼、碰電路、冷媒或瓦斯的維修，本站只會提醒你聯絡原廠或合格技師，不提供操作步驟。</p>
     <h2>發現錯誤</h2>
-    <p>型號不同，代碼意思可能不一樣。內容如果有錯或已經改版，歡迎告訴我們，我們會查證後更新。</p>
+    <p>型號不同，代碼意思可能不一樣。內容如果有錯或已經改版，請寄信到 <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>，附上文章網址和你的機型，我們會對照原廠資料查證後更新。</p>
+    <h2>聯絡我們</h2>
+    <p>錯誤回報、合作或其他問題，都可以寄信到 <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>。本站無法代為報修或判斷個別機器的故障，需要維修請直接聯絡原廠客服。資料怎麼被使用，請看<a href="/privacy/">隱私權政策</a>。</p>
   </article>
 </Base>
