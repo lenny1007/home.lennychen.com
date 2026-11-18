@@ -1,0 +1,51 @@
+---
+import Base from '../layouts/Base.astro';
+import { ADSENSE_CLIENT, CONTACT_EMAIL, SITE_NAME } from '../consts';
+// 廣告段落依 ADSENSE_CLIENT 自動切換現在式／預告。開廣告時記得改「最後更新」日期，
+// 並先完成 docs/ADSENSE-CHECKLIST.md 的歐洲經濟區同意聲明（CMP）設定。
+const adsOn = Boolean(ADSENSE_CLIENT);
+---
+<Base title="隱私權政策" description={`${SITE_NAME}會蒐集哪些資料、交給誰、拿來做什麼，以及你可以怎麼關掉個人化廣告。`}>
+  <article class="prose">
+    <h1>隱私權政策</h1>
+    <p>最後更新：2026 年 11 月 18 日</p>
+    <p>{SITE_NAME}（home.lennychen.com，以下稱「本站」）整理家電與廚具的說明書資料。這一頁說明你瀏覽本站時，哪些資料會被蒐集、交給誰、拿來做什麼。</p>
+
+    <h2>本站自己不蒐集個人資料</h2>
+    <p>本站沒有會員、留言、表單或電子報，不會要你提供姓名、電話這類個人資料。本站自己的程式不會在你的瀏覽器設定 cookie，也不使用 localStorage。</p>
+    <p>你主動寄信給我們時，我們會收到你的 email 地址和信件內容，只用來回覆與查證內容，不會轉給別人。</p>
+
+    <h2>廣告與 Cookie</h2>
+    {adsOn
+      ? <p>本站使用 Google AdSense 刊登廣告，廣告收入用來支付網站的維運費用。</p>
+      : <p>本站目前還沒有刊登廣告。之後會使用 Google AdSense 刊登廣告來支付網站的維運費用，開始刊登後，以下說明就會適用。</p>}
+    <ul>
+      <li>Google 等第三方廣告供應商會使用 cookie，依據你過去造訪本站或其他網站的紀錄，向你放送廣告。</li>
+      <li>Google 使用廣告 cookie，讓 Google 和它的合作夥伴能依據你造訪本站和網路上其他網站的情形，向你放送廣告。</li>
+      <li>你可以到 Google 的<a href="https://adssettings.google.com/" rel="nofollow">廣告設定</a>關閉個人化廣告。關閉後你還是會看到廣告，只是內容不會依你的瀏覽紀錄挑選。</li>
+      <li>其他第三方廣告供應商的個人化廣告 cookie，可以到 <a href="https://www.aboutads.info/choices/" rel="nofollow">www.aboutads.info</a> 選擇停用。</li>
+    </ul>
+    <p>Google 怎麼處理這些資料，請見 <a href="https://policies.google.com/technologies/partner-sites?hl=zh-TW">Google 如何使用合作夥伴網站的資訊</a>、<a href="https://policies.google.com/technologies/ads?hl=zh-TW">Google 的廣告技術說明</a>與 <a href="https://policies.google.com/privacy?hl=zh-TW">Google 隱私權政策</a>。你也可以在瀏覽器設定封鎖或刪除 cookie，本站一樣可以正常瀏覽。</p>
+
+    <h2>流量統計</h2>
+    <p>本站目前沒有使用 Google Analytics 等流量統計工具。我們透過 Google Search Console 查看本站在 Google 搜尋的曝光與點擊次數，這些是 Google 提供給網站管理者的彙總數字，看不到個別訪客是誰。之後如果加入流量統計，會在上線前更新這一頁。</p>
+
+    <h2>Google 字型</h2>
+    <p>本站的標題字體由 Google Fonts 提供。打開網頁時，你的瀏覽器會直接向 Google 的伺服器下載字型，Google 因此會收到你的 IP 位址和瀏覽器資訊。</p>
+
+    <h2>YouTube 影片</h2>
+    <p>部分文章會顯示 YouTube 影片的縮圖，縮圖從 YouTube 的圖片伺服器載入，所以 Google 會收到你的 IP 位址和瀏覽器資訊。文章裡的官方示範影片要按下播放才會載入，播放器使用 YouTube 的隱私強化模式（youtube-nocookie.com）。其他影片連結點了才會離開本站，到 YouTube 觀看。</p>
+
+    <h2>網站主機</h2>
+    <p>本站架設在 Vercel。和所有網站一樣，伺服器傳送網頁時會處理你的 IP 位址和瀏覽器資訊，主機商可能為了維運與安全保存連線紀錄。本站沒有另外保存這些紀錄。</p>
+
+    <h2>連到其他網站</h2>
+    <p>本站很多連結會帶你到原廠官網、客服頁或 YouTube。離開本站之後，那些網站怎麼處理你的資料，要看它們自己的隱私權政策。</p>
+
+    <h2>這一頁的更新</h2>
+    <p>蒐集資料的方式有改變時，例如開始刊登廣告或加入流量統計，會更新這一頁，並修改上方的「最後更新」日期。</p>
+
+    <h2>聯絡我們</h2>
+    <p>對本站的隱私權做法有疑問，或發現內容有錯，請寄信到 <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>。</p>
+  </article>
+</Base>

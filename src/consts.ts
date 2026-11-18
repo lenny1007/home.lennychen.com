@@ -9,6 +9,9 @@ export const SITE_DESCRIPTION =
  */
 export const ADSENSE_CLIENT = '';
 
+/** 讀者回報錯誤、隱私權問題的聯絡信箱。關於本站、隱私權政策頁共用。 */
+export const CONTACT_EMAIL = 'lenny0929@gmail.com';
+
 /**
  * 分類＝家裡的位置。首頁平面圖、導覽列、文章與知識卡共用。
  * 順序依 2026-11-15 Google Trends 需求排（冷氣最高）。
