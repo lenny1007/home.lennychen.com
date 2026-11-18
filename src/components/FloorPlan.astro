@@ -8,7 +8,8 @@ const rooms: { slug: CategorySlug; x: number; y: number; w: number; h: number; r
   { slug: 'cooker', x: 240, y: 0, w: 160, h: 90, room: '廚房' },
   { slug: 'cookware', x: 240, y: 90, w: 160, h: 90, room: '廚房' },
   { slug: 'dehumidifier', x: 0, y: 180, w: 140, h: 120, room: '儲藏室' },
-  { slug: 'washer', x: 140, y: 180, w: 260, h: 120, room: '陽台' },
+  { slug: 'network', x: 140, y: 180, w: 100, h: 120, room: '書房' },
+  { slug: 'washer', x: 240, y: 180, w: 160, h: 120, room: '陽台' },
 ];
 ---
 <figure class="plan">
@@ -24,7 +25,8 @@ const rooms: { slug: CategorySlug; x: number; y: number; w: number; h: number; r
     <rect class="walls" x="0" y="0" width="400" height="300" />
     <line class="door" x1="100" y1="180" x2="140" y2="180" />
     <line class="door" x1="240" y1="40" x2="240" y2="70" />
-    <line class="door" x1="290" y1="180" x2="340" y2="180" />
+    <line class="door" x1="170" y1="180" x2="210" y2="180" />
+    <line class="door" x1="300" y1="180" x2="350" y2="180" />
   </svg>
   <figcaption>點房間，看那一類家電的錯誤碼、清潔與設定。</figcaption>
 </figure>

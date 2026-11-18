@@ -1,0 +1,56 @@
+---
+title: 華碩路由器怎麼換 Wi-Fi 頻道？訊號互相干擾時這樣設定
+description: 附近很多 Wi-Fi、連線常不穩時，可以手動換頻道。依華碩台灣官方 FAQ，整理華碩路由器變更 2.4GHz、5GHz 頻道的步驟與改 5GHz 頻道要注意的 DFS 選項。
+pubDate: 2026-11-18
+category: network
+kind: setting
+brands: ['華碩']
+takeaways:
+  - 很多裝置用同一個頻道會互相干擾，華碩路由器預設是自動選頻道，也可以手動改
+  - 登入 www.asusrouter.com 或路由器 IP，到「無線網路 > 一般設定」各頻段分開設定
+  - 改 5GHz 頻道前，如果有勾選「自動選擇頻道包括 DFS 頻道」，要先取消勾選才能手動選
+  - 頻道只能在網頁介面改，ASUS Router App 不能改
+  - 2.4GHz 建議用不重疊的 1、6、11 頻道
+sources:
+  - title: 華碩官方 FAQ〈[無線路由器] 如何變更無線路由器的無線網路頻道？〉
+    url: https://www.asus.com/tw/support/FAQ/1011432
+    checked: 2026-11
+  - title: 華碩官方 FAQ〈[無線路由器] 無線頻率 2.4GHz、5GHz 和 6GHz 有什麼不同？〉
+    url: https://www.asus.com/tw/support/FAQ/1044838
+    checked: 2026-11
+draft: false
+---
+import FlowFig from '../../components/figures/FlowFig.astro';
+
+## 為什麼要換頻道
+
+無線頻道是很多裝置共用的。住在公寓、附近有很多 Wi-Fi 都擠在同一個頻道時，訊號容易互相干擾，連線就會不穩。
+
+華碩路由器的頻道**預設是「自動」**，你也可以手動換成別的頻道試試看。2.4GHz 頻段華碩建議用**不重疊的 1、6、11 頻道**。
+
+## 換頻道的步驟
+
+1. 電腦連上路由器，打開瀏覽器，輸入路由器的 IP，或網址 `www.asusrouter.com`。
+2. 輸入帳號密碼登入。忘記密碼的話，要先[恢復原廠設定](/articles/asus-router-factory-reset/)再重新設定。
+3. 到「**無線網路 > 一般設定**」，2.4GHz、5GHz（有的型號還有 5GHz-2、6GHz）可以分別設定頻道。
+4. 選好頻道，按「**套用頁面設定**」儲存。
+
+<FlowFig caption="華碩路由器手動換 Wi-Fi 頻道。依華碩台灣官方 FAQ。" nodes={[
+  { icon: 'router', title: '登入 www.asusrouter.com 或路由器 IP' },
+  { icon: 'wifi', title: '無線網路 > 一般設定', note: '每個頻段分開設定' },
+  { icon: 'check', title: '選頻道，按「套用頁面設定」' },
+]} />
+
+## 改 5GHz 頻道：先關掉 DFS 自動選擇
+
+改 5GHz 頻道時，如果畫面上有「自動選擇頻道包括 DFS 頻道」的勾選，**要先取消勾選**，才能手動選頻道。華碩的範例裡，韌體 3.0.0.6.102_35404 以後（含）是在 5GHz 頻段要先取消；較舊的韌體則是 5GHz-2 頻段要先取消。
+
+DFS 頻道是和氣象雷達共用的 5GHz 頻道，部分地區才開放。
+
+## 注意
+
+- 頻道**只能在網頁介面改**，ASUS Router App 不能改。
+- 各國開放的頻道不同。即使路由器支援 6GHz，所在地區沒開放也可能連不上。
+- 不同韌體版本的畫面和選項名稱可能不一樣。
+
+換了頻道還是常斷線，也可以檢查路由器擺放位置和裝置連的頻段，見[Wi-Fi 2.4GHz、5GHz、6GHz 差在哪](/articles/wifi-2-4ghz-5ghz-6ghz/)。
