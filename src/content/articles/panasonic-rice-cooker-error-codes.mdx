@@ -1,0 +1,86 @@
+---
+title: 國際牌電子鍋 U14、U15、H01 怎麼辦？分機型看錯誤訊息與叫修前檢查
+description: 國際牌電子鍋 U14、H01 與 SR-PBA 的 U15 怎麼處理？依 Panasonic SR-PBA、SR-JMX／JMN 台灣說明書，分機型對照錯誤訊息與叫修前檢查。
+cover: ../../assets/covers/panasonic-rice-cooker-error-codes.webp
+cover_alt: 廚房檯面上的飯匙與米罐
+pubDate: 2026-11-20
+category: cooker
+kind: troubleshoot
+brands: ['Panasonic']
+takeaways:
+  - 本文兩系列顯示 U14 時，都要檢查保溫是否超過 96 小時；PBA 按「取消/關」，JMX／JMN 按「關」。
+  - SR-PBA 的 U15 要檢查外蓋與感應美味閥；感應美味閥遺失時，洽 Panasonic 直屬服務站。
+  - SR-PBA 顯示 H 後接兩位數時，試著拔插電源；再次出現就告知服務站代碼。
+  - SR-JMX／JMN 的 H01、H02、H31 未列個別意思，說明書要求聯絡服務站並告知代碼。
+sources:
+  - title: 國際牌 Panasonic《使用說明書 可變壓力IH電子鍋》SR-PBA100／SR-PBA180（RZ19TL87；0_H_26750）
+    url: https://pmst.panasonic.com.tw/PSMIOUT/DL/DLFiles/2779/0_H_26750.pdf
+    checked: 2026-11
+  - title: 國際牌 Panasonic《微電腦電子鍋 使用說明書》SR-JMX188／SR-JMN188／SR-JMN108（VS3144F；0_H_26754）
+    url: https://pmst.panasonic.com.tw/PSMIOUT/DL/DLFiles/2775/0_H_26754.pdf
+    checked: 2026-11
+draft: false
+---
+import CodeTable from '../../components/CodeTable.astro';
+import SafetyNote from '../../components/SafetyNote.astro';
+
+國際牌電子鍋顯示 **U14**，本文兩系列的說明書都要求檢查保溫是否超過 **96 小時**，再按各機型的關閉按鈕。**U15** 在 SR-PBA 系列要檢查外蓋與感應美味閥；SR-JMX／JMN 顯示 **H01、H02、H31** 則要聯絡 Panasonic 直屬服務站並告知代碼。
+
+## 適用機種
+
+- 可變壓力 IH 電子鍋：SR-PBA100、SR-PBA180，以下簡稱 PBA。
+- 微電腦電子鍋：SR-JMX188、SR-JMN188、SR-JMN108，以下簡稱 JMX／JMN。
+
+## PBA：U14、U15 與其他錯誤訊息
+
+依 PBA 說明書印刷第 27 頁整理；「意思」欄保留原廠要求檢查的項目。
+
+<CodeTable idPrefix="pba" caption="適用型號：Panasonic SR-PBA100、SR-PBA180。" rows={[
+  { code: 'U10', meaning: '檢查內鍋是否放置正確', action: '重新放好內鍋，再按「取消/關」使訊息消失。' },
+  { code: 'U12', meaning: '檢查內鍋底部、內蓋加熱板、內蓋感應器或熱感應器是否有異物、污垢；或內鍋水太多', action: '有異物、污垢時，依清洗注意事項清除後按「取消/關」。水太多時按「取消/關」，下次烹調稍微減少水量。' },
+  { code: 'U14', meaning: '檢查保溫是否超過 96 小時', action: '按「取消/關」。' },
+  { code: 'U15', meaning: '檢查外蓋是否沒關上、感應美味閥是否固定', action: '確認外蓋與感應美味閥；感應美味閥若已遺失，洽 Panasonic 直屬服務站。', pro: true },
+  { code: 'U25', meaning: '檢查底部吸氣口、排氣口是否被灰塵阻塞，或是否在地毯等物品上使用', action: '有灰塵時依下方步驟清除；請勿在底部受到阻塞的地方使用。' },
+  { code: 'H＋兩位數', meaning: '拔插電源後再次出現，即為故障訊息；未列個別代碼意思', action: '試著拔下電源插頭再插入。若再次出現，聯絡 Panasonic 直屬服務站，告知 H 後的兩位數。', pro: true },
+]} />
+
+PBA 的感應美味閥未固定時，說明書列出的情況包括：可能無法順利炊煮、液體溢出、煮好後再顯示 U15，以及保溫中的米飯變乾硬。
+
+### U12：清洗前先拔插頭、等冷卻
+
+PBA 說明書第 24～25 頁要求清洗前拔掉電源插頭，並確保本體已冷卻。內蓋感應器與熱感應器用擰乾水分的濕毛巾擦拭；本體和內蓋加熱板的密封墊不能拆下。
+
+### U25：底部有灰塵時的處理順序
+
+PBA 說明書第 26～27 頁的步驟是：
+
+1. 按「取消/關」。
+2. 拔掉電源插頭。
+3. 等電子鍋冷卻後取出內鍋。
+4. 用吸塵器清除底部吸氣口、排氣口的灰塵及異物。
+
+## JMX／JMN：U14、H01、H02、H31
+
+<CodeTable idPrefix="jmx-jmn" caption="適用型號：Panasonic SR-JMX188、SR-JMN188、SR-JMN108；說明書印刷第 17 頁。" rows={[
+  { code: 'U14', meaning: '檢查保溫是否超過 96 小時', action: '按「關」按鈕。' },
+  { code: 'H01、H02、H31', meaning: '說明書未列出各代碼意思', action: '聯絡 Panasonic 直屬服務站，告知錯誤代碼，也就是 H 後的兩位數。', pro: true },
+]} />
+
+### 沒有通電時，叫修前查什麼？
+
+JMX／JMN 說明書第 17 頁針對「沒有通電」列出以下處理：
+
+1. 拔出電源插頭。
+2. 檢查電源插座。
+
+確認後仍無法排除問題，請聯絡 Panasonic 直屬服務站檢修。
+
+## 什麼情況要找原廠／服務站
+
+- **PBA**：依錯誤訊息表處理仍未改善、感應美味閥遺失，或拔插電源後 H 訊息再次出現。
+- **JMX／JMN**：顯示 H01、H02、H31，或依「其他問題」表檢查後仍無法排除問題。
+- **本文兩系列**：發生燒焦味等異常時，停止使用、拔掉電源插頭，洽 Panasonic 直屬服務站。
+
+<SafetyNote title="修理請交給服務站">
+兩份說明書都要求不要自行修理，請洽 Panasonic 直屬服務站。
+</SafetyNote>

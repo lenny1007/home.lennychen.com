@@ -1,0 +1,103 @@
+---
+title: 象印電子鍋錯誤代碼：H01、E01、H04 怎麼辦？分機型對照
+description: 象印電子鍋 H01、E01、H04 等錯誤代碼怎麼處理？依 NW-YAF、NW-QAF、NL-EAF 台灣說明書，分機型整理原因、冷卻步驟與送修情況。
+cover: ../../assets/covers/zojirushi-rice-cooker-error-codes.webp
+cover_alt: 餐桌上兩碗剛煮好的白飯
+pubDate: 2026-11-20
+category: cooker
+kind: troubleshoot
+brands: ["象印"]
+takeaways:
+  - 三個系列的 E01、E02 都列為故障，需聯絡象印服務中心。
+  - H01、H02 是感熱器處於高溫；NW-YAF 要冷卻 60 分鐘以上，NW-QAF、NL-EAF 要 45 分鐘以上。
+  - NW-YAF、NW-QAF 的 H04 表示沒有放入內鍋，需將內鍋確實放到底部。
+  - NW-YAF 的 E17、H17 表示上蓋沒有完全關閉。
+sources:
+  - title: 象印《壓力IH炊飯電子鍋 使用說明書》NW-YAF10／NW-YAF18（文件編號／封底標記：NW-YAF ⒸⒷⒶ）
+    url: https://www.zojirushi.com.tw/downloadmanual/NW-YAF10
+    checked: 2026-11
+  - title: 象印《IH炊飯電子鍋 使用說明書》NW-QAF10／NW-QAF18（文件編號／封底標記：NW-QAF ⒸⒷⒶ）
+    url: https://www.zojirushi.com.tw/downloadmanual/NW-QAF10
+    checked: 2026-11
+  - title: 象印《微電腦炊飯電子鍋 使用說明書》NL-EAF10／NL-EAF18（文件編號／封底標記：NL-EAF ⒸⒷⒶ）
+    url: https://www.zojirushi.com.tw/downloadmanual/NL-EAF10
+    checked: 2026-11
+draft: false
+---
+import CodeTable from '../../components/CodeTable.astro';
+import SafetyNote from '../../components/SafetyNote.astro';
+
+象印電子鍋顯示 **H01、H02**，本文三個系列的說明書都寫感熱器處於高溫，要依機型冷卻；**E01、E02** 則列為故障，請聯絡象印服務中心。**H04** 在 NW-YAF、NW-QAF 是沒有放入內鍋，需確實放到底部。
+
+## 適用機種
+
+- 壓力 IH：NW-YAF10／NW-YAF18。
+- IH：NW-QAF10／NW-QAF18。
+- 微電腦：NL-EAF10／NL-EAF18。
+
+以下各表只整理該系列說明書列出的代碼，頁碼均為印刷頁碼。說明書同一張表另有「拔下插頭後顯示消失」「顯示異常」兩項，不是代碼，沒有列入。
+
+## NW-YAF：壓力 IH 錯誤代碼
+
+<CodeTable idPrefix="yaf" caption="適用：NW-YAF10／NW-YAF18，說明書第 29 頁。" rows={[
+  { code: 'E01、E02、E07', meaning: '故障；說明書未細分原因', action: '聯絡象印服務中心。', pro: true },
+  { code: 'E06', meaning: '電壓異常，為防止故障而停止動作', action: '檢查插座額定電壓，使用正確電壓或另外的插座。' },
+  { code: 'E17、H17', meaning: '上蓋沒有完全關閉', action: '依下方關蓋步驟處理。' },
+  { code: 'H01、H02', meaning: '上蓋感熱器、側面感熱器處於高溫', action: '依下方步驟冷卻 60 分鐘以上，小心燙傷。' },
+  { code: 'H04', meaning: '沒有放入內鍋', action: '將內鍋確實放到底部。' },
+]} />
+
+NW-YAF 顯示 E17、H17 時：
+
+1. 按「保溫／取消」鍵。
+2. 確認上蓋完全關閉。
+3. 再按「炊飯／再加熱」鍵。
+
+NW-YAF 的「壓力」閃爍，表示炊飯或異味清理停止後仍為加壓狀態。請等「壓力」顯示消失（約 5～10 分鐘）；閃爍時按鍵無效。
+
+## NW-QAF：IH 錯誤代碼
+
+<CodeTable idPrefix="qaf" caption="適用：NW-QAF10／NW-QAF18，說明書第 22 頁。" rows={[
+  { code: 'E01、E02、E07', meaning: '故障；說明書未細分原因', action: '聯絡象印服務中心。', pro: true },
+  { code: 'E06', meaning: '電壓異常，為防止故障而停止動作', action: '檢查插座額定電壓，使用正確電壓或另外的插座。' },
+  { code: 'H01、H02', meaning: '上蓋感熱器、側面感熱器處於高溫', action: '依下方步驟冷卻 45 分鐘以上，小心燙傷。' },
+  { code: 'H04', meaning: '沒有放入內鍋', action: '將內鍋確實放到底部。' },
+]} />
+
+## NL-EAF：微電腦錯誤代碼
+
+<CodeTable idPrefix="eaf" caption="適用：NL-EAF10／NL-EAF18，說明書第 25 頁。" rows={[
+  { code: 'E01、E02', meaning: '故障；說明書未細分原因', action: '聯絡象印服務中心。', pro: true },
+  { code: 'H01、H02', meaning: '上蓋感熱器、中心感熱器處於高溫', action: '依下方步驟冷卻 45 分鐘以上，小心燙傷。' },
+]} />
+
+## H01、H02 的冷卻步驟
+
+1. NW-YAF 按「保溫／取消」；NW-QAF、NL-EAF 按「取消」。
+2. 打開上蓋，小心燙傷。
+3. NW-YAF 冷卻 60 分鐘以上；NW-QAF、NL-EAF 冷卻 45 分鐘以上。
+
+## 沒有錯誤碼，卻覺得機器壞了
+
+### 按了不能炊飯、操作鍵失靈
+
+三個系列的「認為故障時」都列出：檢查電源插頭是否完全插入插座、本體插頭是否確實插入本體插座。炊飯操作最後還要按「炊飯／再加熱」鍵，才會開始。
+
+若是保溫燈亮著，NW-YAF（第 26 頁）也包含保溫燈閃爍的情況，依說明書操作：
+
+1. NW-YAF 按「保溫／取消」；NW-QAF、NL-EAF 按「取消」。
+2. 再按「炊飯／再加熱」。
+
+### 沒顯示完成時間、或「7:00」閃爍
+
+三個系列都說明：連續炊飯或異味清理時，本體冷卻為止不會顯示所需的大約時間，但炊飯、異味清理已正常開始，並非故障。
+
+三個系列的「7:00」閃爍時，請重新調整時間；若未更正，炊飯、保溫、異味清理中不顯示目前時間。
+
+## 什麼情況要找原廠／服務站
+
+三個系列依表處理仍未改善，或出現表內標示故障的代碼，請聯絡象印服務中心。未放內鍋就直接把米、水倒入本體內部，也要洽詢服務中心。
+
+<SafetyNote title="異常與維修請交給象印服務中心">
+三份說明書都要求：電源線與插頭異常發熱時，拔掉插頭、停止使用並聯絡服務中心；電源線損壞時停止使用並聯絡。發生異常狀況或異常聲音也要洽詢服務中心，請勿自行拆解或修理。
+</SafetyNote>

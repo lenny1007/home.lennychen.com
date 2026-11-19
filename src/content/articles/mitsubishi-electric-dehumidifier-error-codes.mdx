@@ -1,0 +1,96 @@
+---
+title: 三菱電機除濕機 P4、A6、E0 錯誤代碼怎麼辦？分機型對照
+description: 三菱除濕機 P4、A6、E0 等錯誤代碼怎麼處理？依三菱電機 MJ-EV250HM-TW、MJ-E195HM-TW、MJ-E160HN-TW 台灣說明書，分機型整理檢查方式與服務站處理時機。
+cover: ../../assets/covers/mitsubishi-electric-dehumidifier-error-codes.webp
+cover_alt: 梅雨季窗外下雨的臥室
+pubDate: 2026-11-20
+category: dehumidifier
+kind: troubleshoot
+brands: ["三菱電機"]
+takeaways:
+  - 本文三款機型顯示 P4 時，檢查出風口是否被蓋住、前置濾網是否阻塞
+  - MJ-EV250HM-TW 顯示 A2、b1～b3 時，檢查電源插頭並重新插好；Fb、FE 與 P4 同列處理
+  - 三款機型顯示 A6、A8、E0 時都列為故障，要拔下插頭並立即聯絡服務站；完整代碼範圍見分機型表格
+  - 三份說明書都要求重新插電前，拔下插頭後間隔 1 分鐘以上
+sources:
+  - title: 台灣三菱電機《除濕機 使用說明書》MJ-EV250HM-TW（文件編號 ZT936Z212H01）
+    url: https://www.mitsubishielectric.com.tw/customerservice/Downloads/Manual/MJ-EV250HM-TW_vrnvpxrp.4bh.pdf
+    checked: 2026-11
+  - title: 台灣三菱電機《除濕機 使用說明書》MJ-E195HM-TW（文件編號 ZT936Z214H03）
+    url: https://www.mitsubishielectric.com.tw/customerservice/Downloads/Manual/MJ-E195HM-TW_tla4bzso.m5y.pdf
+    checked: 2026-11
+  - title: 台灣三菱電機《除濕機 使用說明書》MJ-E160HN-TW（文件編號 ZT936Z219H01）
+    url: https://www.mitsubishielectric.com.tw/customerservice/Downloads/Manual/MJ-E160HN-TW_tk0ii1dv.stf.pdf
+    checked: 2026-11
+draft: false
+---
+import CodeTable from '../../components/CodeTable.astro';
+import SafetyNote from '../../components/SafetyNote.astro';
+
+三菱電機除濕機的 **P4**，在本文三款機型的說明書中，都要求檢查出風口是否被蓋住、前置濾網是否阻塞。若顯示 **A6、A8、E0**，三款都列為故障，請拔下電源插頭並立即聯絡服務站。其他代碼請依下方型號分表對照。
+
+## 適用機種
+
+本文只整理這三款台灣三菱電機除濕機：
+
+- **MJ-EV250HM-TW**：錯誤顯示見說明書第 31 頁。
+- **MJ-E195HM-TW**：錯誤顯示見第 31 頁。
+- **MJ-E160HN-TW**：錯誤顯示見第 23 頁。
+
+## MJ-EV250HM-TW：A2、b1～b3、P4、Fb、FE
+
+這款的錯誤顯示表分為三列。表內列為「故障」的代碼，說明書沒有逐碼解釋是哪個零件故障。
+
+**以下凡需重新插電，拔下插頭後都要間隔 1 分鐘以上。**這項提醒同樣適用後面的 MJ-E195HM-TW、MJ-E160HN-TW。
+
+<CodeTable idPrefix="ev250" caption="適用型號：三菱電機 MJ-EV250HM-TW；使用說明書第 31 頁。" rows={[
+  { code: 'A2、b1～b3', meaning: '檢查電源插頭是否確實插好。', action: '將插頭在插座上重新插好；拔下後須間隔 1 分鐘以上。' },
+  { code: 'P4、Fb、FE', meaning: '檢查出風口是否蓋住、前置濾網是否阻塞。', action: '出風口被蓋住時，移除遮蓋物並重新插好插頭；濾網阻塞時，按照「保養」方式清理，見第 28 頁。' },
+  { code: 'A6、A8、C1～C4、CA～CE、E0～E9、EA～EC、F0～F2、FC、Fd', meaning: '故障；未列出個別代碼的零件原因。', action: '拔下電源插頭，立即聯絡各服務站。', pro: true },
+]} />
+
+## MJ-E195HM-TW、MJ-E160HN-TW：P4 與故障代碼
+
+這兩款的錯誤顯示表只有下列兩列；**E 開頭列的是 E0～E8**，與 EV250HM 的 E0～E9 範圍不同。
+
+<CodeTable idPrefix="e195-e160" caption="適用型號：三菱電機 MJ-E195HM-TW（第 31 頁）、MJ-E160HN-TW（第 23 頁）。" rows={[
+  { code: 'P4', meaning: '檢查出風口是否蓋住、前置濾網是否阻塞。', action: '出風口被蓋住時，移除遮蓋物並重新插好插頭；濾網阻塞時，按「保養」方式清理。E195HM 見第 28 頁，E160HN 見第 21 頁。' },
+  { code: 'A6、A8、E0～E8、F0', meaning: '故障；未列出個別代碼的零件原因。', action: '拔下電源插頭，立即聯絡各服務站。', pro: true },
+]} />
+
+### 出風口被蓋住時，怎麼處理？
+
+以下適用三款的 P4，以及 EV250HM 的 Fb、FE：
+
+1. 移除出風口的遮蓋物。
+2. 拔下電源插頭。
+3. 間隔 1 分鐘以上。
+4. 將插頭在插座上重新插好。
+
+若檢查到的是**前置濾網阻塞**，請依各機型上述「保養」頁清理。也可延伸閱讀[除濕機濾網與水箱清潔](/articles/dehumidifier-filter-tank-cleaning/)，操作時對照文內適用機型。
+
+## 哪些現象並非故障？
+
+以下三項，三款說明書都有列出：EV250HM、E195HM 在第 30 頁，E160HN 在第 22 頁。
+
+### 吹出熱風
+
+除濕後的空氣會經過加熱器，再以暖和的風吹出；說明書註明沒有冷氣機效果，這並非故障。
+
+### 儲水箱無水、除濕量很少
+
+先確認溫度和濕度是否過低。濕度過低會降低除濕能力；冬季乾燥、濕度降低時，儲水箱不容易積存水，這並非故障。
+
+### 顯示濕度與其他濕度計不同
+
+即使在同一個房間，不同地點的濕度也會有差異。三份說明書都要求把顯示濕度視為參考值。
+
+## 什麼情況要找原廠／服務站
+
+三款機型遇到以下情況，依說明書處理：
+
+- **顯示表中列為「故障」的代碼**：拔下電源插頭，立即聯絡服務站。
+- **照表處理後異常仍無法消失**：拔下電源插頭，聯絡服務站。
+- **電源插頭或插座過熱**：停止使用，聯絡服務站。
+
+<SafetyNote>附帶的電源線損壞時，必須由製造商、其維修代理或類似具備資格的人員更換，以避免發生危險。</SafetyNote>

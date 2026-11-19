@@ -1,0 +1,119 @@
+---
+title: 三星洗衣機 4C、5C、UB、dC 怎麼辦？直立式與滾筒資訊代碼對照
+description: 三星洗衣機資訊代碼怎麼處理？依台灣說明書與客服頁分機型整理 4C、5C、Ub／UB、dC、LC 等顯示的意思、可做的檢查與聯絡客服時機。
+cover: ../../assets/covers/samsung-washer-error-codes.webp
+cover_alt: 放著摺好衣物的洗衣角落
+pubDate: 2026-11-20
+category: washer
+kind: troubleshoot
+brands: ['三星']
+takeaways:
+  - WA80F 直立式的 4C 是無法進水、5C 是無法排水、dC／dC1 是蓋板沒有完全蓋上。
+  - WA80F 的 Ub 要整理衣物；WF90F22ADSTW、WD12DB9B84GN 的 UB 可增加或重新分配衣物。
+  - LC 的排水管位置不能混用：WA80F 要末端放在地板上，WW12BB 要末端不在地板上。
+  - WA80F 顯示 1C、4C、LC 時會排水 3 分鐘，期間電源鍵無法操作。
+sources:
+  - title: 三星 Samsung 洗衣機使用說明書（直立）WA80F13S5L／WA80F13S5B／WA80F16B9B／WA80F19B9B（OID84387）
+    url: https://org.downloadcenter.samsung.com/downloadfile/ContentsFile.aspx?CDSite=UNI_TW&OriginYN=N&ModelType=N&ModelName=WA80F16B9B&CttFileID=10276264&CDCttType=UM&VPath=UM%2F202504%2F20250417191008232%2FOID84387_IB_WA6000F_BestBetter_ZH_TW_250310_250319.pdf
+    checked: 2026-11
+  - title: 三星 Samsung 洗衣機使用說明書（滾筒）WW12BB944DGB／WW12BB944DGM／WW12BB744DGW／WW12BB744DGB（DC68-04464F-01）
+    url: https://org.downloadcenter.samsung.com/downloadfile/ContentsFile.aspx?CDSite=UNI_TW&OriginYN=N&ModelType=N&ModelName=WW12BB744DGWTW&CttFileID=10393332&CDCttType=UM&VPath=UM%2F202505%2F20250515104719237%2FDC68-04464F-01_IB_B-PJT_WASHER-AD_SimpleUX_ZH-TW_250327.pdf
+    checked: 2026-11
+  - title: 三星台灣客服：WA80F19B9BTW 直立洗衣機關於資訊代碼的說明（2025-10-09）
+    url: https://www.samsung.com/tw/support/home-appliances/wa80f19b9btw-vertical-washing-machine-information-code/
+    checked: 2026-11
+  - title: 三星台灣客服：WF90F22ADSTW 滾筒洗衣機關於資訊代碼的說明（2025-09-12）
+    url: https://www.samsung.com/tw/support/home-appliances/-wf90f22adstw-front-load-washing-machine-information-code/
+    checked: 2026-11
+  - title: 三星台灣客服：WD12DB9B84GN - AI 智慧滾筒洗衣機資訊代碼說明（2025-05-13）
+    url: https://www.samsung.com/tw/support/home-appliances/wd12db9b84gn-ai-smart-drum-washing-machine-information-code-description/
+    checked: 2026-11
+  - title: 三星台灣客服：洗衣機：錯誤代碼解決方法（未標示適用機型，2024-06-03）
+    url: https://www.samsung.com/tw/support/home-appliances/what-does-the-error-code-means-and-how-to-fix-it/
+    checked: 2026-11
+draft: false
+---
+import CodeTable from '../../components/CodeTable.astro';
+import SafetyNote from '../../components/SafetyNote.astro';
+
+三星 WA80F 直立洗衣機出現 **4C 是無法進水、5C 是無法排水、dC 是蓋板沒蓋好**，先依下表檢查水龍頭、排水管或蓋板。滾筒要分型號：WW12BB 說明書有中文提示，WF90F22ADSTW、WD12DB9B84GN 客服頁則列出 4C、5C、UB 等代碼。
+
+## 適用機種
+
+- 直立式 WA80F：WA80F13S5L、WA80F13S5B、WA80F16B9B、WA80F19B9B；客服頁另指定 WA80F19B9BTW。
+- 滾筒 WW12BB：WW12BB944DGB、WW12BB944DGM、WW12BB744DGW、WW12BB744DGB。
+- 滾筒客服頁：WF90F22ADSTW、WD12DB9B84GN，見各自標示。
+
+## 直立式：4C、5C、dC、Ub
+
+<CodeTable idPrefix="wa80f" caption="適用：上述 WA80F 四款直立式及 WA80F19B9BTW。依說明書第 44～45 頁與該型號客服頁。" rows={[
+  { code: '4C', meaning: '無法進水', action: '確認水龍頭已開、水管未堵塞、水龍頭未結凍、水壓充足及冷熱水龍頭妥善連接；清潔堵塞的過濾網。' },
+  { code: '4C2', meaning: '（說明書只列處理方式）', action: '冷水進水管要牢固接在冷水龍頭；接到熱水龍頭時，某些行程可能使衣物變形。' },
+  { code: '5C', meaning: '無法排水', action: '確認排水管未凍結或彎曲、按連接類型正確擺放且平直通往排水系統；清潔堵塞的棉絮濾網。仍出現就聯絡客服。', pro: true },
+  { code: 'dC／dC1', meaning: '蓋板沒有完全蓋上', action: '關好蓋板，確認沒有衣物卡住；仍出現就聯絡客服。', pro: true },
+  { code: 'Ub', meaning: '無法脫水', action: '重新整理並攤平衣物，確認機器放在平坦、穩定的表面。' },
+  { code: 'LC', meaning: '檢查排水管', action: '確認排水管末端放在地板上，管路未堵塞；仍出現就聯絡客服。', pro: true },
+  { code: 'OC', meaning: '出現溢水', action: '脫水後重新啟動；仍出現就聯絡客服。', pro: true },
+  { code: '1C', meaning: '水位感測器異常', action: '代碼仍出現就聯絡三星客服。', pro: true },
+  { code: '9C1', meaning: '需要檢查電子控制（電壓過高錯誤）', action: '確認電源供應正常；代碼仍存在就聯絡客服。', pro: true },
+  { code: '9C2', meaning: '偵測到電壓太低', action: '檢查電源線是否已插入；代碼仍存在就聯絡客服。', pro: true },
+  { code: '3C', meaning: '檢查馬達運轉狀況', action: '嘗試重新啟動行程；問題繼續發生就聯絡客服。', pro: true },
+  { code: 'HC', meaning: '高溫加熱檢查', action: '代碼仍存在就聯絡客服。', pro: true },
+  { code: '8C', meaning: '檢查 MEMS 感測器', action: '依下列步驟重試；問題繼續發生就聯絡客服。', pro: true },
+]} />
+
+WA80F 顯示 **1C、4C、LC** 時會排水 **3 分鐘**，這期間電源鍵無法操作。8C 的重試步驟是：
+
+1. 關閉洗衣機電源。
+2. 等候 2～3 分鐘。
+3. 開啟洗衣機電源。
+4. 再試一次。
+
+## 滾筒 WW12BB：保留說明書的中文提示
+
+<CodeTable idPrefix="ww12bb" caption="僅適用：上述 WW12BB 四款滾筒。依說明書第 59～61 頁，不替中文提示另配英數代碼。" rows={[
+  { code: '檢查水龍頭並重啟', meaning: '無法進水', action: '確認水龍頭已開、水管未堵塞及水壓充足。' },
+  { code: '清潔排水濾網', meaning: '無法排水', action: '確認排水管未凍結或彎曲；清潔堵塞的棉絮過濾網。仍出現就聯絡客服。', pro: true },
+  { code: '請正確連接冷熱水管接頭', meaning: '（說明書只列處理方式）', action: '冷水進水管要牢固接在冷水龍頭；接到熱水龍頭時，某些行程衣物可能變形。' },
+  { code: '將衣物均勻擺放後重新啟動', meaning: '無法脫水', action: '整理並攤平衣物，確認機器放在平坦、穩定的表面。' },
+  { code: '關閉洗衣機門並再試一次', meaning: '機門開著時操作', action: '關好機門，確認沒有衣物卡住。' },
+  { code: 'LC／LC1', meaning: '檢查排水管', action: '確認排水管末端不在地板上，管路未堵塞；仍出現就聯絡客服。', pro: true },
+  { code: 'OC', meaning: '水溢出', action: '脫水後重新啟動；仍出現就聯絡客服。', pro: true },
+  { code: '3C', meaning: '檢查洗衣槽馬達運轉', action: '重新啟動行程；仍出現就聯絡客服。', pro: true },
+  { code: '1C／8C', meaning: '分別為水位／MEMS 感測器異常', action: '關閉洗衣機，重新啟動行程；仍出現就聯絡客服。', pro: true },
+  { code: 'HC', meaning: '高溫加熱檢查', action: '代碼仍存在就聯絡客服。', pro: true },
+  { code: 'UC', meaning: '檢查迴轉盤馬達運轉／偵測到電壓太低', action: '確認供電正常、電源線已插入；仍出現就聯絡客服。', pro: true },
+  { code: '3CP', meaning: '需要檢查電子控制', action: '嘗試重新啟動行程；仍出現就聯絡客服。', pro: true },
+  { code: 'AC', meaning: '主副控制板之間通訊異常', action: '關閉洗衣機，重新啟動行程；仍出現就聯絡客服。', pro: true },
+  { code: 'AC6', meaning: '主副變頻器控制板之間通訊異常', action: '洗衣機可能會自動回復正常；關閉洗衣機，重新啟動行程，仍出現就聯絡客服。', pro: true },
+  { code: 'DC1', meaning: '主門鎖／解鎖異常', action: '關閉洗衣機，重新啟動行程；仍出現就聯絡客服。', pro: true },
+]} />
+
+## 滾筒客服頁：4C、5C、UB、DC、DC1
+
+<CodeTable idPrefix="wf-wd" caption="僅適用：WF90F22ADSTW、WD12DB9B84GN，節錄客服頁常見的幾列；按鍵名稱分別為「開始」、「啟動」。" rows={[
+  { code: '4C', meaning: '檢查供水', action: '檢查水龍頭，再按開始／啟動重新啟動。' },
+  { code: '5C', meaning: '排水不正常', action: '清潔排水管濾網，再按開始／啟動重新啟動。' },
+  { code: '4C2', meaning: '水過熱', action: '檢查供水軟管是否正確連接，再按開始／啟動重新啟動。' },
+  { code: 'UB', meaning: '衣物不足或負載不平衡', action: '增加或重新分配衣物，再按開始／啟動重新啟動。' },
+  { code: 'DC', meaning: '機門開啟', action: '關門後再試一次。' },
+  { code: 'DC1（WD12DB9B84GN）', meaning: '機門開關未正常運作', action: '檢查機門周圍有沒有異物，關門後再試一次。' },
+  { code: 'DC1（WF90F22ADSTW）', meaning: '門開關鎖定／解鎖異常', action: '機門開啟。關上門後再試一次。客服頁同列另寫：自動打開機門無法正常運作時，關閉電源門就會打開；要使用自動打開機門，請關閉 SmartThings 中的鎖定和智慧控制。' },
+  { code: 'UB1（WF90F22ADSTW）', meaning: '偵測到防水材質衣物', action: '取出防水衣物，再按開始重新啟動。' },
+  { code: 'NC（WF90F22ADSTW）', meaning: '濾網沒有正確裝入', action: '檢查濾網是否正確裝入，再按開始重新啟動。' },
+  { code: 'LC／LC1（WD12DB9B84GN）', meaning: '檢查排水管', action: '確保排水軟管末端沒有放在地面上、排水管沒有堵塞。' },
+]} />
+
+WD12DB9B84GN 顯示 4C 後，所有按鈕會停用 3 分鐘，機器排水期間電源鍵也停用。WF90F22ADSTW 若未連接供水軟管就執行冷凝器清潔，可能顯示 5C，此時要檢查排水與供水狀態。
+
+WD12DB9B84GN 的 UC 列有「檢查波輪電機運轉」與低電壓檢測，使用者可確認供電及電源線是否插好；這項不套用到 WF90F22ADSTW。
+
+注意直立 WA80F 的 **dC1** 是「蓋板沒有完全蓋上」，滾筒的 **DC1** 在各型號意思不同，要看自己的機型。
+
+補充：未標示機型的「洗衣機：錯誤代碼解決方法」另列 **4C／4E、5C／5E、dC／dE、Ub／UE**，僅供辨識不同寫法。
+
+<SafetyNote>WA80F、WW12BB 說明書禁止自行維修、拆卸或改裝。水位感測器配線、電路及內部零件的檢修，請交給三星服務中心。</SafetyNote>
+
+## 什麼情況要找原廠／服務站
+
+WA80F、WW12BB 依表處理後，資訊代碼仍一直出現，請聯絡三星服務中心；HC 仍存在也要聯絡客服。WF90F22ADSTW、WD12DB9B84GN 若需要協助，可使用三星客服頁的線上文字客服或客服信箱。
