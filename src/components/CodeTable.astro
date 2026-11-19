@@ -2,21 +2,32 @@
 // 錯誤碼表：錯誤碼頁的主體。每列都要能在文章 frontmatter sources 列出的原廠說明書裡找到。
 // pro: true 的列代表要叫原廠或技師，會標紅。
 interface Row { code: string; meaning: string; action: string; pro?: boolean }
-interface Props { rows: Row[]; caption?: string }
-const { rows, caption } = Astro.props;
+// 每列有自己的錨點（例如 #code-e1），讀者可以直接分享某一碼。同頁有兩張表時用 idPrefix 區分。
+interface Props { rows: Row[]; caption?: string; idPrefix?: string }
+const { rows, caption, idPrefix = 'code' } = Astro.props;
+const seen = new Map<string, number>();
+const anchor = (code: string) => {
+  const base = `${idPrefix}-${code.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '') || 'dash'}`;
+  const n = (seen.get(base) ?? 0) + 1;
+  seen.set(base, n);
+  return n === 1 ? base : `${base}-${n}`;
+};
 ---
 <div class="table-wrap">
   <table class="codes">
     {caption && <caption>{caption}</caption>}
     <thead><tr><th scope="col">代碼／燈號</th><th scope="col">意思</th><th scope="col">你可以做什麼</th></tr></thead>
     <tbody>
-      {rows.map((r) => (
-        <tr class:list={{ pro: r.pro }}>
-          <th scope="row"><code>{r.code}</code></th>
+      {rows.map((r) => {
+        const id = anchor(r.code);
+        return (
+        <tr id={id} class:list={{ pro: r.pro }}>
+          <th scope="row"><a href={`#${id}`}><code>{r.code}</code></a></th>
           <td>{r.meaning}</td>
           <td>{r.pro ? <><strong>請聯絡原廠</strong>　{r.action}</> : r.action}</td>
         </tr>
-      ))}
+        );
+      })}
     </tbody>
   </table>
 </div>
@@ -26,5 +37,8 @@ const { rows, caption } = Astro.props;
   caption { text-align: left; color: var(--muted); font-size: .9rem; padding-bottom: 6px; }
   code { font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace; font-weight: 700; white-space: nowrap; }
   tbody th { background: transparent; }
+  tbody th a { color: inherit; text-decoration: none; }
+  tr { scroll-margin-top: 80px; }
+  tr:target { background: var(--rule); }
   .pro strong { color: var(--warn); }
 </style>

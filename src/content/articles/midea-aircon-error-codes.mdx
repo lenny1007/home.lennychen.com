@@ -1,0 +1,122 @@
+---
+title: 美的冷氣錯誤碼對照表（壁掛型與吊隱型，EL 01、EH 03、PC 00）
+description: 美的冷氣顯示 EL 01、EH 03、PC 00、dF、cF 等代碼時，依臺灣美的官方錯誤碼表分壁掛型與吊隱型對照；哪些是功能運轉中不是故障、哪些要報修。
+pubDate: 2026-11-19
+category: aircon
+kind: troubleshoot
+brands: ['美的']
+takeaways:
+  - 臺灣美的壁掛型與吊隱型的錯誤碼不完全相同，先確認室內機是哪一種再查表。
+  - cF（暖房防冷風）、dF（暖房除霜）、SC／CL（乾燥防霉、自潔淨）是功能執行中的顯示，功能停止就會熄滅，不是故障。
+  - FC 是有人按了應急鍵、進入強制冷房，也不是故障。
+  - EL 01 是室內、外機通信異常，EL 0C 是冷媒洩漏，PC 開頭是室外機的保護，都要記下代碼報修。
+sources:
+  - title: 臺灣美的 美的冷氣室內壁掛型錯誤碼（官方錯誤碼表 PDF）
+    url: https://www.midea.com/content/dam/midea-aem/tw/test-商品圖/download/Indoorunit-error-code.pdf
+    checked: 2026-11
+  - title: 臺灣美的 美的冷氣吊隱型送風機錯誤碼（官方錯誤碼表 PDF）
+    url: https://www.midea.com/content/dam/midea-aem/tw/test-商品圖/download/FCU-error-code.pdf
+    checked: 2026-11
+draft: false
+---
+import CodeTable from '../../components/CodeTable.astro';
+import SafetyNote from '../../components/SafetyNote.astro';
+
+美的冷氣的錯誤碼大多是兩個英文字加兩碼，例如 **EL 01**、**EH 03**、**PC 00**。臺灣美的把**壁掛型**和**吊隱型**分成兩張表，兩種的代碼不完全相同，先看你家室內機是掛在牆上的壁掛型，還是藏在天花板裡、只露出出風口的吊隱型。
+
+## 先分辨：功能運轉中的代碼不是故障
+
+壁掛型錯誤碼表寫到，機器在執行某些功能時，溫度顯示器會顯示對應代碼，**功能停止後就會熄滅，不是故障**：
+
+- **cF**：暖房防冷風功能。
+- **dF**：暖房除霜功能。
+- **SC、CL**：乾燥防霉、自潔淨功能執行中。
+- **FC**：按了應急鍵，進入「強制冷房」。吊隱型的表也註明 FC 是按壓顯示盒上的應急鍵進入強制冷房，屬非故障。
+
+這些功能實際會不會執行，以各機種為準。
+
+## 代碼開頭怎麼看
+
+壁掛型錯誤碼表的代號說明：**E** 是錯誤、**P** 是保護、**F** 是故障，**H** 是室內、**C** 是室外，**L** 是其他（另一處也用 L 表示限頻）。
+
+照這個說明對照，EH 開頭的代碼都是室內機項目，EC 開頭的都是室外機項目，PC 開頭的是保護。
+
+## 壁掛型錯誤碼對照表
+
+<CodeTable idPrefix="wall" caption="適用：臺灣美的壁掛型室內機。取自臺灣美的官方「美的冷氣室內壁掛型錯誤碼」表，表上沒有列出個別型號。" rows={[
+  { code: 'EC 07', meaning: '室外風速異常', action: '記下代碼報修。', pro: true },
+  { code: 'EC 51', meaning: '室外 IC（EEPROM）參數讀取異常', action: '記下代碼報修。', pro: true },
+  { code: 'EC 52', meaning: '室外熱交換器管溫感溫器異常', action: '記下代碼報修。', pro: true },
+  { code: 'EC 53', meaning: '室外環境感溫器異常', action: '記下代碼報修。', pro: true },
+  { code: 'EC 54', meaning: '室外壓縮機吐出管感溫器異常', action: '記下代碼報修。', pro: true },
+  { code: 'EC 56', meaning: '蒸發器出口管感溫器異常（位於一對多外機上）', action: '記下代碼報修。', pro: true },
+  { code: 'EH 00', meaning: '室內 IC（EEPROM）異常', action: '記下代碼報修。', pro: true },
+  { code: 'EH 02', meaning: '室內馬達過零檢測異常', action: '記下代碼報修。', pro: true },
+  { code: 'EH 03', meaning: '室內風速異常', action: '記下代碼報修。', pro: true },
+  { code: 'EH 0A', meaning: '室內 IC（EEPROM）參數讀取異常', action: '記下代碼報修。', pro: true },
+  { code: 'EH 0b', meaning: '室內機主控板與顯示板通訊異常', action: '記下代碼報修。', pro: true },
+  { code: 'EH 60', meaning: '室內環境感溫器異常', action: '記下代碼報修。', pro: true },
+  { code: 'EH 61', meaning: '室內熱交換器管溫感溫器異常', action: '記下代碼報修。', pro: true },
+  { code: 'EL 01', meaning: '室內、外機通信異常', action: '記下代碼報修。', pro: true },
+  { code: 'EL 0C', meaning: '冷媒洩漏（一對一機型、冷房模式）', action: '記下代碼報修，不要自己處理冷媒。', pro: true },
+  { code: 'PC 00', meaning: 'IPM（智能電源模組）保護或異常', action: '記下代碼報修。', pro: true },
+  { code: 'PC 01', meaning: '電壓異常（過電壓、欠電壓）', action: '記下代碼報修。', pro: true },
+  { code: 'PC 02', meaning: '壓縮機頂部溫度保護（IPM 模組溫度保護）', action: '記下代碼報修。', pro: true },
+  { code: 'PC 03', meaning: '壓縮機低壓保護', action: '記下代碼報修。', pro: true },
+  { code: 'PC 04', meaning: '壓縮機失速／轉子檢知異常', action: '記下代碼報修。', pro: true },
+  { code: 'PC 08', meaning: '過電流保護', action: '記下代碼報修。', pro: true },
+  { code: 'PC 0L', meaning: '室外溫度過低保護', action: '記下代碼報修。', pro: true },
+  { code: 'cF', meaning: '暖房防冷風功能', action: '不是故障，功能停止就會熄滅。' },
+  { code: 'dF', meaning: '暖房除霜功能', action: '不是故障，功能停止就會熄滅。' },
+  { code: 'FC', meaning: '按壓應急鍵進入「強制冷房」', action: '不是故障。' },
+  { code: 'SC、CL', meaning: '乾燥防霉及自潔淨功能執行中', action: '不是故障，功能停止就會熄滅。' },
+]} />
+
+壁掛型的表另外列了一項「內機運轉模式衝突（搭配一對多冷暖外機時）」，旁邊標示「- -」；吊隱型的表則明確寫「- -」是運轉模式衝突。遇到時記下顯示內容，聯絡原廠確認。
+
+## 吊隱型錯誤碼對照表
+
+吊隱型多了幾個代碼，例如水位警示 EH 0E、線控器通信 EH b3，以及更多室外機保護（PC 06、PC 0A、PC 0F、PH 90、PH 91）。同一個代碼在兩張表的寫法略有不同，以你家機型那張為準。
+
+<CodeTable idPrefix="fcu" caption="適用：臺灣美的吊隱型送風機。取自臺灣美的官方「美的冷氣吊隱型送風機錯誤碼」表，表上沒有列出個別型號。" rows={[
+  { code: 'EC 07', meaning: '室外風速異常', action: '記下代碼報修。', pro: true },
+  { code: 'EC 51', meaning: '室外 IC（EEPROM）異常（參數讀取異常）', action: '記下代碼報修。', pro: true },
+  { code: 'EC 52', meaning: '室外熱交換器感溫器異常', action: '記下代碼報修。', pro: true },
+  { code: 'EC 53', meaning: '室外環境感溫器異常', action: '記下代碼報修。', pro: true },
+  { code: 'EC 54', meaning: '室外壓縮機吐出感溫器異常', action: '記下代碼報修。', pro: true },
+  { code: 'EC 56', meaning: '蒸發器出口管感溫器異常（位於一對多外機上）', action: '記下代碼報修。', pro: true },
+  { code: 'EH 00', meaning: '室內 IC（EEPROM）異常（參數讀取異常）', action: '記下代碼報修。', pro: true },
+  { code: 'EH 03', meaning: '室內風速異常', action: '記下代碼報修。', pro: true },
+  { code: 'EH 0b', meaning: '室內機主板與顯示板通信異常', action: '記下代碼報修。', pro: true },
+  { code: 'EH 0E', meaning: '水位警示（「CN5」插座短接線開路或未短接）', action: '記下代碼報修。', pro: true },
+  { code: 'EH 60', meaning: '室內環境感溫器異常', action: '記下代碼報修。', pro: true },
+  { code: 'EH 61', meaning: '室內熱交換器感溫器異常', action: '記下代碼報修。', pro: true },
+  { code: 'EH b3', meaning: '線控器與控制主板通信異常', action: '記下代碼報修。', pro: true },
+  { code: 'EL 01', meaning: '室內、外機通信異常', action: '記下代碼報修。', pro: true },
+  { code: 'EL 0C', meaning: '冷媒洩漏', action: '記下代碼報修，不要自己處理冷媒。', pro: true },
+  { code: 'PC 00', meaning: '室外 IPM（智能電源模組）保護或異常', action: '記下代碼報修。', pro: true },
+  { code: 'PC 01', meaning: '電壓異常（過電壓、欠電壓）', action: '記下代碼報修。', pro: true },
+  { code: 'PC 02', meaning: '壓縮機頂部溫度保護／IPM 模組高溫保護', action: '記下代碼報修。', pro: true },
+  { code: 'PC 03', meaning: '室外高壓／低壓壓力保護', action: '記下代碼報修。', pro: true },
+  { code: 'PC 04', meaning: '壓縮機失速／轉子檢知異常', action: '記下代碼報修。', pro: true },
+  { code: 'PC 06', meaning: '室外壓縮機排氣高溫保護', action: '記下代碼報修。', pro: true },
+  { code: 'PC 08', meaning: '室外機過電流保護', action: '記下代碼報修。', pro: true },
+  { code: 'PC 0A', meaning: '冷凝器高溫保護', action: '記下代碼報修。', pro: true },
+  { code: 'PC 0F', meaning: '室外 PFC／IGBT 保護或異常', action: '記下代碼報修。', pro: true },
+  { code: 'PC 0L', meaning: '室外環境溫度過低保護', action: '記下代碼報修。', pro: true },
+  { code: 'PH 90', meaning: '蒸發器高溫保護', action: '記下代碼報修。', pro: true },
+  { code: 'PH 91', meaning: '蒸發器低溫保護', action: '記下代碼報修。', pro: true },
+  { code: '- -', meaning: '運轉模式衝突（一對多冷暖機）', action: '記下代碼，聯絡原廠確認。', pro: true },
+  { code: 'CP', meaning: '「J7」短接線開路或未短接', action: '記下代碼報修。', pro: true },
+  { code: 'FC', meaning: '按壓顯示盒上應急鍵，系統進入「強制冷房」', action: '非故障。' },
+]} />
+
+兩張官方表都只寫代碼意思，沒有寫處理步驟，所以除了標明「不是故障」的代碼，其他都標成找原廠。表中的插座、短接線是機器內部的配線，**不要自己拆開檢查**。
+
+<SafetyNote>冷媒、電路、壓縮機相關的代碼都要由原廠或合格技師處理，不要自己拆機或量電。</SafetyNote>
+
+## 報修前準備
+
+- 記下**完整代碼**（例如 EL 01，不要只記 EL），以及室內機與室外機貼紙上的**型號**。
+- 先說清楚是壁掛型還是吊隱型，同一個代碼兩種的意思可能有差。
+- 聯絡當初安裝的經銷商或臺灣美的客服。
