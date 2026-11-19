@@ -1,0 +1,157 @@
+---
+title: 聲寶冷氣故障代碼對照表（壁掛變頻 PF、NF、SF、QC、PC 系列）
+description: 聲寶分離式壁掛冷氣顯示數字或英文故障代碼時，依聲寶技術資訊站官方查詢，分系列對照代碼意思；同一個代碼在不同系列意思不同。
+cover: ../../assets/covers/sampo-aircon-error-codes.webp
+cover_alt: 書桌上的茶與書
+pubDate: 2026-11-19
+category: aircon
+kind: troubleshoot
+brands: ['聲寶']
+takeaways:
+  - 聲寶冷氣同一個代碼在不同系列意思不同，例如「1」在壁掛 PF、NF 是室外銅管溫度感測器故障，在 SF 是室外盤管溫度感測器故障，先確認系列。
+  - 壁掛 PF、NF、SF 系列用數字代碼（1～41）加 EA；QC22～80、CF、DF、MF 系列用 E、F、P 開頭；PC22～80DC1 用兩位數字（另有 8A）。
+  - 官方說明多是給維修技師看的檢修方式，使用者能做的是記下代碼和型號，聯絡聲寶客服。
+  - 聲寶客服中心電話 0800-00-5438。
+sources:
+  - title: 聲寶技術資訊站 故障代碼查詢（空調：壁掛 PF／NF／SF／QC／CF／DF／MF／PC 變頻系列）
+    url: https://sampo-errorcode.com.tw/
+    checked: 2026-11
+draft: false
+---
+import CodeTable from '../../components/CodeTable.astro';
+import SafetyNote from '../../components/SafetyNote.astro';
+
+聲寶冷氣室內機顯示數字或英文代碼，要**先確認是哪個系列**再查表。聲寶官方的「聲寶技術資訊站」按系列列出故障代碼，同一個代碼在不同系列的意思不一樣。這頁整理分離式**壁掛變頻**的幾個系列。
+
+## 先看你家是哪個系列
+
+先從機身型號確認是哪個系列，聲寶技術資訊站依系列分成：
+
+- **PF、NF、SF 系列**：代碼是數字（1、2、6、7、8…41）和 EA。
+- **QC22～80、CF、DF、MF 系列**：代碼是 E、F、P 開頭加一個數字或字母，例如 E1、F0、P1。
+- **PC 變頻 PC22～80DC1**：代碼多是兩位數字，例如 05、36，另有 8A。
+
+窗型、吊隱式、一對多的代碼又不一樣，請到聲寶技術資訊站選「空調」和你的系列查詢。
+
+## 處理方式：記下代碼找聲寶
+
+聲寶技術資訊站的說明是寫給維修技師的，內容是量電壓、換機板這類檢修，頁首也寫明「非修理技術人員請勿自行拆解及修理，維修請洽聲寶服務中心」。所以下面的表只整理代碼意思，處理方式一律是**記下代碼和型號，聯絡聲寶客服**。
+
+## 壁掛 PF、NF 變頻系列
+
+<CodeTable idPrefix="pf-nf" caption="適用：聲寶壁掛 PF 變頻系列、壁掛 NF 變頻系列（技術資訊站標示「全系列」）。意思照聲寶技術資訊站「故障內容」原文；代碼 20 原文寫「室外室外馬達…」，本站刪去重複字。" rows={[
+  { code: '1', meaning: '室外銅管溫度感測器故障', action: '記下代碼報修。', pro: true },
+  { code: '2', meaning: '壓縮機排氣溫度感測器故障', action: '記下代碼報修。', pro: true },
+  { code: '6', meaning: '交流電壓過欠壓保護', action: '記下代碼報修。', pro: true },
+  { code: '7', meaning: '室內室外通訊故障', action: '記下代碼報修。', pro: true },
+  { code: '8', meaning: '電流超載保護', action: '記下代碼報修。', pro: true },
+  { code: '11', meaning: '室外E2PROM故障', action: '記下代碼報修。', pro: true },
+  { code: '12', meaning: '室外環境溫度過低保護', action: '記下代碼報修。', pro: true },
+  { code: '13', meaning: '壓縮機排氣溫度過高保護', action: '記下代碼報修。', pro: true },
+  { code: '14', meaning: '室外環境溫度感測器故障', action: '記下代碼報修。', pro: true },
+  { code: '16', meaning: '室內冷氣防凍結或暖氣超載保護', action: '記下代碼報修。', pro: true },
+  { code: '17', meaning: '室外機PFC保護', action: '記下代碼報修。', pro: true },
+  { code: '18', meaning: '直流壓縮機啟動失敗', action: '記下代碼報修。', pro: true },
+  { code: '19', meaning: '壓縮機驅動故障', action: '記下代碼報修。', pro: true },
+  { code: '20', meaning: '室外馬達故障或堵轉保護', action: '記下代碼報修。', pro: true },
+  { code: '21', meaning: '冷氣室外過載保護', action: '記下代碼報修。', pro: true },
+  { code: '22', meaning: '壓縮機預加熱狀態', action: '記下代碼報修。', pro: true },
+  { code: '33', meaning: '室內環境溫度感測器故障', action: '記下代碼報修。', pro: true },
+  { code: '34', meaning: '室內盤管溫度感測器故障', action: '記下代碼報修。', pro: true },
+  { code: '36', meaning: '室內外機通訊故障', action: '記下代碼報修。', pro: true },
+  { code: '38', meaning: '室內E2PROM故障', action: '記下代碼報修。', pro: true },
+  { code: '39', meaning: '室內馬達故障', action: '記下代碼報修。', pro: true },
+  { code: '41', meaning: '室內過零檢測故障', action: '記下代碼報修。', pro: true },
+  { code: 'EA', meaning: '室內板與顯示板通訊故障', action: '記下代碼報修。', pro: true },
+]} />
+
+## 壁掛 SF 變頻系列
+
+SF 系列多數代碼和 PF、NF 相同，但 1、17、19 的寫法略有不同，例如「1」是室外盤管溫度感測器故障。
+
+<CodeTable idPrefix="sf" caption="適用：聲寶壁掛 SF 變頻系列（技術資訊站標示「全系列」）。意思照聲寶技術資訊站「故障內容」原文。" rows={[
+  { code: '1', meaning: '室外盤管溫度感測器故障', action: '記下代碼報修。', pro: true },
+  { code: '2', meaning: '壓縮機排氣溫度感測器故障', action: '記下代碼報修。', pro: true },
+  { code: '6', meaning: '交流電壓過欠壓保護', action: '記下代碼報修。', pro: true },
+  { code: '7', meaning: '室內室外通訊故障', action: '記下代碼報修。', pro: true },
+  { code: '8', meaning: '電流超載保護', action: '記下代碼報修。', pro: true },
+  { code: '11', meaning: '室外E2PROM故障', action: '記下代碼報修。', pro: true },
+  { code: '12', meaning: '室外環境溫度過低保護', action: '記下代碼報修。', pro: true },
+  { code: '13', meaning: '壓縮機排氣溫度過高保護', action: '記下代碼報修。', pro: true },
+  { code: '14', meaning: '室外環境溫度感測器故障', action: '記下代碼報修。', pro: true },
+  { code: '16', meaning: '室內冷氣防凍結或暖氣超載保護', action: '記下代碼報修。', pro: true },
+  { code: '17', meaning: '室外PFC保護', action: '記下代碼報修。', pro: true },
+  { code: '18', meaning: '直流壓縮機啟動失敗', action: '記下代碼報修。', pro: true },
+  { code: '19', meaning: '驅動故障', action: '記下代碼報修。', pro: true },
+  { code: '20', meaning: '室外馬達故障或堵轉保護', action: '記下代碼報修。', pro: true },
+  { code: '21', meaning: '冷氣室外過載保護', action: '記下代碼報修。', pro: true },
+  { code: '22', meaning: '壓縮機預加熱狀態', action: '記下代碼報修。', pro: true },
+  { code: '33', meaning: '室內環境溫度感測器故障', action: '記下代碼報修。', pro: true },
+  { code: '34', meaning: '室內盤管溫度感測器故障', action: '記下代碼報修。', pro: true },
+  { code: '36', meaning: '室內外機通訊故障', action: '記下代碼報修。', pro: true },
+  { code: '38', meaning: '室內E2PROM故障', action: '記下代碼報修。', pro: true },
+  { code: '39', meaning: '室內馬達故障', action: '記下代碼報修。', pro: true },
+  { code: '41', meaning: '室內過零檢測故障', action: '記下代碼報修。', pro: true },
+  { code: 'EA', meaning: '室內板與顯示板通訊故障', action: '記下代碼報修。', pro: true },
+]} />
+
+## 壁掛 QC22～80、CF、DF、MF 變頻系列
+
+<CodeTable idPrefix="qc" caption="適用：聲寶壁掛 QC 變頻系列 QC22-80D/DC、壁掛 CF、DF、MF 變頻系列（後三者技術資訊站標示「全系列」）。QC93～110D 是另一套代碼，不適用本表。" rows={[
+  { code: 'E0', meaning: '室內EEPROM錯誤', action: '記下代碼報修。', pro: true },
+  { code: 'E1', meaning: '室内外機通訊異常', action: '記下代碼報修。', pro: true },
+  { code: 'E3', meaning: '室内馬達異常', action: '記下代碼報修。', pro: true },
+  { code: 'E4', meaning: '室内氣溫檢知異常', action: '記下代碼報修。', pro: true },
+  { code: 'E5', meaning: '室内銅管檢知異常', action: '記下代碼報修。', pro: true },
+  { code: 'EC', meaning: '室內銅管溫度過低', action: '記下代碼報修。', pro: true },
+  { code: 'F0', meaning: '過電流保護', action: '記下代碼報修。', pro: true },
+  { code: 'F1', meaning: '室外氣溫異常', action: '記下代碼報修。', pro: true },
+  { code: 'F2', meaning: '室外銅管溫度異常', action: '記下代碼報修。', pro: true },
+  { code: 'F3', meaning: '壓縮機溫檢知異常', action: '記下代碼報修。', pro: true },
+  { code: 'F4', meaning: '室外EEPROM錯誤', action: '記下代碼報修。', pro: true },
+  { code: 'F5', meaning: '室外馬達異常', action: '記下代碼報修。', pro: true },
+  { code: 'P0', meaning: 'IPM保護', action: '記下代碼報修。', pro: true },
+  { code: 'P1', meaning: '過欠壓保護', action: '記下代碼報修。', pro: true },
+  { code: 'P2', meaning: '壓縮機溫度保護', action: '記下代碼報修。', pro: true },
+  { code: 'P3', meaning: '室外氣溫過低保護', action: '記下代碼報修。', pro: true },
+  { code: 'P4', meaning: '壓縮機轉子保護', action: '記下代碼報修。', pro: true },
+  { code: 'P6', meaning: 'DC電壓過低', action: '記下代碼報修。', pro: true },
+]} />
+
+## 壁掛 PC 變頻 PC22～80DC1
+
+<CodeTable idPrefix="pc" caption="適用：聲寶壁掛 PC 變頻系列 PC22-80DC1。意思照聲寶技術資訊站「故障內容」原文。" rows={[
+  { code: '01', meaning: '室內溫度感溫器短斷路故障', action: '記下代碼報修。', pro: true },
+  { code: '02', meaning: '室內熱交溫度感溫器短斷路故障', action: '記下代碼報修。', pro: true },
+  { code: '03', meaning: '室內熱交換器結冰', action: '記下代碼報修。', pro: true },
+  { code: '04', meaning: '暖房過載保護', action: '記下代碼報修。', pro: true },
+  { code: '05', meaning: '室內外機通訊不良', action: '記下代碼報修。', pro: true },
+  { code: '06', meaning: '四路閥吸合異常', action: '記下代碼報修。', pro: true },
+  { code: '08', meaning: '室内馬達檢知異常', action: '記下代碼報修。', pro: true },
+  { code: '31', meaning: '室外溫度感溫器短斷路故障', action: '記下代碼報修。', pro: true },
+  { code: '32', meaning: '室外熱交溫度感溫器短斷路故障', action: '記下代碼報修。', pro: true },
+  { code: '33', meaning: '壓縮機過熱或排氣溫度感溫器故障', action: '記下代碼報修。', pro: true },
+  { code: '34', meaning: '直流壓縮機反饋故障', action: '記下代碼報修。', pro: true },
+  { code: '35', meaning: '外機通訊故障', action: '記下代碼報修。', pro: true },
+  { code: '36', meaning: '過電流保護', action: '記下代碼報修。', pro: true },
+  { code: '37', meaning: '無負載保護', action: '記下代碼報修。', pro: true },
+  { code: '38', meaning: '電壓過高或過低保護', action: '記下代碼報修。', pro: true },
+  { code: '39', meaning: '直流壓縮機啓動失敗', action: '記下代碼報修。', pro: true },
+  { code: '40', meaning: '過負荷保護', action: '記下代碼報修。', pro: true },
+  { code: '42', meaning: 'IPM保護', action: '記下代碼報修。', pro: true },
+  { code: '43', meaning: 'EEPROM ERROR', action: '記下代碼報修。', pro: true },
+  { code: '45', meaning: '室外馬達異常', action: '記下代碼報修。', pro: true },
+  { code: '46', meaning: '直流壓縮機失速保護', action: '記下代碼報修。', pro: true },
+  { code: '47', meaning: '壓縮機過熱保護', action: '記下代碼報修。', pro: true },
+  { code: '48', meaning: 'IPM感溫器短路故障', action: '記下代碼報修。', pro: true },
+  { code: '8A', meaning: '室外環境溫度過低保護', action: '記下代碼報修。', pro: true },
+  { code: '91', meaning: '室外基板與驅動板通訊異常', action: '記下代碼報修。', pro: true },
+  { code: '92', meaning: '室外機PFC保護', action: '記下代碼報修。', pro: true },
+]} />
+
+<SafetyNote>冷媒、電路、壓縮機相關的代碼都要由原廠或合格技師處理，不要自己拆機或量電。</SafetyNote>
+
+## 報修前準備
+
+- 記下**代碼**和室內機、室外機貼紙上的**型號**。
+- 聲寶技術資訊站列的聯絡窗口是聲寶客服中心，電話 **0800-00-5438**。

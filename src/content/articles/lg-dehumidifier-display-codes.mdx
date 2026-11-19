@@ -1,0 +1,73 @@
+---
+title: LG 除濕機顯示 dF、CL、Lo、Hi 是什麼意思？不是故障的代碼對照
+description: LG 除濕機面板顯示 dF、CL、Lo、Hi 或 [O 時，依 LG 台灣官方支援文章與使用手冊說明：dF 是除霜、CL 是兒童鎖，都不是故障；產生其他錯誤代碼要聯絡 LG 服務中心。
+cover: ../../assets/covers/lg-dehumidifier-display-codes.webp
+cover_alt: 雨天窗邊的閱讀椅
+pubDate: 2026-11-19
+category: dehumidifier
+kind: troubleshoot
+brands: ['LG']
+takeaways:
+  - dF 是除霜運轉：室內溫度低、熱交換器結霜時自動除霜，這時壓縮機不運轉，除霜結束後再選模式。
+  - CL 是兒童鎖已啟用，不是錯誤代碼；解除方法依機型年份不同，例如 2024 年後的機型按住濕度向上（▲）3 秒。
+  - DD121MWE0、DD121MWK0、DD141MWE0、DD161MWE0：室內濕度低於 20% 顯示 Lo，高於 90% 顯示 Hi。
+  - LG 台灣使用手冊沒有列其他錯誤代碼的意思，只寫產生錯誤代碼時請立即聯絡服務中心。
+sources:
+  - title: LG 台灣 支援資料庫：【除濕機】代碼：dF
+    url: https://www.lg.com/tw/support/product-support/troubleshoot/help-library/cs-CT30003841-20152911471153/
+    checked: 2026-11
+  - title: LG 台灣 支援資料庫：[LG 除濕機]「CL」代碼是什麼意思？如何修復無反應按鈕
+    url: https://www.lg.com/tw/support/product-support/troubleshoot/help-library/cs-doc-20155118509737-tw-LGETT/
+    checked: 2026-11
+  - title: LG 除濕機使用手冊 DD121MWE0、DD121MWK0、DD141MWE0、DD161MWE0（MFL72146401，Rev.00）
+    url: https://gscs-b2c.lge.com/open/downloadFile?fileId=0eFQAydkjHZV7VsREvsR9A
+    checked: 2026-11
+  - title: LG 除濕機使用手冊 MD191QCE0、MD191QEE0（MFL68026046，Rev.01）
+    url: https://gscs-b2c.lge.com/open/downloadFile?fileId=j0GIxqoK7k0iHvPCyJyQ
+    checked: 2026-11
+  - title: LG 除濕機使用手冊 WD261VKF0（MFL68026050，Rev.03）
+    url: https://gscs-b2c.lge.com/open/downloadFile?fileId=KQXOQAMvnWazns1IwoObIw
+    checked: 2026-11
+  - title: LG 除濕機電子使用手冊（MD161QPK3、DD121QWK0 支援頁，MFL05902201）
+    url: http://gscs-manual.lge.com/DLZ/MFL05902201/zh-tw/main.html
+    checked: 2026-11
+draft: false
+---
+import CodeTable from '../../components/CodeTable.astro';
+import SafetyNote from '../../components/SafetyNote.astro';
+
+LG 除濕機面板上的 **dF** 是自動除霜、**CL** 是兒童鎖，兩個都不是故障。**Lo、Hi** 是濕度超出顯示範圍，**[O** 是設定或運行自動乾燥、自動清潔時的顯示。除了這些，面板出現其他錯誤代碼時，LG 台灣的使用手冊只寫「請立即聯絡服務中心」，沒有列出代碼意思。
+
+## 面板顯示對照表
+
+<CodeTable caption="適用：LG 台灣除濕機。dF、CL 取自 LG 台灣支援文章與多本使用手冊；Lo、Hi 只見於 DD121MWE0、DD121MWK0、DD141MWE0、DD161MWE0 手冊（MFL72146401）。" rows={[
+  { code: 'dF', meaning: '除霜運轉：室內溫度低、熱交換器結霜時自動除霜，壓縮機暫停運轉', action: '不是故障。除霜運轉結束後再選擇模式。有加裝濾網的要定期清潔濾網。' },
+  { code: 'CL', meaning: '兒童鎖已啟用，只有電源鍵有反應', action: '不是故障。依機型年份解除，見下一段。' },
+  { code: 'Lo', meaning: '室內濕度低於 20%', action: '不是故障，是濕度低於顯示範圍。' },
+  { code: 'Hi', meaning: '室內濕度高於 90%', action: '不是故障，是濕度高於顯示範圍。' },
+  { code: '[O', meaning: '設定或運行自動乾燥、自動清潔功能時顯示', action: '不是故障。手冊寫按住模式按鈕 3 秒可以關閉。' },
+  { code: '其他錯誤代碼', meaning: 'LG 台灣使用手冊未列意思', action: '手冊寫：智慧診斷時產生錯誤代碼，請立即聯絡服務中心。', pro: true },
+]} />
+
+## CL 兒童鎖怎麼解除
+
+LG 台灣的支援文章依機型年份分成四種，看控制面板長得像哪一種：
+
+- **2024 年及更新的機型**：按住「濕度向上（▲）」3 秒。
+- **2020～2023 年機型**：按住「鎖定」按鈕 3 秒。
+- **2017～2019 年機型**：按住「離子器」按鈕 3 秒。
+- **2013～2017 年機型**：同時按住「濕度向上（▲）」和「高速風扇」3 秒。
+
+2012 年以前製造的機型不支援兒童鎖。MD191QEE0、WD261VKF0 等機型的手冊寫的是按住「奈米離子」按鈕 3 秒設定或解除鎖定，請以你那台的手冊為準。
+
+按住 3 秒還是解不開，支援文章建議：用軟布擦乾淨控制面板（觸控感應器沾到髒汙會沒反應），拔掉電源等 5 分鐘再插回，然後再試一次。
+
+## dF 一直出現怎麼辦
+
+dF 是天冷時的正常除霜，除霜時壓縮機會停，除濕暫時停下來。LG 支援文章另外提醒：有加裝濾網的話要定期清潔，灰塵髒汙會讓循環變差。清過濾網還是常出現、或一直不除濕，就聯絡 LG 客服。
+
+<SafetyNote>dF、CL、Lo、Hi 以外的錯誤代碼請交給 LG 服務中心，不要自己拆機。</SafetyNote>
+
+## 聯絡 LG
+
+LG 台灣官網「支援」頁有線上客服、電話與線上申請維修。打電話前記下面板上的代碼和機身型號。
