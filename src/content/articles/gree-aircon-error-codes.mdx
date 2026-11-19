@@ -1,0 +1,130 @@
+---
+title: 格力冷氣故障代碼對照表（E1、F1、H1、C2 是什麼意思）
+description: 格力冷氣顯示 E1、E6、F1、H1、C2 等代碼時，對照臺灣格力官網整理的家用冷氣代碼意思；H1 是除霜不是故障，其他代碼記下來報修。
+pubDate: 2026-11-19
+category: aircon
+kind: troubleshoot
+brands: ['格力']
+takeaways:
+  - 臺灣格力官網的家用冷氣代碼表共 64 個代碼，E 開頭多是系統保護，F 開頭多是感溫包開路短路或降頻。
+  - H1 是除霜，不是故障，不要關機，除霜完會自己恢復運轉。
+  - C1～C4 是故障電弧、漏電、接錯線、無地線，屬於電路問題，不要自己動手，請原廠處理。
+  - 遙控器按了沒反應，先看電池電量、正負極，再確認是不是開了童鎖。
+sources:
+  - title: 臺灣格力 常見問答（家用）：家用空調常見顯示故障代碼含義、H1是什麼意思、空調顯示「除霜」是什麼原因、為什麼按遙控器按鍵無反應（官網 FAQ）
+    url: https://www.gree.com.tw/qa.php
+    checked: 2026-11
+  - title: 臺灣格力 客戶服務（報修服務、服務據點）
+    url: https://www.gree.com.tw/service.php
+    checked: 2026-11
+draft: false
+---
+import CodeTable from '../../components/CodeTable.astro';
+import SafetyNote from '../../components/SafetyNote.astro';
+
+格力冷氣面板出現英文加數字的代碼，先對照下面的表。**H1 是除霜，不是故障**，不要關機，除霜完會自己恢復。其他代碼臺灣格力只寫了意思、沒有寫使用者可以怎麼修，記下代碼和室內機型號，交給格力報修。
+
+## 先分辨：除霜不是故障
+
+冬天開暖氣時，面板顯示 **H1** 或「除霜」：
+
+- 官網說 H1 是**智能除霜提示，並非故障，請不要關機**，除霜完畢會自動恢復運轉。
+- 顯示「除霜」也一樣是正常現象。開暖氣時會「暖氣、除霜、暖氣、除霜」不斷循環，除霜完就會恢復制熱。
+
+## 遙控器按了沒反應
+
+這不是冷氣的故障代碼，官網列了三項檢查：
+
+1. 電池電量夠不夠。
+2. 電池正負極有沒有裝反。
+3. 有沒有開到童鎖。遙控器螢幕出現鎖的圖示時，同時按溫度「＋」和「－」鍵就能解除。
+
+## 格力冷氣代碼怎麼看
+
+臺灣格力官網的代碼表分成幾類：
+
+- **E 開頭**：系統高壓、低壓、排氣等保護，另有 E6 通訊故障、E7 模式衝突。
+- **F 開頭**：F1～F5 是各處感溫包開路或短路；F6、F8、F9、FA、FH 是降頻；F0 是冷媒洩漏。
+- **H 開頭**：H1 是除霜；其他包括壓縮機過載（H3）、模組保護（H5）、水滿保護（H8）、電加熱管故障（H9）等，各碼不同。
+- **C 開頭**：C1～C4 是故障電弧、漏電、接錯線、無地線這類電路安全問題；C5 是跳帽故障保護，Cd 是二氧化碳濃度過高警報。
+- **L、U、P 等**：電壓、壓縮機、風扇馬達、四通閥、模組溫度等。
+
+官網的表另有一欄「指示燈閃爍次數」，給沒有數字顯示的機型對照；閃燈要看是哪一盞燈，請以你那台的說明書為準。
+
+## 格力冷氣代碼對照表
+
+<CodeTable caption="適用：臺灣格力家用冷氣。取自臺灣格力官網常見問答「家用空調常見顯示故障代碼含義」，官網沒有逐一列出適用型號；你的機器說明書如果寫法不同，以說明書為準。" rows={[
+  { code: 'E1', meaning: '系統高壓保護', action: '記下代碼報修。', pro: true },
+  { code: 'E2', meaning: '內側防凍結保護', action: '記下代碼報修。', pro: true },
+  { code: 'E3', meaning: '系統低壓保護', action: '記下代碼報修。', pro: true },
+  { code: 'E4', meaning: '壓縮機排氣保護', action: '記下代碼報修。', pro: true },
+  { code: 'E5', meaning: '低電壓過流保護', action: '記下代碼報修。', pro: true },
+  { code: 'E6', meaning: '通訊故障', action: '記下代碼報修。', pro: true },
+  { code: 'E7', meaning: '模式衝突', action: '記下代碼報修。', pro: true },
+  { code: 'E8', meaning: '防高溫保護', action: '記下代碼報修。', pro: true },
+  { code: 'E9', meaning: '防冷風保護', action: '記下代碼報修。', pro: true },
+  { code: 'E0', meaning: '整機交流電壓下降降頻', action: '記下代碼報修。', pro: true },
+  { code: 'EE', meaning: '室外記憶晶片讀寫故障', action: '記下代碼報修。', pro: true },
+  { code: 'EU', meaning: '模組溫度過高限頻／降頻', action: '記下代碼報修。', pro: true },
+  { code: 'F0', meaning: '冷媒（製冷劑）洩漏', action: '記下代碼報修，不要自己處理冷媒。', pro: true },
+  { code: 'F1', meaning: '室內環境感溫包開路、短路', action: '記下代碼報修。', pro: true },
+  { code: 'F2', meaning: '室內蒸發器感溫包開路、短路', action: '記下代碼報修。', pro: true },
+  { code: 'F3', meaning: '室外環境感溫包開路、短路', action: '記下代碼報修。', pro: true },
+  { code: 'F4', meaning: '室外冷凝器感溫包開路、短路', action: '記下代碼報修。', pro: true },
+  { code: 'F5', meaning: '室外排氣感溫包開路、短路', action: '記下代碼報修。', pro: true },
+  { code: 'F6', meaning: '製冷過負荷降頻', action: '記下代碼報修。', pro: true },
+  { code: 'F8', meaning: '電流過大降頻', action: '記下代碼報修。', pro: true },
+  { code: 'F9', meaning: '排氣過高降頻', action: '記下代碼報修。', pro: true },
+  { code: 'FA', meaning: '管溫過高降頻', action: '記下代碼報修。', pro: true },
+  { code: 'FH', meaning: '防凍結降頻', action: '記下代碼報修。', pro: true },
+  { code: 'FC', meaning: '滑動門故障', action: '記下代碼報修。', pro: true },
+  { code: 'FP', meaning: '二氧化碳檢測故障', action: '記下代碼報修。', pro: true },
+  { code: 'H1', meaning: '除霜（化霜），不是故障', action: '不要關機，除霜完會自動恢復運轉。' },
+  { code: 'H2', meaning: '靜電除塵保護', action: '記下代碼報修。', pro: true },
+  { code: 'H3', meaning: '壓縮機過載保護', action: '記下代碼報修。', pro: true },
+  { code: 'H4', meaning: '系統異常（防高溫停機保護）', action: '記下代碼報修。', pro: true },
+  { code: 'H5', meaning: '模組保護', action: '記下代碼報修。', pro: true },
+  { code: 'H6', meaning: '沒有室內馬達回饋訊號', action: '記下代碼報修。', pro: true },
+  { code: 'H7', meaning: '同步失敗', action: '記下代碼報修。', pro: true },
+  { code: 'H8', meaning: '水滿保護', action: '記下代碼報修。', pro: true },
+  { code: 'H9', meaning: '電加熱管故障', action: '記下代碼報修。', pro: true },
+  { code: 'H0', meaning: '制熱防高溫降頻', action: '記下代碼報修。', pro: true },
+  { code: 'HC', meaning: 'PFC 保護', action: '記下代碼報修。', pro: true },
+  { code: 'HE', meaning: '壓縮機退磁保護', action: '記下代碼報修。', pro: true },
+  { code: 'C1', meaning: '故障電弧保護', action: '電路問題，不要自己處理，請原廠檢修。', pro: true },
+  { code: 'C2', meaning: '漏電保護', action: '電路問題，不要自己處理，請原廠檢修。', pro: true },
+  { code: 'C3', meaning: '接錯線保護', action: '電路問題，不要自己處理，請原廠檢修。', pro: true },
+  { code: 'C4', meaning: '無地線', action: '電路問題，不要自己處理，請原廠檢修。', pro: true },
+  { code: 'C5', meaning: '跳帽故障保護', action: '記下代碼報修。', pro: true },
+  { code: 'Cd', meaning: '二氧化碳濃度過高警報', action: '記下代碼報修。', pro: true },
+  { code: 'L1', meaning: '濕度感測器故障', action: '記下代碼報修。', pro: true },
+  { code: 'L2', meaning: '水箱水位開關故障', action: '記下代碼報修。', pro: true },
+  { code: 'L9', meaning: '功率過高保護', action: '記下代碼報修。', pro: true },
+  { code: 'LC', meaning: '按鍵功能被遮蔽', action: '記下代碼報修。', pro: true },
+  { code: 'Ld', meaning: '欠相、脫調（缺相）', action: '記下代碼報修。', pro: true },
+  { code: 'LE', meaning: '壓縮機堵轉', action: '記下代碼報修。', pro: true },
+  { code: 'LP', meaning: '室內機型號不匹配', action: '記下代碼報修。', pro: true },
+  { code: 'PH', meaning: '直流輸入電壓過高', action: '記下代碼報修。', pro: true },
+  { code: 'PL', meaning: '直流輸入電壓過低', action: '記下代碼報修。', pro: true },
+  { code: 'PU', meaning: '電容充電故障', action: '記下代碼報修。', pro: true },
+  { code: 'P5', meaning: '壓縮機相電流過流保護', action: '記下代碼報修。', pro: true },
+  { code: 'P7', meaning: '模組感溫包電路故障', action: '記下代碼報修。', pro: true },
+  { code: 'P8', meaning: '模組溫度過高保護', action: '記下代碼報修。', pro: true },
+  { code: 'U1', meaning: '壓縮機相電流檢測電路故障', action: '記下代碼報修。', pro: true },
+  { code: 'U5', meaning: '整機過流檢測電路故障', action: '記下代碼報修。', pro: true },
+  { code: 'U7', meaning: '四通閥換向異常', action: '記下代碼報修。', pro: true },
+  { code: 'U8', meaning: '室內風扇馬達（PG 電機）過零檢測故障', action: '記下代碼報修。', pro: true },
+  { code: 'U9', meaning: '室外風扇過零檢測電路故障', action: '記下代碼報修。', pro: true },
+  { code: 'UH', meaning: '沒有室外馬達回饋訊號', action: '記下代碼報修。', pro: true },
+  { code: 'rF', meaning: '射頻模組故障', action: '記下代碼報修。', pro: true },
+  { code: 'JF', meaning: '室內機與檢測板通訊故障', action: '記下代碼報修。', pro: true },
+]} />
+
+表中意思照官網原文，用字改成台灣常見說法，例如模塊寫成模組、傳感器寫成感測器、電機寫成馬達、芯片寫成晶片、反饋寫成回饋訊號。官網只寫代碼意思，沒有寫處理步驟，所以除了 H1，其他都標成找原廠。
+
+<SafetyNote>冷媒、電路、壓縮機相關的代碼都要由原廠或合格技師處理，不要自己拆機或量電。</SafetyNote>
+
+## 報修前準備
+
+- 記下**代碼**，以及室內機側面貼紙上的**型號**。
+- 臺灣格力官網「客戶服務」頁有線上報修（LINE）和服務據點，也可以找當初安裝的經銷商。

@@ -1,0 +1,74 @@
+---
+title: 東芝洗衣機錯誤碼 E1、E2、E3、E4、E7 怎麼辦（直立式 AW 系列）
+description: 東芝直立洗衣機顯示 E1、E2、E3、E4 或 E7-1～E7-5 時，依台灣東芝 AW-DUK1300KG、AW-DUK1150HG、AW-T08DU1800MTA 說明書檢查水龍頭、排水管、上蓋與衣物分布，E7 要停機找服務中心。
+pubDate: 2026-11-19
+category: washer
+kind: troubleshoot
+brands: ['東芝']
+takeaways:
+  - E1 是注水異常，先看水龍頭有沒有打開。
+  - E2 是排水沒完成，檢查排水軟管末端是不是放太高、泡在水裡或被堵住。
+  - E3 是洗衣、脫水前上蓋沒蓋好；E4 是脫水時衣物不平衡，用手把衣物撥均勻。
+  - E7-1～E7-5 是有危險的異常（制動器線路、制動器、感測器）：運轉中出現就按電源鍵停機，一開機就出現要致電服務中心。
+sources:
+  - title: 台灣東芝 全自動洗衣機 使用手冊 AW-DUK1300KG（故障排除，p.20）
+    url: https://www.toshiba-lifestyle.com/content/dam/toshiba-aem/tw/說明書/AW-DUK1300KG(SG).pdf
+    checked: 2026-11
+  - title: 台灣東芝 全自動洗衣機 使用手冊 AW-DUK1150HG（故障排除，p.20）
+    url: https://www.toshiba-lifestyle.com/content/dam/toshiba-aem/tw/說明書/AW-DUK1150HG(WW).pdf
+    checked: 2026-11
+  - title: 台灣東芝 全自動洗衣機 使用說明書 AW-T08DU1800MTA(MG)／AW-T08DU2000QTA(MG)（故障排除，p.20）
+    url: https://www.toshiba-lifestyle.com/content/dam/toshiba-aem/tw/說明書/AW-T08DU1800MTA-MG-AW-T08DU2000MTA-MG-說明書.pdf
+    checked: 2026-11
+  - title: 台灣東芝 說明書下載
+    url: https://www.toshiba-lifestyle.com/tw/support/user-manual
+    checked: 2026-11
+draft: false
+---
+import CodeTable from '../../components/CodeTable.astro';
+import SafetyNote from '../../components/SafetyNote.astro';
+
+東芝直立洗衣機顯示 **E1** 是注水異常、**E2** 是排水沒完成、**E3** 是上蓋沒蓋好、**E4** 是脫水時衣物不平衡，這四個都能自己先處理。**E7-1～E7-5** 是有危險的異常，運轉中出現就按電源鍵停機，聯絡服務中心。
+
+## 適用機種
+
+下表整理自三本台灣東芝說明書的故障排除表：
+
+- AW-DUK1300KG
+- AW-DUK1150HG
+- AW-T08DU1800MTA(MG)、AW-T08DU2000QTA(MG)
+
+三本的 E1～E4 意思相同；E7 系列在 AW-T08DU 這本只列了 E7-1、E7-2、E7-4、E7-5，沒有 E7-3。其他型號請用機身型號到台灣東芝「說明書下載」頁找自己那一本。
+
+## 東芝洗衣機錯誤碼對照表
+
+<CodeTable caption="適用型號：台灣東芝 AW-DUK1300KG、AW-DUK1150HG、AW-T08DU1800MTA(MG)／AW-T08DU2000QTA(MG)。E7-3 只有 AW-DUK1300KG、AW-DUK1150HG 說明書列出。" rows={[
+  { code: 'E1', meaning: '注水異常', action: '檢查水龍頭有沒有打開。' },
+  { code: 'E2', meaning: '排水（放水）沒有完成', action: '檢查排水軟管末端是不是放得太高、是不是泡在水裡、有沒有被堵住。' },
+  { code: 'E3', meaning: '洗衣和脫水前上蓋沒有關上', action: '關上蓋子。AW-DUK1150HG 說明書另寫：再按「開始」。' },
+  { code: 'E4', meaning: '脫水時衣物不平衡', action: '用手把洗衣槽裡的衣物撥均勻。' },
+  { code: 'E7-1', meaning: '有危險的異常（制動器線路、制動器、感測器）', action: '運轉中出現：按電源鍵停機。按電源鍵開機就出現：致電服務中心。', pro: true },
+  { code: 'E7-2', meaning: '有危險的異常（制動器線路、制動器、感測器）', action: '同 E7-1。', pro: true },
+  { code: 'E7-3', meaning: '有危險的異常（制動器線路、制動器、感測器）', action: '同 E7-1。', pro: true },
+  { code: 'E7-4', meaning: '有危險的異常（制動器線路、制動器、感測器）', action: '同 E7-1。', pro: true },
+  { code: 'E7-5', meaning: '有危險的異常（制動器線路、制動器、感測器）', action: '同 E7-1。', pro: true },
+  { code: 'FXX', meaning: '其他（F 開頭的代碼）', action: '說明書只寫「其他」，前面的方法都沒用時致電服務中心。', pro: true },
+]} />
+
+## 自己能先做的
+
+- **E1**：確認水龍頭打開。
+- **E2**：把排水軟管末端放低，不要泡在水裡，看看有沒有被堵住。
+- **E3**：把上蓋關好。
+- **E4**：用手把洗衣槽裡的衣物撥均勻。
+
+AW-DUK1300KG 說明書另外提醒：**某些型號要按「開始」才能清除 E1～E4 的警報**。
+
+<SafetyNote>E7 系列是制動器、感測器這類內部零件的異常，說明書只要你停機、找服務中心，不要自己拆機檢查。</SafetyNote>
+
+## 什麼情況要找原廠
+
+- 出現 E7-1～E7-5，或 F 開頭的代碼。
+- E1～E4 照上面處理之後還是一直出現。
+
+聯絡時準備好**代碼**和**型號**（貼在機身上），可以找購買的經銷商，或台灣東芝的客服。
