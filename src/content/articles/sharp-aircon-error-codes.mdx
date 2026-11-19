@@ -1,0 +1,265 @@
+---
+title: 夏普冷氣故障代碼對照表（頂級 ZAMH、極致 BESH、榮耀 AESH、經典 WESH 系列）
+description: 夏普分離式冷氣室內機燈號閃爍或遙控器叫出故障代碼時，依台灣夏普官網故障代碼查詢頁，分系列對照代碼意思；同一個代碼在不同系列意思不同。
+cover: ../../assets/covers/sharp-aircon-error-codes.webp
+cover_alt: 午後和室的冰茶與團扇
+pubDate: 2026-11-19
+category: aircon
+kind: troubleshoot
+brands: ['夏普']
+takeaways:
+  - 夏普冷氣的故障代碼依系列不同，台灣夏普官網分成頂級 ZAMH、極致 BESH、榮耀 AESH、旗艦 VAMH、經典 WESH 五個系列，先確認系列再查表。
+  - 頂級 ZAMH 的代碼是「主要-次要」兩段數字（例如 1-0），可以在冷氣關機時長按室內機 ON/OFF 鍵超過 5 秒，用燈號閃爍讀出來，也可以用遙控器叫出。
+  - 同一個代碼在不同系列意思不同，例如 E2 在經典 WESH 是室外機壓縮機啟動故障，在榮耀 AESH 是防凍結保護，原廠註明不是故障。
+  - 官網的說明是給維修人員的檢查點與零件，使用者能做的是記下代碼、燈號和型號，聯絡台灣夏普客戶服務中心。
+sources:
+  - title: 台灣夏普 冷暖空調 故障代碼查詢（頂級 ZAMH、極致 BESH、榮耀 AESH、旗艦 VAMH、經典 WESH 系列）
+    url: https://tw.sharp/air-conditioner-errorcode
+    checked: 2026-11
+draft: false
+---
+import CodeTable from '../../components/CodeTable.astro';
+import SafetyNote from '../../components/SafetyNote.astro';
+
+夏普冷氣出問題時，室內機的燈會用特定次數閃爍，有的系列還能用遙控器叫出數字代碼。要**先確認是哪個系列**再查表，因為同一個代碼在不同系列的意思不一樣。
+
+## 先看你家是哪個系列
+
+台灣夏普官網的故障代碼查詢頁依系列分成五區：
+
+- **頂級系列（ZAMH）**：代碼是「主要-次要」兩段數字，例如 1-0、24-1。
+- **極致系列（BESH）**：PC、EC、EH、EL 開頭加兩碼，例如 PC40、EH 00。
+- **榮耀系列（AESH）**：兩個字元，例如 E1、F0、H5、U8。
+- **旗艦系列（VAMH）**：不顯示文字代碼，看室內機三顆燈的組合。
+- **經典系列（WESH）**：E、F、P 開頭加一個字元，例如 E0、F2、P1，同時有燈號閃爍次數。
+
+不確定是哪個系列時，看購買單據、保固卡，或直接問夏普客服。
+
+## 處理方式：記下代碼找夏普
+
+官網的代碼表是寫給維修人員的，內容是熱敏電阻、IPM 模組、壓縮機、控制板這類檢查點和零件更換，沒有給一般使用者的處理步驟。所以下面的表只整理代碼意思，處理方式除了少數例外，一律是**記下代碼、燈號和型號，聯絡台灣夏普客戶服務中心**。
+
+## 頂級系列（ZAMH）
+
+### 怎麼叫出代碼
+
+官網列了三種看法：
+
+- **看室內機燈號**：冷氣關機時，長按室內機上的 ON/OFF 按鈕超過 5 秒，運行燈（綠）、定時燈（橙）、WLAN 燈（綠）會閃爍。運行燈和定時燈的閃爍次數合起來是主要代碼，WLAN 燈的閃爍次數是次要代碼。官網的例子是運行燈閃 2 次、定時燈閃 3 次、WLAN 燈閃 4 次，就是 23-4。
+- **用遙控器叫出**：室內機和遙控器都關閉時，長按遙控器的溫度下鍵超過 5 秒，螢幕顯示 00。用溫度上下鍵逐步切換數字，切到主要代碼時蜂鳴器會發出長音；再按一次風量鍵切到 -0，同樣逐步切換，長音那個數字就是次要代碼。
+- **看室外機 LED1**：室外機的 LED1 用閃爍次數顯示錯誤，大約顯示 3～10 分鐘後恢復正常顯示。官網表中主要代碼 1～14 時，LED1 閃爍次數和主要代碼相同；17 以後是亮著、熄滅或正常閃爍。
+
+<CodeTable idPrefix="zamh" caption="適用：夏普頂級系列（ZAMH）。意思寫次要代碼的診斷內容，最後的「主要：…」括號是主要代碼的診斷內容。原表「熱敏電組」「熱交換氣」本站改為「熱敏電阻」「熱交換器」；14-2 原表主要欄空白。" rows={[
+  { code: '0-0', meaning: '正常狀態（沒有故障）', action: '不用處理。' },
+  { code: '1-0', meaning: '熱交換器熱敏電阻短路故障（主要：室外機熱敏電阻短路）', action: '記下代碼報修。', pro: true },
+  { code: '1-1', meaning: '室外溫度熱敏電阻短路故障（主要：室外機熱敏電阻短路）', action: '記下代碼報修。', pro: true },
+  { code: '1-2', meaning: '吸氣熱敏電阻短路故障（主要：室外機熱敏電阻短路）', action: '記下代碼報修。', pro: true },
+  { code: '1-3', meaning: '二通閥熱敏電阻短路故障（主要：室外機熱敏電阻短路）', action: '記下代碼報修。', pro: true },
+  { code: '1-4', meaning: '散熱器熱敏電阻故障（主要：室外機熱敏電阻短路）', action: '記下代碼報修。', pro: true },
+  { code: '1-5', meaning: '放電熱敏電阻短路（主要：室外機熱敏電阻短路）', action: '記下代碼報修。', pro: true },
+  { code: '2-0', meaning: '壓縮機高溫故障（主要：循環溫度）', action: '記下代碼報修。', pro: true },
+  { code: '2-1', meaning: '壓縮機排氣過熱（主要：循環溫度）', action: '記下代碼報修。', pro: true },
+  { code: '2-2', meaning: '室外機熱交換器過熱（主要：循環溫度）', action: '記下代碼報修。', pro: true },
+  { code: '2-3', meaning: '室內機熱交換器過熱（主要：循環溫度）', action: '記下代碼報修。', pro: true },
+  { code: '2-4', meaning: 'IPM高溫錯誤（主要：循環溫度）', action: '記下代碼報修。', pro: true },
+  { code: '2-5', meaning: 'IPM高溫錯誤（主要：循環溫度）', action: '記下代碼報修。', pro: true },
+  { code: '3-0', meaning: '由於除濕運轉而暫時停止（主要：乾運轉）', action: '原表檢查點寫暫停循環保護。記下代碼報修。', pro: true },
+  { code: '5-0', meaning: '熱交換器熱敏電阻開路錯誤（主要：室外機熱敏電阻開路）', action: '記下代碼報修。', pro: true },
+  { code: '5-1', meaning: '室外溫度熱敏電阻開路錯誤（主要：室外機熱敏電阻開路）', action: '記下代碼報修。', pro: true },
+  { code: '5-2', meaning: '吸氣熱敏電阻開路錯誤（主要：室外機熱敏電阻開路）', action: '記下代碼報修。', pro: true },
+  { code: '5-3', meaning: '二通閥熱敏電阻開路錯誤（主要：室外機熱敏電阻開路）', action: '記下代碼報修。', pro: true },
+  { code: '5-4', meaning: '放電熱敏電阻開路錯誤（主要：室外機熱敏電阻開路）', action: '記下代碼報修。', pro: true },
+  { code: '5-5', meaning: '散熱器熱敏電阻開路錯誤（主要：室外機熱敏電阻開路）', action: '記下代碼報修。', pro: true },
+  { code: '6-0', meaning: '直流過流錯誤（主要：室外機直流電流）', action: '記下代碼報修。', pro: true },
+  { code: '6-1', meaning: 'IPM引腳電平錯誤（主要：室外機直流電流）', action: '記下代碼報修。', pro: true },
+  { code: '6-2', meaning: '壓縮機旋轉錯誤（主要：室外機直流電流）', action: '記下代碼報修。', pro: true },
+  { code: '6-3', meaning: '其他因素（主要：室外機直流電流）', action: '記下代碼報修。', pro: true },
+  { code: '7-0', meaning: '交流過流錯誤（主要：室外機交流電流）', action: '記下代碼報修。', pro: true },
+  { code: '7-1', meaning: '關閉時交流電流錯誤（主要：室外機交流電流）', action: '記下代碼報修。', pro: true },
+  { code: '7-2', meaning: '交流最大電流錯誤（主要：室外機交流電流）', action: '記下代碼報修。', pro: true },
+  { code: '7-3', meaning: '交流電流不足錯誤（主要：室外機交流電流）', action: '記下代碼報修。', pro: true },
+  { code: '8-0', meaning: '線路檢查異常錯誤（主要：線路檢查異常）', action: '記下代碼報修。', pro: true },
+  { code: '9-0', meaning: '熱敏電阻安裝錯誤或四通閥錯誤（主要：循環溫度）', action: '記下代碼報修。', pro: true },
+  { code: '9-4', meaning: '四通閥錯誤或氣體洩漏錯誤（主要：循環溫度）', action: '記下代碼報修。', pro: true },
+  { code: '9-5', meaning: '二通閥和三通閥關閉錯誤（主要：循環溫度）', action: '記下代碼報修。', pro: true },
+  { code: '10-0', meaning: 'EEPROM(室外)數據錯誤（主要：EEPROM錯誤）', action: '記下代碼報修。', pro: true },
+  { code: '10-1', meaning: 'EEPROM(室外)數據錯誤（主要：EEPROM錯誤）', action: '記下代碼報修。', pro: true },
+  { code: '10-2', meaning: 'CPU(室外)RAM資料錯誤（主要：EEPROM錯誤）', action: '記下代碼報修。', pro: true },
+  { code: '10-3', meaning: '中央處理器錯誤（主要：EEPROM錯誤）', action: '記下代碼報修。', pro: true },
+  { code: '11-0', meaning: '室外機直流風扇旋轉錯誤（主要：室外機直流風扇）', action: '記下代碼報修。', pro: true },
+  { code: '11-1', meaning: '室外機直流風扇驅動IC故障（主要：室外機直流風扇）', action: '記下代碼報修。', pro: true },
+  { code: '11-2', meaning: '室外機直流風扇鎖定錯誤（主要：室外機直流風扇）', action: '記下代碼報修。', pro: true },
+  { code: '11-3', meaning: '壓縮機驅動前直流風扇反轉偵測錯誤（主要：室外機直流風扇）', action: '記下代碼報修。', pro: true },
+  { code: '11-4', meaning: '直流風扇逆雙電流偵測錯誤（主要：室外機直流風扇）', action: '記下代碼報修。', pro: true },
+  { code: '11-5', meaning: '室外機直流風扇開路連接器錯誤（主要：室外機直流風扇）', action: '記下代碼報修。', pro: true },
+  { code: '12-0', meaning: '端子板熱熔斷器錯誤(電源)（主要：端子板上的熱熔斷器）', action: '記下代碼報修。', pro: true },
+  { code: '13-0', meaning: '壓縮機繞組短路（主要：壓縮機錯誤）', action: '記下代碼報修。', pro: true },
+  { code: '13-1', meaning: '壓縮機繞組開路等（主要：壓縮機錯誤）', action: '記下代碼報修。', pro: true },
+  { code: '13-2', meaning: '壓縮機鎖（主要：壓縮機錯誤）', action: '記下代碼報修。', pro: true },
+  { code: '13-3', meaning: '過流暫停（主要：壓縮機錯誤）', action: '記下代碼報修。', pro: true },
+  { code: '14-0', meaning: 'PAM過壓錯誤（主要：室外機PAM）', action: '記下代碼報修。', pro: true },
+  { code: '14-1', meaning: 'PAM時鐘錯誤（主要：室外機PAM）', action: '記下代碼報修。', pro: true },
+  { code: '14-2', meaning: '電源電壓異常直流低電壓', action: '記下代碼報修。', pro: true },
+  { code: '17-0', meaning: '序列開路（主要：單元間接線）', action: '記下代碼報修。', pro: true },
+  { code: '18-0', meaning: '序列短路（主要：單元間接線）', action: '記下代碼報修。', pro: true },
+  { code: '18-1', meaning: '串口錯誤接線（主要：單元間接線）', action: '記下代碼報修。', pro: true },
+  { code: '19-0', meaning: '室內機風扇故障（主要：室內機風扇）', action: '記下代碼報修。', pro: true },
+  { code: '20-0', meaning: 'EEPROM資料錯誤（主要：室內機控制板）', action: '記下代碼報修。', pro: true },
+  { code: '24-0', meaning: '無線適配器通訊錯誤（主要：無線區域網路）', action: '記下代碼報修。', pro: true },
+  { code: '24-1', meaning: '無線路由器連接錯誤（主要：無線區域網路）', action: '檢查家裡的無線路由器和網路連線；仍出現再報修。' },
+  { code: '24-2', meaning: '網路通訊故障（主要：無線區域網路）', action: '檢查家裡的無線路由器和網路連線；仍出現再報修。' },
+  { code: '24-3', meaning: '與伺服器通訊錯誤（主要：無線區域網路）', action: '檢查家裡的無線路由器和網路連線；仍出現再報修。' },
+  { code: '26-1', meaning: '室內機室溫熱敏電阻', action: '記下代碼報修。', pro: true },
+  { code: '26-2', meaning: '室內機管路溫度熱敏電阻', action: '記下代碼報修。', pro: true },
+  { code: '26-3', meaning: '室內機閥門溫度熱敏電阻', action: '記下代碼報修。', pro: true },
+]} />
+
+## 極致系列（BESH）
+
+官網列了兩張表。第一張只列代碼，內容都是室外機、壓縮機和風機。第二張同時列代碼和室內機的定時燈、運轉燈閃爍次數。**EC07 在兩張表的意思不同**，兩張都列出來。
+
+<CodeTable idPrefix="besh" caption="適用：夏普極致系列（BESH），官網第一張表（只列故障代碼）。PC0F 原圖第三碼字形像英文 O，可能印成 PCOF。" rows={[
+  { code: 'PC40', meaning: '室外機主控晶片與驅動晶片通信故障', action: '記下代碼報修。', pro: true },
+  { code: 'PC41', meaning: '室外機壓縮機電流採樣電路故障', action: '記下代碼報修。', pro: true },
+  { code: 'PC42', meaning: '室外機壓縮機啟動故障', action: '記下代碼報修。', pro: true },
+  { code: 'PC43', meaning: '室外壓縮機缺相保護', action: '記下代碼報修。', pro: true },
+  { code: 'PC44', meaning: '室外機壓縮機零速保護', action: '記下代碼報修。', pro: true },
+  { code: 'PC45', meaning: '室外機IR(341)晶片驅動同步故障，電壓跌落', action: '記下代碼報修。', pro: true },
+  { code: 'PC46', meaning: '室外機壓縮機失速保護', action: '記下代碼報修。', pro: true },
+  { code: 'PC49', meaning: '室外機壓縮機過電流故障', action: '記下代碼報修。', pro: true },
+  { code: 'PC04', meaning: '室外機壓縮機回饋保護', action: '記下代碼報修。', pro: true },
+  { code: 'PC10', meaning: '室外機交流電壓過低保護、室外機直流電壓過低保護（原表同一代碼列兩個名稱）', action: '記下代碼報修。', pro: true },
+  { code: 'PC11', meaning: '室外機直流母線電壓過高保護', action: '記下代碼報修。', pro: true },
+  { code: 'PC12', meaning: '室外機直流母線電壓過低保護/341MCE故障', action: '記下代碼報修。', pro: true },
+  { code: 'EC71', meaning: '室外外置風機過流故障', action: '記下代碼報修。', pro: true },
+  { code: 'EC72', meaning: '室外外置風機缺相故障', action: '記下代碼報修。', pro: true },
+  { code: 'EC73', meaning: '室外機直流風機零速故障', action: '記下代碼報修。', pro: true },
+  { code: 'EC74', meaning: '室外外置風機電流採樣偏置故障', action: '記下代碼報修。', pro: true },
+  { code: 'EC75', meaning: '室外外置風機模組保護/硬體過流保護', action: '記下代碼報修。', pro: true },
+  { code: 'PC02', meaning: '壓縮機頂部溫度保護/IPM模組溫度保護', action: '記下代碼報修。', pro: true },
+  { code: 'PC0F', meaning: 'PFC模組開關停機/IGBT故障停機（原圖第三碼字形像英文 O）', action: '記下代碼報修。', pro: true },
+  { code: 'PC00', meaning: 'IPM保護故障', action: '記下代碼報修。', pro: true },
+  { code: 'PC06', meaning: '排氣高溫保護故障', action: '記下代碼報修。', pro: true },
+  { code: 'PC30', meaning: '高壓力保護故障', action: '記下代碼報修。', pro: true },
+  { code: 'PC31', meaning: '低壓力保護故障', action: '記下代碼報修。', pro: true },
+  { code: 'PC0C', meaning: '四通閥串氣故障', action: '記下代碼報修。', pro: true },
+  { code: 'EC07', meaning: '室外機直流風機失步故障/啟動失敗故障', action: '記下代碼報修。', pro: true },
+]} />
+
+<CodeTable idPrefix="besh-lamp" caption="適用：夏普極致系列（BESH），官網第二張表（顯示內容：故障碼、定時燈、運轉燈閃爍次數）。原表代碼中間有空格，照原樣列出。" rows={[
+  { code: 'EH 00', meaning: '室內機EEPROM參數讀取錯誤（定時燈滅、運轉燈閃 1 次）', action: '記下代碼和燈號報修。', pro: true },
+  { code: 'EL 01', meaning: '室內外機通訊故障（定時燈滅、運轉燈閃 2 次）', action: '記下代碼和燈號報修。', pro: true },
+  { code: 'EH 02', meaning: '過零檢測異常（定時燈滅、運轉燈閃 3 次）', action: '記下代碼和燈號報修。', pro: true },
+  { code: 'EH 03', meaning: '室內風扇超出正常範圍（定時燈滅、運轉燈閃 4 次）', action: '記下代碼和燈號報修。', pro: true },
+  { code: 'EC 51', meaning: '室外EEPROM參數讀取錯誤（定時燈滅、運轉燈閃 5 次）', action: '記下代碼和燈號報修。', pro: true },
+  { code: 'EC 52', meaning: '室外冷凝器管溫溫度傳感器故障（定時燈滅、運轉燈閃 5 次）', action: '記下代碼和燈號報修。', pro: true },
+  { code: 'EC 53', meaning: '室外環境溫度傳感器故障（定時燈滅、運轉燈閃 5 次）', action: '記下代碼和燈號報修。', pro: true },
+  { code: 'EC 54', meaning: '排氣溫度傳感器故障（定時燈滅、運轉燈閃 5 次）', action: '記下代碼和燈號報修。', pro: true },
+  { code: 'EC 56', meaning: '一對多T2b傳感器故障（定時燈滅、運轉燈閃 5 次）', action: '記下代碼和燈號報修。', pro: true },
+  { code: 'EH 60', meaning: '室內環境溫度傳感器故障（定時燈滅、運轉燈閃 6 次）', action: '記下代碼和燈號報修。', pro: true },
+  { code: 'EH 61', meaning: '室內蒸發器管溫溫度傳感器故障（定時燈滅、運轉燈閃 6 次）', action: '記下代碼和燈號報修。', pro: true },
+  { code: 'EC 07', meaning: '室外風扇轉速超出正常範圍（定時燈滅、運轉燈閃 12 次）', action: '記下代碼和燈號報修。', pro: true },
+  { code: 'EL 0C', meaning: '冷媒洩漏檢測故障（定時燈滅、運轉燈閃 8 次）', action: '記下代碼和燈號報修。', pro: true },
+  { code: 'PC 01', meaning: '電壓過高或過低保護（定時燈閃爍、運轉燈閃 2 次）', action: '記下代碼和燈號報修。', pro: true },
+  { code: 'PC 08', meaning: '電流過載保護（定時燈閃爍、運轉燈閃 1 次）', action: '記下代碼和燈號報修。', pro: true },
+  { code: 'PC 03', meaning: '壓縮機高壓或低壓保護（定時燈閃爍、運轉燈閃 7 次）', action: '記下代碼和燈號報修。', pro: true },
+  { code: 'PC 0L', meaning: '室外機溫度過低保護（定時燈閃爍、運轉燈閃 4 次）', action: '記下代碼和燈號報修。', pro: true },
+]} />
+
+## 榮耀系列（AESH）
+
+官網表格另列「內機指示燈顯示」，只有部分代碼有燈號，有的列在意思後面的括號。**E2、E9 原廠註明不是故障代碼**，是冷氣、暖氣模式運轉過程中的狀態碼。F0（數字零）和 Fo（小寫 o）在原表是兩個代碼，名稱都是冷媒防漏保護。
+
+<CodeTable idPrefix="aesh" caption="適用：夏普榮耀系列（AESH）。意思照官網「故障名稱」原文；寫「燈閃 N 次」的括號是官網列的內機指示燈顯示，其他括號是故障名稱原文。" rows={[
+  { code: 'C5', meaning: '跳線帽故障保護（運行燈閃 15 次）', action: '記下代碼報修。', pro: true },
+  { code: 'E6', meaning: '內、外機通信故障（運行燈閃 6 次）', action: '記下代碼報修。', pro: true },
+  { code: 'H5', meaning: 'IPM保護', action: '記下代碼報修。', pro: true },
+  { code: 'L3／LA', meaning: '室外機直流馬達故障', action: '記下代碼報修。', pro: true },
+  { code: 'H3', meaning: '超載保護', action: '記下代碼報修。', pro: true },
+  { code: 'F0', meaning: '冷媒防漏保護', action: '記下代碼報修。', pro: true },
+  { code: 'F1', meaning: '室內環境感溫包開、短路（冷氣燈閃 1 次）', action: '記下代碼報修。', pro: true },
+  { code: 'F2', meaning: '室內蒸發器感溫包開、短路（冷氣燈閃 2 次）', action: '記下代碼報修。', pro: true },
+  { code: 'H6', meaning: '無室內機馬達回饋（運行燈閃 11 次）', action: '記下代碼報修。', pro: true },
+  { code: 'LP', meaning: '內外機不匹配', action: '記下代碼報修。', pro: true },
+  { code: 'C4', meaning: '無地線（運行燈閃 15 次、滅 3 秒）', action: '記下代碼報修。', pro: true },
+  { code: 'b7', meaning: '氣閥感溫包開、短路（一對多）', action: '記下代碼報修。', pro: true },
+  { code: 'b5', meaning: '液閥感溫包開、短路(一對多)', action: '記下代碼報修。', pro: true },
+  { code: 'E1', meaning: '系統高壓保護', action: '記下代碼報修。', pro: true },
+  { code: 'E3', meaning: '系統低壓保護', action: '記下代碼報修。', pro: true },
+  { code: 'E4', meaning: '排氣保護', action: '記下代碼報修。', pro: true },
+  { code: 'E5', meaning: '過電流保護', action: '記下代碼報修。', pro: true },
+  { code: 'E7', meaning: '模式衝突(一對多)', action: '記下代碼報修。', pro: true },
+  { code: 'E8', meaning: '過負荷保護', action: '記下代碼報修。', pro: true },
+  { code: 'EE', meaning: 'EEPROM 讀寫故障', action: '記下代碼報修。', pro: true },
+  { code: 'Fo', meaning: '冷媒防漏保護', action: '記下代碼報修。', pro: true },
+  { code: 'F3', meaning: '室外環境感溫包故障', action: '記下代碼報修。', pro: true },
+  { code: 'F4', meaning: '室外管溫感溫包故障', action: '記下代碼報修。', pro: true },
+  { code: 'F5', meaning: '室外排氣感溫包故障', action: '記下代碼報修。', pro: true },
+  { code: 'FC', meaning: '推拉門故障', action: '記下代碼報修。', pro: true },
+  { code: 'H4', meaning: '系統異常（防高溫停機保護）', action: '記下代碼報修。', pro: true },
+  { code: 'H7', meaning: '壓縮機失速', action: '記下代碼報修。', pro: true },
+  { code: 'HC', meaning: 'PFC 過電流保護', action: '記下代碼報修。', pro: true },
+  { code: 'HE', meaning: '壓縮機退磁保護', action: '記下代碼報修。', pro: true },
+  { code: 'L1', meaning: '溫度傳感器故障', action: '記下代碼報修。', pro: true },
+  { code: 'L9', meaning: '功率過高保護（運行燈閃 20 次、滅 3 秒）', action: '記下代碼報修。', pro: true },
+  { code: 'Lc', meaning: '壓縮機啟動失敗', action: '記下代碼報修。', pro: true },
+  { code: 'Ld', meaning: '壓縮機缺 / 逆相保護', action: '記下代碼報修。', pro: true },
+  { code: 'oE', meaning: '外機出現任意需要停機的故障', action: '記下代碼報修。', pro: true },
+  { code: 'P5', meaning: '相電流過流保護', action: '記下代碼報修。', pro: true },
+  { code: 'P6', meaning: '驅動板與主板通訊故障', action: '記下代碼報修。', pro: true },
+  { code: 'P7', meaning: '模組感溫包開、短路', action: '記下代碼報修。', pro: true },
+  { code: 'P8', meaning: '模組溫度保護', action: '記下代碼報修。', pro: true },
+  { code: 'PH', meaning: '高電壓保護', action: '記下代碼報修。', pro: true },
+  { code: 'PL', meaning: '低電壓保護', action: '記下代碼報修。', pro: true },
+  { code: 'PU', meaning: '電容充電故障', action: '記下代碼報修。', pro: true },
+  { code: 'cF', meaning: '射頻模塊故障', action: '記下代碼報修。', pro: true },
+  { code: 'U1', meaning: '壓縮機相電流電路檢測故障', action: '記下代碼報修。', pro: true },
+  { code: 'U2', meaning: '壓縮機缺相保護', action: '記下代碼報修。', pro: true },
+  { code: 'U3', meaning: '直流母線電壓跌落故障', action: '記下代碼報修。', pro: true },
+  { code: 'U5', meaning: '整機電流檢測故障', action: '記下代碼報修。', pro: true },
+  { code: 'U7', meaning: '四通閥換向異常', action: '記下代碼報修。', pro: true },
+  { code: 'U8', meaning: '室內機馬達過零檢測故障（運行燈閃 17 次、滅 3 秒）', action: '記下代碼報修。', pro: true },
+  { code: 'U9', meaning: '外機過零故障', action: '記下代碼報修。', pro: true },
+  { code: 'E2', meaning: '防凍結保護', action: '原廠註明不是故障，是冷氣模式運轉中的狀態碼。' },
+  { code: 'E9', meaning: '防冷風保護（運行燈閃 9 次、滅 3 秒）', action: '原廠註明不是故障，是暖氣模式運轉中的狀態碼。' },
+]} />
+
+## 經典系列（WESH）
+
+官網表格每個代碼同時列「燈號閃爍（次數）」，但同一個閃爍次數會對到不同代碼，例如閃 1 次可能是 E0、F0 或 P0，所以**以代碼為準**。
+
+<CodeTable idPrefix="wesh" caption="適用：夏普經典系列（WESH）。意思照官網「故障名稱」原文；括號是官網列的燈號閃爍次數。原表 E7 列閃 9 次、EC 列閃 7 次，照原樣列出。" rows={[
+  { code: 'E0', meaning: '室外機主控晶片與驅動晶片通信故障（燈號閃 1 次）', action: '記下代碼和燈號報修。', pro: true },
+  { code: 'E1', meaning: '室外機壓縮機電流採樣電路故障（燈號閃 2 次）', action: '記下代碼和燈號報修。', pro: true },
+  { code: 'E2', meaning: '室外機壓縮機啟動故障（燈號閃 3 次）', action: '記下代碼和燈號報修。', pro: true },
+  { code: 'E3', meaning: '室外壓縮機缺相保護（燈號閃 4 次）', action: '記下代碼和燈號報修。', pro: true },
+  { code: 'E4', meaning: '室外機壓縮機零速保護（燈號閃 5 次）', action: '記下代碼和燈號報修。', pro: true },
+  { code: 'E5', meaning: '室外機IR(341)晶片驅動同步故障，電壓跌落（燈號閃 6 次）', action: '記下代碼和燈號報修。', pro: true },
+  { code: 'E7', meaning: '室外機壓縮機失速保護（燈號閃 9 次）', action: '記下代碼和燈號報修。', pro: true },
+  { code: 'EC', meaning: '檢測到冷媒洩漏（燈號閃 7 次）', action: '記下代碼和燈號報修。', pro: true },
+  { code: 'F0', meaning: '室外機壓縮機過電流故障（燈號閃 1 次）', action: '記下代碼和燈號報修。', pro: true },
+  { code: 'F1', meaning: '室外機壓縮機回饋保護（燈號閃 2 次）', action: '記下代碼和燈號報修。', pro: true },
+  { code: 'F2', meaning: '室外機交流電壓過低保護（燈號閃 3 次）', action: '記下代碼和燈號報修。', pro: true },
+  { code: 'F3', meaning: '室外機直流電壓過低保護（燈號閃 4 次）', action: '記下代碼和燈號報修。', pro: true },
+  { code: 'F4', meaning: '室外機直流母線電壓過高保護（燈號閃 5 次）', action: '記下代碼和燈號報修。', pro: true },
+  { code: 'F5', meaning: '室外機直流母線電壓過低保護/341MCE故障（燈號閃 6 次）', action: '記下代碼和燈號報修。', pro: true },
+  { code: 'P0', meaning: '室外外置風機缺相故障（燈號閃 1 次）', action: '記下代碼和燈號報修。', pro: true },
+  { code: 'P1', meaning: '室外機直流風機零速故障（燈號閃 2 次）', action: '記下代碼和燈號報修。', pro: true },
+  { code: 'P2', meaning: '室外外置風機電流採樣偏置故障（燈號閃 3 次）', action: '記下代碼和燈號報修。', pro: true },
+  { code: 'P4', meaning: '室外外置風機模組保護/硬體過流保護（燈號閃 5 次）', action: '記下代碼和燈號報修。', pro: true },
+]} />
+
+## 旗艦系列（VAMH）
+
+旗艦系列不顯示文字代碼。官網寫明：冷氣關機時，長按室內機上的 AUX 按鈕超過 5 秒，就會顯示自我診斷資訊。室內機用計時器（橙）、操作（綠）、藍色三顆燈表示，官網表格用三排、每排 5 格的組合對照故障編號，另外列室外機 LED1 的閃爍次數。
+
+燈號組合很難用文字描述清楚，建議**把三顆燈的燈號組合拍照或錄影**，連同型號交給夏普客服，或到官網故障代碼查詢頁的旗艦系列區塊對照圖表。
+
+<SafetyNote>冷媒、電路、壓縮機、控制板相關的代碼都要由原廠或合格技師處理，不要自己拆機或量電。</SafetyNote>
+
+## 報修前準備
+
+- 記下**代碼**或燈號閃爍次數，旗艦系列把燈號拍下來。
+- 記下室內機、室外機貼紙上的**型號**。
+- 頂級系列 ZAMH 可以順便看室外機 LED1 閃幾次，一起告訴客服。
+- 聯絡台灣夏普客戶服務中心。
