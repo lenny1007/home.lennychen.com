@@ -1,0 +1,149 @@
+---
+title: 金鼎冷氣故障碼對照表（RT 金抑菌、XT 金清新系列）
+description: 金鼎冷氣顯示 E1、E7、F1、F13 等故障碼時，依金鼎官網故障碼查詢頁，分 RT 金抑菌與 XT 金清新兩個系列對照意思；同一個代碼在兩個系列意思不同。
+cover: ../../assets/covers/jinting-aircon-error-codes.webp
+cover_alt: 夏日午後的臥室
+pubDate: 2026-11-19
+category: aircon
+kind: troubleshoot
+brands: ['金鼎']
+takeaways:
+  - 金鼎冷氣同一個代碼在不同系列意思不同，例如 E2 在 RT 系列是室內熱交換器感溫器異常，在 XT 系列是室外機盤管感測器故障，先看室內機貼紙上的型號尾碼。
+  - RT 系列的 E5 是室內機在除霜，不是故障；想強制停止，斷電後重新開機。
+  - RT 系列的 E4、E7、F3、F12，官網寫可以先關總開關斷電 3 分鐘再開機，仍顯示才報修。
+  - 其他代碼官網都寫「需請專人報修」，金鼎官網列的電話是 0800-589-100。
+sources:
+  - title: 金鼎冷氣 官網「4.4 故障碼查詢」（故障碼、機型敘述、故障說明、維修方式）
+    url: https://www.jin-ting.com.tw/error-code/
+    checked: 2026-11
+  - title: 金鼎冷氣 線上報修／查詢
+    url: https://www.jin-ting.com.tw/repair/
+    checked: 2026-11
+  - title: 金鼎冷氣 家用壁掛式 RT 金抑菌系列產品頁（型號規格）
+    url: https://www.jin-ting.com.tw/product-rt-wall-mounted/
+    checked: 2026-11
+  - title: 金鼎冷氣 家用壁掛式 XT 金清新系列產品頁（型號規格）
+    url: https://www.jin-ting.com.tw/product-xt-wall-mounted/
+    checked: 2026-11
+  - title: 金鼎冷氣 家用吊隱式 XT 金清新系列產品頁（型號規格）
+    url: https://www.jin-ting.com.tw/product-xt-fcu/
+    checked: 2026-11
+draft: false
+---
+import CodeTable from '../../components/CodeTable.astro';
+import SafetyNote from '../../components/SafetyNote.astro';
+
+金鼎冷氣的故障碼要**先看系列再查表**：官網的故障碼表把每個代碼都標了適用機型，同一個 E2 在 RT 系列和 XT 系列是不同的故障。這頁整理官網目前在賣的兩個家用變頻系列：**RT 金抑菌**和 **XT 金清新**。
+
+## 先看你家是哪個系列
+
+看機身型號的尾碼：
+
+- **RT 金抑菌系列**：室外機 JCV-xxRT，壁掛室內機 JSV-xxRT，吊隱室內機 HRV-xxRT（xx 是能力數字，例如 JSV-36RT）。
+- **XT 金清新系列**：室外機 JCV-xxXT，壁掛室內機 JSV-xxXT。官網故障碼表這一組寫的是「JCV-xxXT / JSV-xxXT / HRV-23XT」，吊隱只列了 HRV-23XT。
+
+XT 吊隱室內機的產品頁不只 23 一種能力，但故障碼表只寫了 HRV-23XT，其他能力的吊隱機請以官網查詢結果為準。
+
+如果你的型號是其他尾碼（例如 HD、SD、AG、CN、RN、CD），代碼意思不一樣，請到金鼎官網的故障碼查詢頁輸入代碼和機型查詢。
+
+## 先做這件事：斷電 3 分鐘再開機
+
+RT 系列有四個代碼（E4、E7、F3、F12），官網寫的處理方式是：
+
+1. **關掉總開關，斷電 3 分鐘後重新開機。**
+2. 仍然顯示故障燈號，再報修。
+
+其他代碼官網寫的都是「需請專人報修」。
+
+## RT 金抑菌系列故障碼
+
+<CodeTable idPrefix="rt" caption="適用：金鼎 RT 金抑菌系列 JCV-xxRT／JSV-xxRT／HRV-xxRT。取自金鼎官網故障碼查詢頁，意思照官網原文。" rows={[
+  { code: 'E1', meaning: '室內環境感溫器異常', action: '記下代碼報修。', pro: true },
+  { code: 'E2', meaning: '室內熱交換器感溫器異常', action: '記下代碼報修。', pro: true },
+  { code: 'E4', meaning: '室內IC(EEPROM參數)異常', action: '先關總開關斷電 3 分鐘再開機；仍顯示就報修。', pro: true },
+  { code: 'E5', meaning: '室內機執行「除霜」功能(非故障停機)', action: '不是故障。要強制停止這個功能，斷電後重新開機。' },
+  { code: 'E7', meaning: '室內、外機通訊異常', action: '先關總開關斷電 3 分鐘再開機；仍顯示就報修。', pro: true },
+  { code: 'E9', meaning: '室內機過負荷保護', action: '記下代碼報修。', pro: true },
+  { code: 'E14', meaning: '室內機風速異常', action: '記下代碼報修。', pro: true },
+  { code: 'F1', meaning: '室外IPM(智能電源模組)保護', action: '記下代碼報修。', pro: true },
+  { code: 'F2', meaning: '壓縮機驅動軟體過電流保護', action: '記下代碼報修。', pro: true },
+  { code: 'F3', meaning: 'CBD(主控板)與驅動模組通訊異常', action: '先關總開關斷電 3 分鐘再開機；仍顯示就報修。', pro: true },
+  { code: 'F4', meaning: '壓縮機吐出溫度過高保護', action: '記下代碼報修。', pro: true },
+  { code: 'F5', meaning: '驅動模組溫度過高保護(95度)', action: '記下代碼報修。', pro: true },
+  { code: 'F6', meaning: '室外環境感溫器異常', action: '記下代碼報修。', pro: true },
+  { code: 'F7', meaning: '壓縮機入口感溫器異常', action: '記下代碼報修。', pro: true },
+  { code: 'F8', meaning: '室外風速異常', action: '記下代碼報修。', pro: true },
+  { code: 'F9', meaning: '驅動模組復歸(Reset)', action: '記下代碼報修。', pro: true },
+  { code: 'F10', meaning: '液管(入管)感溫器異常', action: '記下代碼報修。', pro: true },
+  { code: 'F11', meaning: '壓縮機失速/轉子檢知異常', action: '記下代碼報修。', pro: true },
+  { code: 'F12', meaning: '室外機EEPROM參數異常', action: '先關總開關斷電 3 分鐘再開機；仍顯示就報修。', pro: true },
+  { code: 'F13', meaning: '冷媒洩漏', action: '記下代碼報修。', pro: true },
+  { code: 'F14', meaning: '暖氣時四方閥隨切換異常', action: '記下代碼報修。', pro: true },
+  { code: 'F15', meaning: '端子台溫度保護', action: '記下代碼報修。', pro: true },
+  { code: 'F19', meaning: '電壓異常', action: '記下代碼報修。', pro: true },
+  { code: 'F20', meaning: '壓縮機過負荷保護', action: '記下代碼報修。', pro: true },
+  { code: 'F21', meaning: '室外除霜感測器異常', action: '記下代碼報修。', pro: true },
+  { code: 'F22', meaning: 'AC電流過電流保護', action: '記下代碼報修。', pro: true },
+  { code: 'F23', meaning: '相電流過電流保護', action: '記下代碼報修。', pro: true },
+  { code: 'F24', meaning: '比流器斷線、總電量異常', action: '記下代碼報修。', pro: true },
+  { code: 'F25', meaning: '壓縮機吐出感溫器異常', action: '記下代碼報修。', pro: true },
+  { code: 'F27', meaning: '壓縮機堵死或瞬停', action: '記下代碼報修。', pro: true },
+  { code: 'F28', meaning: '壓縮機位置檢測迴路故障', action: '記下代碼報修。', pro: true },
+  { code: 'F30', meaning: '壓縮機入口溫度過高保護', action: '記下代碼報修。', pro: true },
+  { code: 'F34', meaning: '冷房時室外熱交換器溫度異常保護', action: '記下代碼報修。', pro: true },
+  { code: 'F35', meaning: '驅動模組不明原因故障', action: '記下代碼報修。', pro: true },
+  { code: 'F36', meaning: '冷凝器中段感溫器異常', action: '記下代碼報修。', pro: true },
+  { code: 'F38', meaning: '室外機氣管(回管)感溫器異常', action: '記下代碼報修。', pro: true },
+  { code: 'F39', meaning: '高壓壓力開關異常', action: '記下代碼報修。', pro: true },
+  { code: 'F40', meaning: '低壓壓力開關異常', action: '記下代碼報修。', pro: true },
+  { code: 'F41', meaning: '高壓壓力過高保護', action: '記下代碼報修。', pro: true },
+  { code: 'F42', meaning: '低壓壓力過低保護', action: '記下代碼報修。', pro: true },
+]} />
+
+## XT 金清新系列故障碼
+
+<CodeTable idPrefix="xt" caption="適用：金鼎 XT 金清新系列，官網表標示 JCV-xxXT／JSV-xxXT／HRV-23XT。取自金鼎官網故障碼查詢頁，意思照官網原文。" rows={[
+  { code: 'E0', meaning: '室內機電流互感器過流保護', action: '記下代碼報修。', pro: true },
+  { code: 'E1', meaning: '室溫感測器故障', action: '記下代碼報修。', pro: true },
+  { code: 'E2', meaning: '室外機盤管感測器故障', action: '記下代碼報修。', pro: true },
+  { code: 'E3', meaning: '室內機盤管感測器故障', action: '記下代碼報修。', pro: true },
+  { code: 'E4', meaning: '內機馬達故障(PG/DC馬達)', action: '記下代碼報修。', pro: true },
+  { code: 'E5(5E)', meaning: '內外機通訊故障', action: '記下代碼報修。', pro: true },
+  { code: 'E8', meaning: '顯示面板和主控板通訊故障', action: '記下代碼報修。', pro: true },
+  { code: 'Eb', meaning: '室內機EE故障', action: '記下代碼報修。', pro: true },
+  { code: 'F0', meaning: '室外機馬達故障', action: '記下代碼報修。', pro: true },
+  { code: 'F1', meaning: '模組保護故障', action: '記下代碼報修。', pro: true },
+  { code: 'F2', meaning: 'PFC保護故障', action: '記下代碼報修。', pro: true },
+  { code: 'F3', meaning: '壓縮機啟動失敗或運轉失步', action: '記下代碼報修。', pro: true },
+  { code: 'F4', meaning: '室外機排氣感測器故障', action: '記下代碼報修。', pro: true },
+  { code: 'F5', meaning: '壓縮機頂蓋保護器故障', action: '記下代碼報修。', pro: true },
+  { code: 'F6', meaning: '室外機環境溫感測器故障', action: '記下代碼報修。', pro: true },
+  { code: 'F7', meaning: '過欠電壓保護故障', action: '記下代碼報修。', pro: true },
+  { code: 'F8', meaning: '室外機主控板和模組板通訊故障', action: '記下代碼報修。', pro: true },
+  { code: 'F9', meaning: '外機EE故障', action: '記下代碼報修。', pro: true },
+  { code: 'FA', meaning: '回器感測故障', action: '記下代碼報修。', pro: true },
+  { code: 'L0', meaning: '直流過欠壓故障', action: '記下代碼報修。', pro: true },
+  { code: 'L1', meaning: '壓縮機相電流過流保護', action: '記下代碼報修。', pro: true },
+  { code: 'L2', meaning: '壓縮機失步故障', action: '記下代碼報修。', pro: true },
+  { code: 'L3', meaning: '壓縮機缺相故障', action: '記下代碼報修。', pro: true },
+  { code: 'L4', meaning: '壓縮機驅動模組IPM故障', action: '記下代碼報修。', pro: true },
+  { code: 'L5', meaning: 'PFC過電流硬體保護', action: '記下代碼報修。', pro: true },
+  { code: 'L6', meaning: 'PFC過電流軟體保護', action: '記下代碼報修。', pro: true },
+  { code: 'L7', meaning: '電流檢測AD異常保護', action: '記下代碼報修。', pro: true },
+  { code: 'L8', meaning: 'shunt電阻不平衡故障', action: '記下代碼報修。', pro: true },
+  { code: 'L9', meaning: 'IPM溫度感測器故障', action: '記下代碼報修。', pro: true },
+  { code: 'P2', meaning: '高壓保護', action: '記下代碼報修。', pro: true },
+  { code: 'P3', meaning: '冷媒洩漏保護', action: '記下代碼報修。', pro: true },
+  { code: 'P4', meaning: '外盤防超載保護(製冷)', action: '記下代碼報修。', pro: true },
+  { code: 'P5', meaning: '排氣保護', action: '記下代碼報修。', pro: true },
+  { code: 'P6', meaning: '室內機防高溫保護(制熱)', action: '記下代碼報修。', pro: true },
+  { code: 'P7', meaning: '室內機防凍結保護(制冷)', action: '記下代碼報修。', pro: true },
+  { code: 'P8', meaning: '室外機過電流保護', action: '記下代碼報修。', pro: true },
+]} />
+
+<SafetyNote>冷媒、電路、壓縮機相關的代碼都要由原廠或合格技師處理，不要自己拆機或量電。</SafetyNote>
+
+## 報修前準備
+
+- 記下**代碼**和室內機、室外機貼紙上的**型號**。
+- 金鼎官網列的電話是 **0800-589-100**，也可以用官網「線上報修」。
