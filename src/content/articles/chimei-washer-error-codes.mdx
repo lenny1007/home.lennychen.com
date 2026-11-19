@@ -1,0 +1,105 @@
+---
+title: 奇美洗衣機錯誤碼 E1～E5、U11～U15、H 是什麼意思（依型號分三套）
+description: 奇美洗衣機顯示 E1、E2、U11、U13、H 加數字或滾筒 E11、E12 時，依奇美官網說明書分三套代碼對照原因與處理方式，哪些可以自己排除、哪些要拔插頭找服務站。
+cover: ../../assets/covers/chimei-washer-error-codes.webp
+cover_alt: 木凳上疊好的毛巾
+pubDate: 2026-11-19
+category: washer
+kind: troubleshoot
+brands: ['奇美']
+takeaways:
+  - 奇美洗衣機有三套代碼：WS-V158PW、V179PW、V138PW、F108PW、F128PW 用 E1～E5；WS-P188VS、P168VS、P17DVS、P20LVS 用 U 加兩位數；滾筒 WS-V117WD、V139WD 用 E11、E12、H、U4。
+  - E1、U14、E11 都是進水問題，先看水龍頭有沒有開、有沒有停水、進水閥濾網有沒有堵住。
+  - E2、U11、E12 都是排水問題，看排水管有沒有被壓住、放太高或被堵住。
+  - P 系列顯示「H」加兩位數字是要維修，記下數字、拔插頭、聯絡服務站。
+sources:
+  - title: 奇美 洗衣機使用說明書 WS-V158PW、WS-V179PW（故障的排除 p.15）
+    url: https://www.chimei.com.tw/files/series/washing-machine/WS-V179PW/V158-179PW說明書.pdf
+    checked: 2026-11
+  - title: 奇美 洗衣機使用說明書 WS-V138PW（故障的排除 p.14）
+    url: https://www.chimei.com.tw/files/series/washing-machine/WS-V138PW說明書(o).pdf
+    checked: 2026-11
+  - title: 奇美 洗衣機使用說明書 WS-F108PW、WS-F128PW（故障的排除 p.13）
+    url: https://www.chimei.com.tw/files/series/washing-machine/10/230307-WS-F128PW說明書(O)_S.pdf
+    checked: 2026-11
+  - title: 奇美 洗衣機使用說明書 WS-P188VS、WS-P168VS、WS-P17DVS（故障代碼 p.29）
+    url: https://www.chimei.com.tw/files/series/washing-machine/WS-P188-168-17DVS說明書.pdf
+    checked: 2026-11
+  - title: 奇美 洗衣機使用說明書 WS-P20LVS（故障代碼 p.28）
+    url: https://www.chimei.com.tw/files/series/washing-machine/WS-P20LVS-說明書.pdf
+    checked: 2026-11
+  - title: 奇美 滾筒洗衣機說明書 WS-V117WD、WS-V139WD（非故障的情況 p.21、故障的排除 p.22）
+    url: https://www.chimei.com.tw/files/series/washing-machine/V139&117WD洗衣機說明書).pdf
+    checked: 2026-11
+  - title: 奇美 官網檔案與型錄下載
+    url: https://www.chimei.com.tw/download
+    checked: 2026-11
+draft: false
+---
+import CodeTable from '../../components/CodeTable.astro';
+import SafetyNote from '../../components/SafetyNote.astro';
+
+奇美洗衣機的錯誤碼**依型號分成三套**，先看機身型號，再查對應的表。E1、U14、E11 都是進水問題，E2、U11、E12 都是排水問題，多數可以自己檢查排除；P 系列出現「H」加兩位數字就是要維修。
+
+## 先看你家是哪一套
+
+| 型號 | 代碼長相 |
+|---|---|
+| 直立式 WS-V158PW、WS-V179PW、WS-V138PW、WS-F108PW、WS-F128PW | E1～E5、EL |
+| 直立式 WS-P188VS、WS-P168VS、WS-P17DVS、WS-P20LVS | U11～U15、U99、H 加兩位數字 |
+| 滾筒 WS-V117WD、WS-V139WD | E11、E12、H、U4 |
+
+其他型號請用機身型號到奇美官網「檔案與型錄下載」找自己那一本說明書。
+
+## WS-V158PW、V179PW、V138PW、F108PW、F128PW
+
+說明書寫：出現故障時會響笛，「行程」顯示同時閃爍。**先按「啟動/暫停」鍵，檢查下表各項，排除後再按「啟動/暫停」繼續運轉。**
+
+<CodeTable idPrefix="v" caption="適用：奇美 WS-V158PW、WS-V179PW、WS-V138PW、WS-F108PW、WS-F128PW。EL 只有 WS-V158PW、WS-V179PW 說明書列出。" rows={[
+  { code: 'E1', meaning: '不進水或進水量很小', action: '看水龍頭有沒有打開、是不是停水、進水軟管和進水閥過濾網有沒有堵住、進水軟管有沒有結凍、水壓是不是太小。' },
+  { code: 'E2', meaning: '不排水', action: '看排水軟管有沒有放倒、排水口是不是高於 15 公分、排水口有沒有被堵住。' },
+  { code: 'E3', meaning: '不脫水', action: '看衣物是不是偏到洗滌脫水桶的一側、洗衣機有沒有放平。' },
+  { code: 'E4', meaning: '不脫水', action: '看洗衣上蓋是不是打開了。' },
+  { code: 'E5', meaning: '不洗衣', action: '看洗衣上蓋是不是打開了、兒童保護鎖是不是打開了。' },
+  { code: 'EL', meaning: '無法開門蓋（門鎖故障、門鎖卡住）', action: '記下代碼報修。', pro: true },
+  { code: 'EA、Eb、EC', meaning: '其他問題（F108PW、F128PW 說明書另列 E901、E902、E920 等）', action: '按「電源開關」關機，拔掉電源插頭，打奇美客服電話。', pro: true },
+]} />
+
+## WS-P188VS、P168VS、P17DVS、P20LVS
+
+說明書寫：洗衣機發出嗶嗶聲、輪流顯示「U」和數字時，照下表檢查；問題仍未解決就洽詢服務站。
+
+<CodeTable idPrefix="p" caption="適用：奇美 WS-P188VS、WS-P168VS、WS-P17DVS（同一本說明書）與 WS-P20LVS。U99 只有前三型說明書列出；U13、U14、U15 兩本寫法略有不同，以下以 P188VS 等三型為主，差異寫在括號內。" rows={[
+  { code: 'U11', meaning: '無法排水', action: '看排水管有沒有被壓住、末端有沒有泡在水裡、中途有沒有墊高 10 公分以上、延長超過 2 公尺、管內有沒有異物。修正後把洗衣槽蓋打開再蓋上，重新啟動。' },
+  { code: 'U12', meaning: '洗衣槽蓋開著', action: '關好洗衣槽蓋。' },
+  { code: 'U13', meaning: '無法脫水（P20LVS：無法脫水／冷風乾燥）', action: '把偏到一邊的衣物重新平均放好，蓋上洗衣槽蓋再重新啟動。洗衣機會搖晃或地面不平時，用平衡調整腳調整，把蓋子打開再蓋上，重新啟動。' },
+  { code: 'U14', meaning: '無法進水', action: '看水龍頭有沒有打開、是不是停水、給水閥過濾網有沒有被雜物堵住。修正後把洗衣槽蓋打開再蓋上，重新啟動。（P20LVS 另列：洗衣前槽內已有水且超過高水位、排水 5 分鐘仍降不下來時，照 U11 檢查排水管。）' },
+  { code: 'U15', meaning: '衣物過多', action: '關電源，取出超過容量上限的衣物，再選行程重新啟動（P20LVS 另寫：也可能是衣物太濕）。P188VS 等三型另寫：「快洗」開始前槽內已有水時，先只設「脫水」把水排掉，再選「快洗」重新啟動。' },
+  { code: 'U99', meaning: '兒童安全（只有 P188VS、P168VS、P17DVS）', action: '設定「兒童安全」時，洗衣中打開上蓋、槽內有一定水量，蓋子開著超過 10 秒就會顯示 U99 並自動強制排水。要停止排水，拔掉電源插頭，等 15 秒再插回。' },
+  { code: 'H 加兩位數字', meaning: '「H」和數字交替顯示，表示需要維修', action: '記下 H 後面的兩位數字，拔掉電源插頭，聯絡就近服務站。', pro: true },
+]} />
+
+說明書另註：出現 U、H 異常時，按電源鍵可以立即關機；**H09（P188VS 等三型還有 U99）無法直接關機，要拔掉電源插頭**。
+
+## 滾筒 WS-V117WD、WS-V139WD
+
+<CodeTable idPrefix="wd" caption="適用：奇美滾筒洗脫烘 WS-V117WD、WS-V139WD。" rows={[
+  { code: 'E11', meaning: '不進水', action: '看水龍頭有沒有打開、進水管有沒有結凍、進水管與進水閥口、水泵過濾器的濾網有沒有堵住、是不是停水。處理後按一次「啟動/暫停」重新運轉。' },
+  { code: 'E12', meaning: '不排水', action: '看排水管口是不是太高、排水管有沒有被絨屑或其他東西堵住。處理後按一次「啟動/暫停」重新運轉。' },
+  { code: 'H', meaning: '門蓋無法打開', action: '用了高溫熱水、洗滌水溫高或烘乾中途暫停時會鎖門。等溫度降到安全範圍會自動解鎖。' },
+  { code: 'U4', meaning: '門蓋沒有關閉', action: '關好門蓋，按一次「啟動/暫停」重新運轉。' },
+  { code: '其他代碼', meaning: '其他警示', action: '按「電源開關」關機，拔掉電源插頭，打奇美客服電話。', pro: true },
+  { code: 'Add', meaning: '不是故障：中途加衣物', action: '按暫停、打開機門就能放入衣物。' },
+  { code: 'Hot', meaning: '不是故障：烘乾結尾的散熱程序', action: '滾筒會慢慢轉、送常溫風降溫，約 20～40 分鐘。這段時間不要中途斷電或強制開門。' },
+]} />
+
+注意：P 系列的「H 加兩位數字」是要維修，滾筒的單獨一個「H」是門蓋因高溫鎖住，兩者不同。
+
+<SafetyNote>EL 門鎖故障、H 加數字、其他未列出的代碼都要由原廠處理，不要自己拆機。</SafetyNote>
+
+## 什麼情況要找原廠
+
+- 出現 EL、EA、Eb、EC、H 加數字或表上沒有的代碼。
+- 照表檢查後同一個代碼還是一直出現。
+
+聯絡時準備好**代碼**和機身**型號**。

@@ -1,0 +1,79 @@
+---
+title: 夏普洗衣機錯誤碼 E1、E3、E4、E19、C 開頭怎麼辦（直立式與滾筒）
+description: 夏普直立洗衣機顯示 E1、E2、E3、E4、E19、E21、U5 或 C 開頭代碼，滾筒顯示 E01～E04 時，依台灣夏普說明書對照原因與處理方式。
+cover: ../../assets/covers/sharp-washer-error-codes.webp
+cover_alt: 陽光房裡晾衣架
+pubDate: 2026-11-19
+category: washer
+kind: troubleshoot
+brands: ['夏普']
+takeaways:
+  - 夏普直立式 ES-ASG12T、ES-ASG13T、ES-ASW13T、ES-ASF10T～12T 共用一套代碼：E1 供水問題、E2 上蓋開著、E3 無法排水、E4 無法脫水。
+  - E1 有兩種情況：無法供水先看水龍頭和供水閥濾網；供水不停是排水軟管放太高，要放到 10 公分以下。
+  - C 開頭的代碼：先關電源等約 1 分鐘再開，仍出現就可能是故障，拔插頭找夏普維修。
+  - 滾筒 ES-FKA105WDT 用 E01～E04，C 加編號是可能有故障。
+sources:
+  - title: 台灣夏普 全自動變頻洗衣機 ES-ASG12T、ES-ASG13T 使用說明書（錯誤顯示、通知顯示 p.39）
+    url: https://tw.sharp/sites/default/files/uploads_service/CS說明書/洗衣機/ES-ASG12T、ES-ASG13T使用說明書.pdf
+    checked: 2026-11
+  - title: 台灣夏普 全自動變頻洗衣機 ES-ASW13T 使用說明書（p.46～47）
+    url: https://tw.sharp/sites/default/files/uploads_service/CS說明書/洗衣機/ES-ASW13T使用說明書.pdf
+    checked: 2026-11
+  - title: 台灣夏普 全自動洗衣機 ES-ASF10T、ES-ASF11T、ES-ASF12T 使用說明書（p.43）
+    url: https://tw.sharp/sites/default/files/uploads_service/CS說明書/洗衣機/ES-ASF10T、ES-ASF11T、ES-ASF12T使用說明書.pdf
+    checked: 2026-11
+  - title: 台灣夏普 全自動變頻滾筒洗衣機 ES-FKA105WDT 使用說明書（故障排除：錯誤信息說明）
+    url: https://tw.sharp/sites/default/files/uploads_service/CS說明書/洗衣機/ES-FKA105WDT使用說明書.pdf
+    checked: 2026-11
+  - title: 台灣夏普 說明書下載
+    url: https://tw.sharp/download
+    checked: 2026-11
+draft: false
+---
+import CodeTable from '../../components/CodeTable.astro';
+import SafetyNote from '../../components/SafetyNote.astro';
+
+夏普直立洗衣機出錯時，運轉燈號會快速閃爍並顯示代碼：**E1 是供水問題、E2 是上蓋開著、E3 是無法排水、E4 是無法脫水**，多數可以自己檢查排除。**C 開頭**的代碼先關電源等約 1 分鐘再開，還是出現就要找夏普維修。
+
+## 適用機種
+
+- 直立式：ES-ASG12T、ES-ASG13T、ES-ASW13T、ES-ASF10T、ES-ASF11T、ES-ASF12T（三本說明書的代碼相同，細節略有差異，寫在表內）。
+- 滾筒：ES-FKA105WDT，代碼格式不同，見最後一張表。
+
+其他型號（例如無孔槽 ES-G16AT-S、ES-G17AT-S）請用型號到台灣夏普「說明書下載」頁找自己那一本。
+
+## 直立式錯誤碼對照表
+
+<CodeTable idPrefix="top" caption="適用：台灣夏普 ES-ASG12T、ES-ASG13T、ES-ASW13T、ES-ASF10T、ES-ASF11T、ES-ASF12T。E19、E21 顯示時是「E」和數字交互顯示。" rows={[
+  { code: 'E1（無法供水）', meaning: '無法供水', action: '看水龍頭有沒有打開、是不是停水、供水閥濾網有沒有阻塞，處理後按「開始」（ES-ASW13T 寫「啟動」）。清洗洗衣槽「內部與外部」時如果把排水軟管掛在主機的水管掛鉤上，要把排水軟管立起，從頭重新操作。' },
+  { code: 'E1（供水不停）', meaning: '供水不停', action: '排水軟管位置太高。關電源，把排水軟管放到水平（高度 10 公分以下），再接通電源，先排水後繼續洗衣。' },
+  { code: 'E2', meaning: '上蓋開啟', action: '確實闔上上蓋。ES-ASG、ES-ASW 說明書另寫：闔上後按「啟動」；開始洗衣時上蓋開著，約 1 分 30 秒後會顯示，洗清、脫水或冷風乾燥開始時一啟動就顯示。' },
+  { code: 'E3', meaning: '無法排水', action: '看排水口有沒有阻塞、排水軟管有沒有壓壞或太長、排水位置是不是高於 10 公分、軟管前端有沒有阻塞、有沒有延長到 3 公尺以上，處理後按「開始」。' },
+  { code: 'E4', meaning: '無法脫水', action: '機體傾斜搖晃、衣物快要露出筒槽或偏向一邊（牛仔褲、厚衣物最容易）時會停下來。等筒槽完全停止再把衣物鋪平，闔上上蓋按「啟動」（ES-ASF 說明書只寫關閉上蓋），約 15 秒後（依剩水可能約 1 分鐘後）開始旋轉。設了兒童安全鎖要先解除上蓋鎖定。' },
+  { code: 'E19', meaning: '無法脫水（排水變差或洗衣劑太多）', action: '照 E3 檢查排水，看是不是倒了太多洗衣劑，處理後按「開始」。' },
+  { code: 'E21', meaning: '上蓋無法鎖定、無法解除', action: '看上蓋的鎖定部位有沒有夾到布料等東西，關好上蓋按「開始」。' },
+  { code: 'C 開頭', meaning: '可能是故障', action: '先關電源，等約 1 分鐘再接通。仍出現同樣顯示就拔掉電源插頭（ES-ASG、ES-ASW 另寫：關閉水龍頭），請夏普檢查維修。', pro: true },
+  { code: 'U5', meaning: '通知：洗衣接冷風乾燥連續運轉時，衣物量較多', action: '洗衣量多於 4 公斤時會通知。關電源、減到適量再重新開始；衣物已經沾濕也可能出現。' },
+  { code: '88', meaning: '通知：處於「展演」模式（ES-ASW13T）', action: '使用前請執行「初始化設定」。' },
+]} />
+
+ES-ASW13T 另有一項通知：自動投入的**洗劑或柔軟劑指示燈閃爍**，表示份量不足，請補充；不補充繼續用，燈會快速閃爍，也無法再自動投入。
+
+## 滾筒 ES-FKA105WDT
+
+<CodeTable idPrefix="drum" caption="適用：台灣夏普全自動變頻滾筒洗衣機 ES-FKA105WDT。" rows={[
+  { code: 'E01', meaning: '進水異常', action: '看進水龍頭有沒有打開、清潔進水閥過濾網、檢查水壓。' },
+  { code: 'E02', meaning: '門鎖異常', action: '看機門是不是開著，確實關緊。' },
+  { code: 'E03', meaning: '排水異常', action: '看排水管有沒有堵住、清潔排水孔過濾蓋、檢查排水管有沒有正確安裝。' },
+  { code: 'E04', meaning: '不平衡警報', action: '衣物分配不均或纏繞時，整理好重新放入；也可以增加衣物數量。' },
+  { code: 'C 加編號', meaning: '有故障的可能', action: '關電源、拔插頭，等 1 分鐘再插上重啟。仍無法排除就聯絡台灣夏普客戶服務中心。', pro: true },
+]} />
+
+<SafetyNote>C 開頭的代碼重開機後仍出現，就交給夏普檢修，不要自己拆機。</SafetyNote>
+
+## 什麼情況要找原廠
+
+- C 開頭的代碼關機重開後還在。
+- 照表處理後同一個代碼一直出現。
+
+聯絡台灣夏普客戶服務中心時，準備好**代碼**和**型號**。
