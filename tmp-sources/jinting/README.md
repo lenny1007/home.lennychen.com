@@ -8,7 +8,7 @@
 
 ## 檔案
 - `jinting-error-codes.tsv`：完整 502 列（不含表頭），順序與官網相同。
-  - 官網格子內的換行（`<br>`）在 TSV 中換成一個半形空格，其他文字原樣保留（含官網自己的空格、斜線寫法不一致，例如 `JCV-xxHD /JSV-xxHD/HD`）。
+  - 官網格子內的換行（`<br>`）在 TSV 中換成一個半形空格，連續空白合併成一個（和瀏覽器顯示一致；原始 HTML 有 2 列是兩個空格：第 46 列 di `HR-xxNH  / JS-xx`、第 109 列 E4 `JCV-xxHD  /HRV-xxHD …`），其他文字原樣保留（含官網自己斜線前後空格不一致的寫法，例如 `JCV-xxHD /JSV-xxHD/HD`）。
   - 官網表本身有 2 列完全重複（例如第 1、2 列都是 `0b / JCV-xxHD / JSV-xxHD/HD / JCM-xxHD`），照抄未去重。
   - 不重複故障碼 199 個；「機型敘述」字串 42 種（同一組機型因空格/斜線寫法不同而被算成不同字串，例如 `CSM-xxSG / JCV-xxSG` 28 列與 `CSM-xxSG/JCV-xxSG` 2 列）。
 
