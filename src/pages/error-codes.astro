@@ -1,0 +1,107 @@
+---
+// 錯誤碼總表：把 kind=troubleshoot 的文章依「品類 → 品牌」排好，並列出各篇表格裡的代碼，
+// 讓搜「冷氣 E1」這類不帶品牌的讀者先找到自己的品牌。代碼直接從文章的 <CodeTable> 抽，
+// 錨點算法與 CodeTable.astro 相同（每張表各自計數），所以點代碼會跳到該列。
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import { CATEGORIES } from '../consts';
+
+type Code = { code: string; href: string };
+
+// 文章 brands 用的是品牌原名，總表顯示時補上台灣常用叫法。
+const BRAND_LABEL: Record<string, string> = { Panasonic: '國際牌 Panasonic', LG: 'LG 樂金', 三星: '三星 Samsung' };
+
+function anchorFor(prefix: string, code: string, seen: Map<string, number>) {
+  const base = `${prefix}-${code.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '') || 'dash'}`;
+  const n = (seen.get(base) ?? 0) + 1;
+  seen.set(base, n);
+  return n === 1 ? base : `${base}-${n}`;
+}
+
+function extractCodes(slug: string, body = ''): Code[] {
+  const out: Code[] = [];
+  const shown = new Set<string>();
+  for (const block of body.split('<CodeTable').slice(1)) {
+    const prefix = block.match(/idPrefix=["']([^"']+)["']/)?.[1] ?? 'code';
+    const seen = new Map<string, number>();
+    for (const m of block.matchAll(/\{\s*code:\s*'([^']*)'/g)) {
+      const code = m[1];
+      const href = `/articles/${slug}/#${anchorFor(prefix, code, seen)}`;
+      // 只列像代碼的（英數開頭、不超過 14 字），中文提示句（例如三星滾筒的「清潔排水濾網」）不列。
+      const label = code.replace(/（.*?）/g, '').trim();
+      if (!/^[A-Za-z0-9]/.test(label) || label.length > 14 || shown.has(label)) continue;
+      shown.add(label);
+      out.push({ code: label, href });
+    }
+  }
+  return out;
+}
+
+const articles = (await getCollection('articles', ({ data }) => !data.draft && data.kind === 'troubleshoot'))
+  .sort((a, b) => (a.data.brands[0] ?? '').localeCompare(b.data.brands[0] ?? '', 'zh-Hant') || a.data.title.localeCompare(b.data.title, 'zh-Hant'));
+
+const groups = CATEGORIES.map((c) => {
+  const items = articles.filter((a) => a.data.category === c.slug);
+  const brands = new Map<string, typeof items>();
+  for (const a of items) {
+    const b = a.data.brands.length ? a.data.brands.map((x) => BRAND_LABEL[x] ?? x).join('／') : '跨品牌';
+    brands.set(b, [...(brands.get(b) ?? []), a]);
+  }
+  return { ...c, brands: [...brands.entries()] };
+}).filter((g) => g.brands.length);
+
+const brandCount = new Set(articles.flatMap((a) => a.data.brands)).size;
+---
+<Base title="家電錯誤碼總表：冷氣、洗衣機、除濕機、電鍋依品牌查" description={`冷氣、洗衣機、除濕機、電鍋顯示錯誤碼或閃燈時，先找品牌再找型號。整理 ${brandCount} 個品牌的錯誤碼頁，每一頁都對照台灣原廠說明書或官方客服資料。`}>
+  <header class="page-head">
+    <h1>家電錯誤碼總表</h1>
+    <p>同一個代碼在不同品牌、甚至同品牌不同系列，意思都可能不一樣。先在下面找到你的品牌，再到該頁看適用型號。點代碼會直接跳到那一列。</p>
+  </header>
+
+  <nav class="jump" aria-label="品類">
+    {groups.map((g) => <a href={`#${g.slug}`}>{g.name}</a>)}
+  </nav>
+
+  {groups.map((g) => (
+    <section class="group" id={g.slug}>
+      <h2>{g.name}</h2>
+      {g.brands.map(([brand, items]) => (
+        <div class="brand">
+          <h3>{brand}</h3>
+          <ul>
+            {items.map((a) => {
+              const codes = extractCodes(a.id, a.body);
+              return (
+                <li>
+                  <a class="title" href={`/articles/${a.id}/`}>{a.data.title}</a>
+                  {codes.length > 0 && (
+                    <p class="codes">
+                      {codes.slice(0, 18).map((c) => <a href={c.href}><code>{c.code}</code></a>)}
+                      {codes.length > 18 && <a href={`/articles/${a.id}/`}>…共 {codes.length} 個</a>}
+                    </p>
+                  )}
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+      ))}
+    </section>
+  ))}
+
+  <p class="note">找不到你的品牌？請用型號到原廠官網下載說明書，或直接聯絡原廠客服。本站只收錄查得到台灣官方資料的品牌與型號。</p>
+</Base>
+
+<style>
+  .jump { display: flex; flex-wrap: wrap; gap: 8px 16px; margin-top: 16px; }
+  .group { padding-block: 28px; border-top: 1px solid var(--rule); margin-top: 24px; scroll-margin-top: 16px; }
+  .group h2 { font-size: 1.4rem; margin: 0 0 8px; }
+  .brand { margin-top: 18px; }
+  .brand h3 { font-size: 1.05rem; margin: 0 0 6px; color: var(--muted); }
+  ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 14px; max-width: 46em; }
+  .title { font-weight: 600; }
+  .codes { margin: 6px 0 0; display: flex; flex-wrap: wrap; gap: 6px; }
+  .codes a { text-decoration: none; }
+  .codes code { font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace; font-size: .85rem; padding: 2px 6px; border: 1px solid var(--rule); border-radius: 4px; white-space: nowrap; }
+  .note { margin-top: 32px; color: var(--muted); max-width: 46em; }
+</style>
