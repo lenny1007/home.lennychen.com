@@ -1,0 +1,105 @@
+---
+title: 三星熱泵乾衣機錯誤代碼：tC、tC5、HC 怎麼辦？分機型對照
+description: 三星熱泵乾衣機錯誤代碼怎麼處理？依 DV10DB7440 與 DV90F20CDSTW 台灣說明書，分別對照 tC、tC5、3C、AC6、HC、DC1 與螢幕文字訊息。
+cover: ../../assets/covers/samsung-heat-pump-dryer-error-codes.webp
+cover_alt: 木架上摺好的毛巾與毛衣
+pubDate: 2026-11-20
+category: washer
+kind: troubleshoot
+brands: ['三星']
+takeaways:
+  - DV10DB7440 的 tC 可先清潔棉絮濾網或熱交換器；DV90F20CDSTW 的 tC 要聯絡客服
+  - 兩系列的 tC5 都先等待 2 到 3 分鐘，再開啟電源並重新啟動
+  - 兩系列的 HC 都是壓縮機過熱，應聯絡三星服務中心
+  - 任何資訊代碼一直出現時，兩份說明書都要求聯絡三星服務中心
+sources:
+  - title: 三星 Samsung 乾衣機使用說明書（熱泵）DV10DB7440GB／DV10DB7440GW（DC68-04543J-00）
+    url: https://org.downloadcenter.samsung.com/downloadfile/ContentsFile.aspx?CDSite=UNI_TW&OriginYN=N&ModelType=N&ModelName=DV10DB7440GB&CttFileID=10399912&CDCttType=UM&VPath=UM%2F202505%2F20250516125113347%2FDC68-04543J-00_IB_D-PJT_DV7400D_SimpleUX_ZH-TW_250515.pdf
+    checked: 2026-11
+  - title: 三星 Samsung 乾衣機使用說明書（熱泵）DV90F20CDSTW（OID127201）
+    url: https://org.downloadcenter.samsung.com/downloadfile/ContentsFile.aspx?CDSite=UNI_TW&OriginYN=N&ModelType=N&ModelName=DV90F20CDSTW&CttFileID=11119806&CDCttType=UM&VPath=UM%2F202511%2F20251119105608553%2FOID127201_IB_DV90F_7LCD_ZH-TW_251103.pdf
+    checked: 2026-11
+  - title: 三星台灣客服常見問答「DV90F20CDSTW 熱泵乾衣機資訊代碼說明」（2026-10-20 更新）
+    url: https://www.samsung.com/tw/support/home-appliances/information-code-explanation-for-dv90f20cdstw-heat-pump-dryer/
+    checked: 2026-11
+draft: false
+---
+import CodeTable from '../../components/CodeTable.astro';
+import SafetyNote from '../../components/SafetyNote.astro';
+
+三星乾衣機顯示 **tC，要分機型處理**：DV10DB7440 可先清潔棉絮濾網或熱交換器，DV90F20CDSTW 則要聯絡客服。兩系列的 **HC 都是壓縮機過熱，請聯絡三星服務中心**。
+
+## 適用機種
+
+- 三星 DV10DB7440GB／DV10DB7440GW：下表簡稱 DV10DB7440。
+- 三星 DV90F20CDSTW：另列代碼與文字訊息表。
+
+## DV10DB7440：11 個資訊代碼
+
+表內有重啟或清潔方式的，可先依該列處理；代碼一直出現時，再聯絡三星服務中心。
+
+<CodeTable idPrefix="dv10" caption="適用：三星 DV10DB7440GB／DV10DB7440GW（說明書第 42–43 頁）" rows={[
+  { code: 'DC1', meaning: '機門開關未正常運作', action: '檢查機門周圍有無異物，再關門重試。' },
+  { code: 'tC', meaning: '空氣溫度感測器問題', action: '清潔棉絮濾網或熱交換器；仍有問題就聯絡客服。' },
+  { code: 'tC5', meaning: '壓縮機溫度感測器問題', action: '依下方 tC5 步驟處理。' },
+  { code: 'tC7', meaning: '檢查 Eva In 溫度感測器', action: '重新開啟電源並重啟；仍有問題就聯絡客服。' },
+  { code: 'tC8', meaning: '檢查 Eva Out 溫度感測器', action: '重新開啟電源並重啟；仍有問題就聯絡客服。' },
+  { code: 'tCA', meaning: '檢查 Compressor Top 溫度感測器', action: '重新開啟電源並重啟；仍有問題就聯絡客服。' },
+  { code: '3C', meaning: '檢查電機運轉', action: '嘗試重啟行程；仍有問題就聯絡客服。' },
+  { code: '3CA', meaning: '檢查變頻壓縮機', action: '重新開啟電源並重啟；仍有問題就聯絡客服。' },
+  { code: 'AC6', meaning: '檢查主芯片和電機芯片之間的通信', action: '嘗試重啟行程；仍有問題就聯絡客服。' },
+  { code: 'ACA', meaning: '檢查主芯片和壓縮機芯片之間的通信', action: '嘗試重啟行程；仍有問題就聯絡客服。' },
+  { code: 'HC', meaning: '壓縮機過熱', action: '聯絡三星服務中心。', pro: true },
+]} />
+
+## DV90F20CDSTW：5 個資訊代碼
+
+<CodeTable idPrefix="dv90" caption="適用：三星 DV90F20CDSTW（說明書第 51 頁、台灣客服 FAQ）" rows={[
+  { code: 'tC', meaning: '空氣溫度感測器問題', action: '聯絡三星客服。', pro: true },
+  { code: 'tC5', meaning: '壓縮機溫度感測器問題', action: '依下方步驟處理；持續發生就聯絡客服。' },
+  { code: '3C', meaning: '檢查馬達運轉狀況', action: '嘗試重啟行程；持續發生就聯絡客服。' },
+  { code: 'AC6', meaning: '檢查主副變頻器 PBA 之間的通訊', action: '嘗試重啟行程；持續發生就聯絡客服。' },
+  { code: 'HC', meaning: '壓縮機過熱', action: '聯絡三星客服。', pro: true },
+]} />
+
+### tC5 的處理步驟（兩系列）
+
+1. 等待 2 到 3 分鐘。
+2. 再次開啟電源。
+3. 重新啟動。
+
+<SafetyNote>兩份說明書都禁止自行維修、拆卸或改裝。表中感測器、芯片與 PBA 的「檢查」是代碼意義；內部檢修請交給三星服務中心。</SafetyNote>
+
+## 螢幕文字訊息
+
+### DV10DB7440GB／DV10DB7440GW
+
+| 螢幕文字 | 使用者可做的處理 |
+|---|---|
+| 關閉乾衣機門，然後重試 | 關門後重新開始；檢查兒童安全鎖。安全鎖開啟時，即使未運轉，開門也可能收到此訊息。 |
+| 開啟門並檢查內部（兒童安全鎖開啟） | 開門檢查筒槽內部；兒童安全鎖開啟時，關閉安全鎖或電源。 |
+| 確認濾網已正確裝入 | 檢查棉絮濾網。 |
+| 檢查熱交換器外蓋是否正確裝入 | 檢查內部熱交換器蓋元件。 |
+| 檢查水槽和排水管是否漏水，然後重啟 | 檢查排水軟管是否彎曲或損壞；清空水箱後開機重啟。 |
+
+### DV90F20CDSTW
+
+| 螢幕文字（同列為說明書並列訊息） | 使用者可做的處理 |
+|---|---|
+| 機門開啟。關上門後再試一次。 | 確認門已關好，沒有衣物卡住機門。 |
+| 使用前請先洗淨濾網。／檢查濾網是否正確裝入 | 檢查並清洗棉絮濾網。 |
+| 檢查熱交換器外蓋是否正確裝入 | 檢查內部熱交換器蓋組件。 |
+| 檢查排水狀態／檢查水箱和水管／檢查漏水後重新啟動／清空水箱。 | 檢查排水管是否彎曲或損壞；清空水箱後開機重啟。 |
+
+上述排水訊息若涉及**排水管結冰**，兩系列都寫可用浸過溫水的毛巾包裹軟管約 10 分鐘解凍。
+
+只有 DV90F20CDSTW 第 51 頁另列：**如果乾衣機內部結冰**，處理如下。
+
+1. 取出水箱。
+2. 在水箱原來的內部空間注入約 400 ml 溫水。
+3. 等大約一小時。
+4. 運轉乾衣機，確認能正常排水。
+
+## 什麼情況要找原廠／服務站
+
+兩系列顯示 HC，或 DV90F20CDSTW 顯示 tC，請聯絡三星客服。任何資訊代碼一直出現，也要聯絡三星服務中心；濾網、熱交換器蓋、排水及「關閉乾衣機門，然後重試」訊息依表處理後仍持續，也應叫修。
