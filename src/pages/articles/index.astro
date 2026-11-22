@@ -11,7 +11,7 @@ const groups = CATEGORIES.map((c) => ({ ...c, items: articles.filter((a) => a.da
 <Base title="全部文章" description="冷氣、洗衣機、除濕機、電鍋氣炸鍋與鍋具的錯誤碼、清潔保養與設定整理。">
   <header class="page-head">
     <h1>全部文章</h1>
-    <p>每篇上線前都對照過原廠說明書或官方資料，來源列在文末。</p>
+    <p>每篇上線前都對照過原廠說明書或官方資料，來源列在文末。要查錯誤碼，可以從<a href="/error-codes/">錯誤碼總表</a>依品牌找。</p>
   </header>
   {articles.length === 0 && <p class="none">第一批文章整理中。</p>}
   {groups.filter((g) => g.items.length).map((g) => (
