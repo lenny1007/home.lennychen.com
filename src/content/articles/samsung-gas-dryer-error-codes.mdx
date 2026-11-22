@@ -1,0 +1,82 @@
+---
+title: 三星瓦斯型乾衣機錯誤代碼：FC、dF、9C1 怎麼辦？分機型對照
+description: 三星瓦斯型乾衣機顯示 FC、AC、HC、9C1、tC、tC5、dF 或 3C 時，依 DVG16CG8600、DVG17CB8700 台灣說明書對照意思、處理方式與通風口堵塞測試結果。
+cover: ../../assets/covers/samsung-gas-dryer-error-codes.webp
+cover_alt: 長凳上摺好的床單
+pubDate: 2026-11-20
+category: washer
+kind: troubleshoot
+brands: ["三星"]
+takeaways:
+  - DVG16CG8600、DVG17CB8700 的 FC 是電源頻率無效，先嘗試重新啟動行程；代碼仍在就聯絡三星服務中心。
+  - 兩系列的 AC、dF 都要求聯絡三星服務中心；dF 的意思是機門開關不正確。
+  - 3C 只列在 DVG16CG8600 這份說明書，處理是拔掉電源插頭後聯絡三星服務中心。
+  - 兩系列的安裝檢查顯示「通風口幾乎堵塞」，代表超過 80% 的通風口堵塞，通風處理須由專業人員採取措施。
+sources:
+  - title: 三星 Samsung 瓦斯型乾衣機使用說明書 DVG16CG8600 系列（DC68-04299R-01）
+    url: https://org.downloadcenter.samsung.com/downloadfile/ContentsFile.aspx?CDSite=UNI_TW&OriginYN=N&ModelType=N&ModelName=DVG16CG8600W&CttFileID=9912290&CDCttType=UM&VPath=UM%2F202410%2F20241015005233656%2FDC68-04299R-01_IB_DV8600_SimpleUX_ZH-TW_240910.pdf
+    checked: 2026-11
+  - title: 三星 Samsung 瓦斯型乾衣機使用說明書 DVG17CB8700 系列（DC68-04394H-01）
+    url: https://org.downloadcenter.samsung.com/downloadfile/ContentsFile.aspx?CDSite=UNI_TW&OriginYN=N&ModelType=N&ModelName=DVG17CB8700V&CttFileID=9912291&CDCttType=UM&VPath=UM%2F202410%2F20241015010847206%2FDC68-04394H-01_IB_DV8900B_SimpleUX_ZH-TW_240910.pdf
+    checked: 2026-11
+draft: false
+---
+import CodeTable from '../../components/CodeTable.astro';
+import SafetyNote from '../../components/SafetyNote.astro';
+
+三星瓦斯型乾衣機 DVG16CG8600、DVG17CB8700 顯示 **FC** 時，先嘗試重新啟動行程；代碼仍在就聯絡三星服務中心。**AC、dF** 則直接聯絡服務中心。**3C 只列在 DVG16CG8600 這份說明書**，要先拔掉電源插頭再聯絡服務中心。
+
+## 適用機種
+
+- 三星 DVG16CG8600 系列：訊息代碼見說明書第 48 頁。
+- 三星 DVG17CB8700 系列：訊息代碼見說明書第 49 頁，未列 3C。
+
+## 兩系列共用：FC、AC、HC、9C1、tC、tC5、dF
+
+下表依兩份說明書整理。FC、HC、9C1、tC、tC5 有先做的檢查或處理；若代碼依然存在，再聯絡三星服務中心。
+
+<CodeTable idPrefix="shared" caption="適用：三星 DVG16CG8600、DVG17CB8700 系列。" rows={[
+  { code: 'FC', meaning: '電源頻率無效', action: '先嘗試重新啟動行程；代碼仍在就聯絡三星服務中心。' },
+  { code: 'AC', meaning: '電子控制問題（通訊無效）', action: '聯絡三星服務中心。', pro: true },
+  { code: 'HC', meaning: '高溫加熱檢查', action: '先清洗棉絮濾網；代碼仍在就聯絡三星服務中心。' },
+  { code: '9C1', meaning: '需要檢查電子控制', action: '先檢查電源線連接是否正常、電源插座是否正常運作；代碼仍在就聯絡三星服務中心。' },
+  { code: 'tC', meaning: '熱敏電阻 1 的電阻極低或極高', action: '先檢查棉絮濾網是否堵塞、通風系統是否受到限制；代碼仍在就聯絡三星服務中心。' },
+  { code: 'tC5', meaning: '熱敏電阻 2 的電阻極低或極高', action: '先檢查棉絮濾網是否堵塞、通風系統是否受到限制；代碼仍在就聯絡三星服務中心。' },
+  { code: 'dF', meaning: '機門開關不正確', action: '聯絡三星服務中心。', pro: true },
+]} />
+
+兩系列另外都有「**機門已開啟**」這項文字訊息，意思是在機門開啟的情況下進行烘乾，處理方式是：
+
+1. 確認機門已關好。
+2. 確認沒有衣物卡住機門。
+
+## DVG16CG8600：另列 3C
+
+<CodeTable idPrefix="dvg16" caption="僅適用：三星 DVG16CG8600 系列，第 48 頁。" rows={[
+  { code: '3C', meaning: '需要檢查 PBA', action: '先拔掉電源插頭，再聯絡三星服務中心。', pro: true },
+]} />
+
+## 通風口堵塞測試：安裝檢查碼怎麼看
+
+兩系列的第 23 頁說明「通風口堵塞測試」，第 24 頁列出以下文字結果。即使顯示「偵測沒問題」，管道系統仍可能稍微堵塞。
+
+<CodeTable idPrefix="installation" caption="適用：三星 DVG16CG8600、DVG17CB8700 系列，安裝檢查碼。" rows={[
+  { code: '偵測沒問題', meaning: '通風情況良好', action: '依說明書安裝指示正確安裝管道系統；此結果仍可能有輕微堵塞。' },
+  { code: '通風口幾乎堵塞', meaning: '超過 80% 的通風口堵塞，可能導致烘乾效率變低或故障', action: '清洗棉絮濾網，檢查通風情況；通風處理須由專業人員採取措施（如清潔）。', pro: true },
+  { code: '乾衣機維持室溫', meaning: '內部溫度低於 0°C 或超過 40°C，無法偵測通風口堵塞', action: '讓乾衣機維持室溫（5～35°C）一小時，再檢查一次。' },
+  { code: '偵測桶槽內有衣物', meaning: '偵測到筒槽內衣物，或烘乾感應器錯誤', action: '取出衣物後再檢查一次；問題仍在就洽服務中心。' },
+]} />
+
+兩系列都提醒：測試過程中不要開啟機門；測試過程中或之後，內部筒槽會發熱，須小心避免燙傷。
+
+<SafetyNote title="安裝與維修請交給專業人員">
+兩系列說明書要求由合格技師或服務公司安裝。瓦斯相關安裝與維修請交給專業人員；切勿自行維修、拆卸或改裝設備，需要維修或重新安裝時請聯絡服務中心。
+</SafetyNote>
+
+## 什麼情況要找原廠／服務站
+
+- 兩系列顯示 AC、dF：聯絡三星服務中心。
+- DVG16CG8600 顯示 3C：拔掉電源插頭後聯絡三星服務中心。
+- 兩系列有任何資訊代碼一直出現在顯示幕上：聯絡三星服務中心。
+- 兩系列：**瓦斯（城市瓦斯、丙烷、液化石油氣）洩漏時，請勿觸摸本設備或電源線，立即通風，不要使用排氣風扇**；說明書提醒火花可能導致爆炸或引發火災，且僅憑氣味可能無法偵測到瓦斯洩漏。
+- 兩系列發出奇怪噪音、有東西燃燒的氣味或冒煙：立即切斷電源並聯繫服務中心。

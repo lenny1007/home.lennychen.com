@@ -1,0 +1,78 @@
+---
+title: LG 乾衣機 dE、tE1、F1 錯誤代碼怎麼辦？分機型查處理方式
+description: LG 乾衣機錯誤代碼 dE、dE1、dE2、dE4、tE1、tE2、F1、LE1、LE2、AE、OE 怎麼辦？依 WR-100VW／VB 與 WR-90TW／TV、WR-80TW 說明書分表對照原因與聯絡客服的條件。
+cover: ../../assets/covers/lg-dryer-error-codes.webp
+cover_alt: 衣架上晾好的棉質襯衫
+pubDate: 2026-11-20
+category: washer
+kind: troubleshoot
+brands: ["LG"]
+takeaways:
+  - WR-100VW／WR-100VB 的 dE1、WR-90TW／WR-90TV／WR-80TW 的 dE，先完全關門；代碼未消失就聯絡客服。
+  - 本文兩系列的 tE1、tE2 是溫度感測器失靈，F1 是滾筒內部溫度突然升高，均須拔掉插頭並聯絡客服。
+  - 本文兩系列的 LE1 要檢查衣物量是否超過最大負荷量，並拔掉插頭、聯絡客服。
+  - 本文兩系列的 OE 列有幫浦馬達失靈與環境低於零度兩種原因；後者對應建議安裝溫度 5–35°C。
+sources:
+  - title: LG 使用者手冊 乾衣機 WR-100VW／WR-100VB（MFL71712146 Rev.02）
+    url: https://gscs-b2c.lge.com/open/downloadFile?fileId=t1PkEsQWrtAV9RVUSirbDA
+    checked: 2026-11
+  - title: LG 使用者手冊 乾衣機 WR-90TW／WR-90TV／WR-80TW（MFL69702081 Rev.05）
+    url: https://gscs-b2c.lge.com/open/downloadFile?fileId=kRmSFX2mMUX3AUlcoWM0A
+    checked: 2026-11
+draft: false
+---
+import CodeTable from '../../components/CodeTable.astro';
+import SafetyNote from '../../components/SafetyNote.astro';
+
+LG 乾衣機顯示 **dE 或 dE1**，本文對應機型的說明書要求先完全關門，代碼未消失就聯絡客服。**tE1、tE2、F1** 則要求拔掉電源插頭並聯絡客服；請依下方型號查表。
+
+## 適用機種
+
+- **WR-100VW／WR-100VB**：依 MFL71712146 Rev.02 第 36 頁「故障資訊」。
+- **WR-90TW／WR-90TV／WR-80TW**：依 MFL69702081 Rev.05 印刷頁 36「錯誤代碼」。
+
+本文只整理上述機型。兩表的機門代碼不同：WR-100VW／VB 列 dE1、dE2、dE4；WR-90TW／TV、WR-80TW 列 dE、dE4。
+
+## WR-100VW／WR-100VB：錯誤代碼
+
+<CodeTable idPrefix="wr100" caption="LG WR-100VW／WR-100VB；說明書第 36 頁。" rows={[
+  { code: 'dE1', meaning: '運轉中開門，或機門未妥善關閉', action: '完全關閉機門；若 dE1 未消失，聯絡客服。', pro: true },
+  { code: 'dE2／dE4', meaning: '機門開關偵測未正常運作', action: '拔掉電源插頭並聯絡客服。', pro: true },
+  { code: 'tE1／tE2', meaning: '溫度感測器失靈', action: '拔掉電源插頭並聯絡客服。', pro: true },
+  { code: 'F1', meaning: '滾筒內部溫度突然升高', action: '拔掉電源插頭並聯絡客服。', pro: true },
+  { code: 'LE1', meaning: '馬達突然停止運轉', action: '檢查衣物量是否超過最大衣物承載量；拔掉電源插頭並聯絡客服。', pro: true },
+  { code: 'LE2／AE', meaning: '壓縮機突然停止運轉', action: '拔掉電源插頭並聯絡客服。', pro: true },
+  { code: 'OE', meaning: '排水幫浦馬達失靈；另列環境低於零度', action: '幫浦馬達失靈：拔掉電源插頭並聯絡客服。環境低於零度：建議安裝環境周圍溫度介於 5–35°C。', pro: true },
+]} />
+
+## WR-90TW／WR-90TV／WR-80TW：錯誤代碼
+
+<CodeTable idPrefix="wr90" caption="LG WR-90TW／WR-90TV／WR-80TW；說明書印刷頁 36。" rows={[
+  { code: 'dE', meaning: '運轉中開門，或機門未妥善關閉', action: '確實關妥機門；若 dE 仍未消失，聯絡客服。', pro: true },
+  { code: 'dE4', meaning: '機門開關偵測未正常運作', action: '拔掉電源插頭並聯絡客服。', pro: true },
+  { code: 'tE1／tE2', meaning: '溫度感測器失靈', action: '拔掉電源插頭並聯絡客服。', pro: true },
+  { code: 'F1', meaning: '滾筒內部溫度突然升高', action: '拔掉電源插頭並聯絡客服。', pro: true },
+  { code: 'LE1', meaning: '馬達突然停止運轉', action: '檢查衣物量是否超過最大負荷量；拔掉電源插頭並聯絡客服。', pro: true },
+  { code: 'LE2／AE', meaning: '壓縮機突然停止運轉', action: '拔掉電源插頭並聯絡客服。', pro: true },
+  { code: 'OE', meaning: '排水幫浦馬達失靈；另列環境低於零度', action: '幫浦馬達失靈：拔掉電源插頭並聯絡客服。環境低於零度：建議安裝環境周圍溫度介於 5–35°C。', pro: true },
+]} />
+
+表中的「請聯絡原廠」須連同處理條件閱讀：dE／dE1 是關門後仍顯示才聯絡客服；OE 的兩種原因各有對應說明。
+
+## dE、dE1：先關門，再看代碼是否消失
+
+WR-100VW／VB 顯示 dE1，或 WR-90TW／TV、WR-80TW 顯示 dE 時：
+
+1. 完全關閉機門。
+2. 若對應代碼仍未消失，聯絡客服人員。
+
+WR-100VW／VB 的 dE2、dE4，以及 WR-90TW／TV、WR-80TW 的 dE4，說明書列為機門開關偵測未正常運作，處理方式是拔掉插頭並聯絡客服。
+
+另有洗衣機代碼要查，可看[LG 洗衣機錯誤碼](/articles/lg-washer-error-codes/)。
+
+## 什麼情況要找原廠／服務站
+
+- **關門後代碼未消失**：WR-100VW／VB 的 dE1；WR-90TW／TV、WR-80TW 的 dE。
+- **拔掉插頭並聯絡客服**：WR-100VW／VB 的 dE2、dE4；WR-90TW／TV、WR-80TW 的 dE4；兩系列的 tE1、tE2、F1、LE1、LE2、AE，以及 OE 對應排水幫浦馬達失靈的情況。LE1 另須檢查衣物量是否超過最大負荷量。
+
+<SafetyNote>上述兩系列手冊都要求不要分開面板或拆卸機器，也不要自行修理或更換零件。除了手冊具體建議的維修方式外，維修須由具有執照的維修人員進行。</SafetyNote>
