@@ -7,7 +7,7 @@ export const SITE_DESCRIPTION =
  * AdSense 發布商 ID（ca-pub-…）。留空就不載入廣告。
  * AdSense 只能登記主網域：lennychen.com 審過後，子網域可直接用同一組 ID。
  */
-export const ADSENSE_CLIENT = '';
+export const ADSENSE_CLIENT = 'ca-pub-9146224692033168';
 
 /** 讀者回報錯誤、隱私權問題的聯絡信箱。關於本站、隱私權政策頁共用。 */
 export const CONTACT_EMAIL = 'lenny0929@gmail.com';
