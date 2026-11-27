@@ -38,7 +38,16 @@ const siteLd = { '@context': 'https://schema.org', '@type': 'WebSite', name: SIT
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@700&display=swap" />
     {ADSENSE_CLIENT && !noindex && (
-      <script async src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT}`} crossorigin="anonymous"></script>
+      // 只在正式網域載入，Vercel preview（*.vercel.app）不載。
+      <script is:inline define:vars={{ client: ADSENSE_CLIENT, siteOrigin: new URL(SITE_URL).origin }}>
+        if (window.location.origin === siteOrigin) {
+          const s = document.createElement('script');
+          s.async = true;
+          s.crossOrigin = 'anonymous';
+          s.src = `https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${encodeURIComponent(client)}`;
+          document.head.append(s);
+        }
+      </script>
     )}
     {[siteLd, ...jsonLd].map((ld) => <script type="application/ld+json" set:html={JSON.stringify(ld)} />)}
   </head>

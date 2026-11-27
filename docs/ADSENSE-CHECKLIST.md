@@ -7,6 +7,10 @@
 - 聯絡信箱放在 `src/consts.ts` 的 `CONTACT_EMAIL`，關於本站與隱私權政策頁共用。
 - 隱私權政策的「廣告與 Cookie」段落依 `ADSENSE_CLIENT` 自動切換：留空時寫「目前還沒有刊登廣告」，填了就變成「本站使用 Google AdSense」。
 
+## 2026-11-27 已開廣告
+- 第 1、2、4 步已完成（PR：AdSense 自動廣告）。程式碼只在 `home.lennychen.com` 正式網域、非 noindex 頁載入。
+- 第 3 步（EEA 同意聲明）要站主在 AdSense 後台「隱私權與訊息」設定，整個帳號共用一次。
+
 ## 開廣告時要做
 1. `src/consts.ts` 填 `ADSENSE_CLIENT = 'ca-pub-…'`（和 lennychen.com 同一組）。
 2. `public/ads.txt` 加一行：`google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0`（換成自己的 pub ID）。
