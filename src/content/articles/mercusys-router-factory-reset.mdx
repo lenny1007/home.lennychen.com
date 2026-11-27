@@ -1,0 +1,48 @@
+---
+title: 水星 MERCUSYS 路由器怎麼重置？MR25BE、MR70X、AC12 等忘記密碼時這樣做
+description: 水星網路（MERCUSYS）路由器忘記登入密碼時，依 MERCUSYS 台灣官方 FAQ：路由器開機中，用針按住背面重置按鈕約 10 秒再放開，等它重新啟動。適用 MR25BE、MR70X、MR30G、AC12、MW301R 等機型。
+pubDate: 2026-11-27
+category: network
+kind: setting
+brands: ['MERCUSYS']
+takeaways:
+  - 路由器正常運作時，用針按住背面的重置按鈕約 10 秒，放開後等它重新啟動
+  - 按之前先確認路由器有開機
+  - 預設登入位址是 192.168.1.1 或 mwlogin.net
+  - 官方 FAQ 寫 MERCUSYS 無線路由器沒有預設的登入密碼
+sources:
+  - title: MERCUSYS 水星網路官方 FAQ〈忘記登入MERCUSYS 無線路由器的密碼怎麼辦?〉（台灣地區，適用 AC12、MW301R、MW325R、AC12G、MW302R、MR50G、MR70X、MR30G、MR60X、MR90X、AC10、MR27BE、MR37BE、MR25BE、MR47BE、MR80X、MR85X、ME30）
+    url: https://www.mercusys.com/tw/faq-118/
+    checked: 2026-11
+draft: false
+---
+import FlowFig from '../../components/figures/FlowFig.astro';
+
+水星網路（MERCUSYS）路由器忘記管理密碼、登不進設定頁時，官方的做法是**按住背面的重置按鈕約 10 秒**，等它重新啟動後再重新登入設定。
+
+## 適用機種
+
+MERCUSYS 台灣官方 FAQ 列出的機型：
+
+- **MR 系列**：MR25BE、MR27BE、MR37BE、MR47BE、MR30G、MR50G、MR60X、MR70X、MR80X、MR85X、MR90X。
+- **AC 系列**：AC10、AC12、AC12G。
+- **MW 系列**：MW301R、MW302R、MW325R。
+- **ME30**。
+
+## 按重置按鈕的步驟
+
+1. 確認路由器**有通電、正常運作中**。
+2. 用針或迴紋針，**按住背面的重置按鈕約 10 秒**。
+3. 放開按鈕，**等路由器自己重新啟動**。
+
+<FlowFig caption="MERCUSYS 路由器用重置按鈕恢復原廠預設值。依 MERCUSYS 台灣官方 FAQ。" nodes={[
+  { icon: 'power', title: '路由器開機、正常運作中' },
+  { icon: 'pin', title: '用針按住背面重置鍵約 10 秒' },
+  { icon: 'router', title: '放開，等它重新啟動', tone: 'ok' },
+]} />
+
+## 重置後怎麼登入
+
+- 預設登入位址是 **192.168.1.1**，或在瀏覽器輸入 `mwlogin.net`。
+- 官方 FAQ 寫 MERCUSYS 無線路由器**沒有預設的登入密碼**。
+- 電腦如果是手動設定 IP，要在同一個網段：IP 設成 192.168.1.X（X 是 2～253），子網路遮罩 255.255.255.0。
