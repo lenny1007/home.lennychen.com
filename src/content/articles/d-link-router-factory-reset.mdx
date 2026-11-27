@@ -1,0 +1,45 @@
+---
+title: D-Link 路由器怎麼恢復原廠設定？DIR 系列 Reset 孔按 10 秒
+description: D-Link DIR 系列路由器忘記密碼或設定出錯時，依 D-Link 台灣官網 FAQ：開機狀態下用迴紋針按住背面 Reset 孔 10 秒再放開，等 WLAN 燈停止閃爍就完成。預設帳號 admin、沒有密碼。
+pubDate: 2026-11-27
+category: network
+kind: setting
+brands: ['D-Link']
+takeaways:
+  - 路由器開機中，用迴紋針按住背面標示 Reset 的小孔 10 秒再放開
+  - 路由器會自己重新開機，WLAN 燈停止閃爍就是重置完成
+  - 重置會把所有設定改回原廠預設值，但不會把韌體降回舊版
+  - 原廠預設帳號是 admin，沒有密碼
+sources:
+  - title: D-Link 台灣官網 FAQ〈How do I reset my router to factory default settings?〉（DIR 系列，英文內容）
+    url: https://www.dlink.com/tw/zh/support/faq/routers/wired-routers/dir-series/how-do-i-reset-my-router-to-factory-default-settings
+    checked: 2026-11
+draft: false
+---
+import FlowFig from '../../components/figures/FlowFig.astro';
+
+D-Link DIR 系列路由器忘記管理密碼、設定亂掉時，可以用背面的 **Reset 孔**恢復原廠設定：開機狀態下用迴紋針按住 **10 秒**，等 WLAN 燈停止閃爍就完成。
+
+## 適用機種
+
+D-Link 台灣官網這篇 FAQ 放在 **DIR 系列**路由器底下。FAQ 本身沒有列出個別型號，只說是 DIR 系列。
+
+## 重置前先知道
+
+重置會把路由器**所有設定改回原廠預設值**。D-Link 也提醒，重置**不會把韌體降回舊版**。
+
+## 按 Reset 孔的步驟
+
+1. 確認路由器**有通電、已開機**。
+2. 把迴紋針插進機身背面標示 **Reset** 的小孔，**按住 10 秒**再放開。
+3. 路由器會**自己重新開機**。等 **WLAN 燈停止閃爍**，就重置完成了。
+
+<FlowFig caption="D-Link DIR 系列用 Reset 孔恢復原廠設定。依 D-Link 台灣官網 FAQ。" nodes={[
+  { icon: 'power', title: '路由器開機中' },
+  { icon: 'pin', title: '迴紋針按住 Reset 孔 10 秒', note: '再放開' },
+  { icon: 'router', title: '自動重開機', note: 'WLAN 燈停止閃爍就完成', tone: 'ok' },
+]} />
+
+## 重置後怎麼登入
+
+D-Link 的 FAQ 寫原廠預設帳號是 **admin，沒有密碼**。
